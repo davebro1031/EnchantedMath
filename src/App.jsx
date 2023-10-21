@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Header from './components/Header'
+import ProblemsList from './components/ProblemsList'
 
 export default function App() {
 
@@ -9,7 +10,7 @@ export default function App() {
   return (
     <>
       <Header setQuery={setQuery} />
-      <div>{query}</div>
+      <ProblemsList query={query}/>
     </>
   )
 }
