@@ -6,7 +6,11 @@ export const problems = [
         text: "Suppose a recipe for tropical punch calls for 6 parts pineapple juice, 5 parts orange juice, and 3 parts coconut milk.   If we have 70 cups of pineapple juice, 40 cups of orange juice, and 30 cups of coconut milk, how many cups of tropical punch will we be able to make?",
         hints: [
             "How many batches can you make?"
-        ]
+        ],
+        categories: [
+            "proportional reasoning"
+        ],
+        chilis: 1
     },
     {
         id: 2,
@@ -17,7 +21,12 @@ export const problems = [
         ],
         wrongAnswers: [
             "24 minutes"
-        ]
+        ],
+        categories: [
+            "proportional reasoning",
+            "modeling"
+        ],
+        chilis: 1
     },
     {
         id: 3,
@@ -29,6 +38,13 @@ export const problems = [
         wrongAnswers: [
             "22.5 minutes",
             "45 minutes",
-        ]
+        ],
+        categories: [
+            "proportional reasoning",
+            "inverse proportion",
+            "rates",
+            "harmonic mean"
+        ],
+        chilis: 1
     },
 ]
