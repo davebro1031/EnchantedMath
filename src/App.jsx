@@ -4,10 +4,12 @@ import Header from './components/Header'
 
 export default function App() {
 
+  const [query, setQuery] = useState("")
+
   return (
     <>
-      <Header />
-      <div>Hello</div>
+      <Header setQuery={setQuery} />
+      <div>{query}</div>
     </>
   )
 }
