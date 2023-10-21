@@ -7,11 +7,12 @@ import ProblemsList from './components/ProblemsList'
 export default function App() {
 
   const [query, setQuery] = useState("")
+  const headerHeight = '56px'
 
   return (
     <>
       <Header setQuery={setQuery} />
-      <Box bg='purple.100'>
+      <Box bg='purple.100' p={headerHeight}>
 
         <ProblemsList query={query} />
       </Box>

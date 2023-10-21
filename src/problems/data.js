@@ -3,7 +3,7 @@ export const problems = [
     {
         id: 1,
         title: "Making punch",
-        text: "Suppose a recipe for tropical punch calls for 6 parts pineapple juice, 5 parts orange juice, and 3 parts coconut milk.   If we have 70 cups of pineapple juice, 40 cups of orange juice, and 30 cups of coconut milk, how many cups of tropical punch will we be able to make?",
+        text: "The recipe for Dave's tropical punch calls for 6 cups of pineapple juice, 5 cups of orange juice, and 3 cups of coconut milk.   If we have 70 cups of pineapple juice, 40 cups of orange juice, and 30 cups of coconut milk, how many cups of Dave's tropical punch will we be able to make?",
         hints: [
             "How many batches can you make?"
         ],
