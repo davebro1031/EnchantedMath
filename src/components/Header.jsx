@@ -9,7 +9,7 @@ function Header({ setQuery }) {
             gap="2"
             align='center'
             p='2'
-            bg='purple.300'
+            bg='red.700'
             position='fixed'
             width='100%'
             zIndex={1}>
@@ -17,7 +17,10 @@ function Header({ setQuery }) {
             <Spacer />
             <Search setQuery={setQuery} />
             <ButtonGroup>
-                <Button colorScheme='purple'>Random Problem</Button>
+                <Button
+                    colorScheme='teal'>
+                    Random Problem
+                </Button>
             </ButtonGroup>
         </Flex>
     )

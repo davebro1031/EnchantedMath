@@ -12,7 +12,7 @@ export default function App() {
   return (
     <>
       <Header setQuery={setQuery} />
-      <Box bg='purple.100' p={headerHeight}>
+      <Box bg='orange.200' p={headerHeight}>
 
         <ProblemsList query={query} />
       </Box>
