@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPepperHot } from '@fortawesome/free-solid-svg-icons'
 import Search from './Search'
 import ChiliSlider from './ChiliSlider'
+import CategorySelector from './CategorySelector'
 
 function Sidebar({ setQuery, width, setChiliRange }) {
     return (
@@ -13,6 +14,7 @@ function Sidebar({ setQuery, width, setChiliRange }) {
                 <Search setQuery={setQuery} />
                 <Button> Advanced Search Options</Button>
                 <ChiliSlider setChiliRange={setChiliRange} />
+                <CategorySelector/>
             </VStack>
         </VStack>
     )
