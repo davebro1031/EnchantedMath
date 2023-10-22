@@ -1,14 +1,16 @@
 import { useState } from 'react'
-import './App.css'
 import { Box } from '@chakra-ui/react'
+
 import Header from './components/Header'
 import ProblemsList from './components/ProblemsList'
 import Sidebar from './components/Sidebar'
 
+import './App.css'
+
 export default function App() {
 
   const [query, setQuery] = useState("")
-  const headerHeight = '52px'
+  const headerHeight = '66px'
   const sidebarWidth = '250px'
 
   return (

@@ -1,11 +1,17 @@
 import React from 'react'
-import { Card, CardBody, CardHeader, Text, Heading, } from '@chakra-ui/react'
+import { Card, CardBody, CardHeader, Text, Heading, Spacer, Flex } from '@chakra-ui/react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPepperHot } from '@fortawesome/free-solid-svg-icons'
 
-function ProblemCard({ problem }) {
+export default function ProblemCard({ problem }) {
     return (
         <Card width='300px' marginBottom="1.5em" borderColor='red' variant='elevated'>
             <CardHeader>
-                <Heading size='md'>{problem.title}</Heading>
+                <Flex align='center'>
+                    <Heading size='md'>{problem.title}</Heading>
+                    <Spacer />
+                    <Chilis rating={problem.chilis} />
+                </Flex>
             </CardHeader>
             <CardBody>
                 <Text noOfLines={5}>{problem.text}</Text>
@@ -14,4 +20,12 @@ function ProblemCard({ problem }) {
     )
 }
 
-export default ProblemCard
+const Chilis = ({ rating }) => {
+    return (
+
+        Array.from({ length: rating }, (_, i) => i).map(el => (
+            <FontAwesomeIcon key={el} icon={faPepperHot} />
+        ))
+
+    )
+}

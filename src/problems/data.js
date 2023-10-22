@@ -7,6 +7,7 @@ export const problems = [
         hints: [
             "How many batches can you make?"
         ],
+        wrongAnswers: null,
         categories: [
             "proportional reasoning"
         ],
@@ -59,7 +60,7 @@ export const problems = [
             "247 red marbles",
         ],
         categories: [
-            "two variables"
+            "many variables"
         ],
         chilis: 1
     },
@@ -72,8 +73,10 @@ export const problems = [
             "How many yellow sacks?",
             "How many in each sack?"
         ],
+        wrongAnswers: null,
         categories: [
-            "proportional reasoning"
+            "proportional reasoning",
+            "many variables"
         ],
         chilis: 1
     },
@@ -84,7 +87,7 @@ export const problems = [
         hints: [
             "How long would it take 1 worker?"
         ],
-        wrongAnswers:[
+        wrongAnswers: [
             "12 hours"
         ],
         categories: [
@@ -94,15 +97,403 @@ export const problems = [
         chilis: 1
     },
     {
-        id:7,
-        title:"Auditorium seats",
-        text:"The first row of an auditorium has 1 seat. The second row has 2, the third row has 3, and so on.  If the auditorium has 100 rows, how many seats does it have?",
+        id: 7,
+        title: "Auditorium seats",
+        text: "The first row of an auditorium has 1 seat. The second row has 2, the third row has 3, and so on.  If the auditorium has 100 rows, how many seats does it have?",
         hints: [
             "Try adding the rows in pairs"
         ],
+        wrongAnswers: null,
         categories: [
             "series",
             "quadratics"
+        ],
+        chilis: 2
+    },
+    {
+        id: 8,
+        title: "The Piggy Bank",
+        text: "A piggy bank is filled with coins: nickles, dimes, and quarters (these are the only types). For every 2 nickels there are 3 dimes.  For every 2 dimes there are 5 quarters. If there are 500 coins in total, how much money is in the piggy bank?",
+        hints: [
+            "For every 6 dimes there are how many nickles? how many quarters?"
+        ],
+        wrongAnswers: null,
+        categories: [
+            "many variables",
+            "proportional reasoning"
+        ],
+        chilis: 2
+    },
+    {
+        id: 11,
+        title: "Carroll's Cats",
+        text: "6 cats eat 6 rats in 6 minutes.  How many cats are needed to eat 100 rats in 50 minutes?",
+        hints: [
+            "How many rats will 6 cats eat in 1 minute?"
+        ],
+        wrongAnswers: null,
+        categories: [
+            "proportional reasoning",
+            "inverse proportion",
+            "rates"
+        ],
+        chilis: 2
+    },
+    {
+        id: 20,
+        title: "Mixed drinks",
+        text: "A solution is 5% alcohol and 95% water.  A second solution is 20% alcohol and 80% water.  If 2 gallons of the first solution is mixed with 1 gallon of the second solution, what percentage of the resulting solution is alcohol?",
+        hints: [
+            "Imagine it is 200 gallons and 100 gallons instead"
+        ],
+        wrongAnswers: null,
+        categories: [
+            "proportional reasoning",
+            "percentages"
+        ],
+        chilis: 1
+    },
+    {
+        id: 21,
+        title: "Toggling lockers",
+        text: "There are 100 lockers in a hallway, numbered 1 to 100.  A teacher sends her first student down the hallway, and asks them to open every locker.  She sends the second student down the hallway, instructing them to close every second locker.  (so after the second student is finished, all of the even lockers are closed and the odd ones are still open).  The third student is instructed to change every third locker.  So she closes locker number 3, because it was open, but she opens locker number 6, because it was closed.  This process continues until the 100th student has walked the hallway (the 4th student changes every 4th locker, the 25th student changes lockers #25, #50, #75, and #100, and the 100th student changes only locker #100). After every student has walked through the hallway, which lockers, if any, are open?",
+        hints: [
+            "Obviously locker #1 remains open.  Find the next locker that eventually remains open."
+        ],
+        wrongAnswers: null,
+        categories: [
+            "number theory",
+            "prime factors"
+        ],
+        chilis: 2
+    },
+    {
+        id: 23,
+        title: 'Days of the Week',
+        text: "In some years, July (which has 31 days) has exactly 4 Mondays and 4 Fridays.  During these years, what day of the week is the 4th of July?",
+        hints: [
+            "Draw a calendar"
+        ],
+        wrongAnswers: null,
+        categories: null,
+        chilis: 1
+    },
+    {
+        id: 24,
+        title: "Flashing lights",
+        text: "One construction sign flashes every 6 seconds, and another sign flashes every 10 seconds.  At a certain instant, both signs flash at exactly the same time.  How many seconds elapse until the signs flash simultaneously again?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "prime factors"
+        ],
+        chilis: 0
+    },
+    {
+        id: 16,
+        title: "Repeating Digits",
+        text: "What is the 322nd digit in the expansion of the repeating decimal 0.135713571357…?",
+        hints: [
+            "What is the 4th, 8th, 12th, etc. digit?"
+        ],
+        wrongAnswers: null,
+        categories: null,
+        chilis: 0
+    },
+    {
+        id: 25,
+        title: "3 Hoses, 4 Hoses",
+        text: "One hose pumps water at a rate of 2.5 gallons per minute.  Three hoses pumping water simultaneously fill a pool in 60 minutes.  How long would it take 4 hoses pumping simultaneously to fill that same pool?",
+        hints: [
+            "You don't need all of the given data, but you CAN use it."
+        ],
+        wrongAnswers: null,
+        categories: [
+            "proportional reasoning",
+            "inverse proportion",
+            "rates"
+        ],
+        chilis: 1
+    },
+    {
+        id: 26,
+        title: "Choir practice",
+        text: "During rehearsal for the Founder’s day choir program, the director, Mrs. Mazurek, tried 3 different configurations for her choir.  One configuration was to have only rows of 12, one was to have only rows of 15, and one was to have only rows of 20.  Each configuration used every member of the choir, and none of them worked, because in each configuration, the last row had one person fewer than the other rows.  What is the fewest number of members this choir could have?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "prime factors",
+        ],
+        chilis: 1
+    },
+    {
+        id: 28,
+        title: "Simple subs",
+        text: "Mark and Juanita own a sandwich shop.  They offer 3 kinds of breads, 5 kinds of meats, and 3 kinds of cheeses.  Each type of sandwich consists of a combination of 1 type of bread, 1 type of meat, and 1 type of cheese.  How many types of sandwiches are possible?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "combinatorics"
+        ],
+        chilis: 0
+    },
+    {
+        id: 34,
+        title: "Laps on laps",
+        text: "Two people start running in the same direction from the starting line on a quarter-mile long track.  One of them runs 4 miles per hour (mph) and the other runs at 8 mph.  How many times will they be at the same point on the track if they run for 8 hours, including their starting point and perhaps their ending point?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "prime factors"
+        ],
+        chilis: 1
+    },
+    {
+        id: 35,
+        title: "How old is Ben?",
+        text: "Five years ago, Ben was 3 times as old as his daughter.  If his daughter is 17 years old now, how old is Ben now?",
+        hints: [
+            "5 years ago, how old was Ben's daughter? How old was he?"
+        ],
+        wrongAnswers: null,
+        categories: null,
+        chilis: 0
+    },
+    {
+        id: 36,
+        title: "Alternating Fun",
+        text: "What is 100 - 99 + 98 - 97 + … - 3 + 2 - 1 ?",
+        hints: [
+            "Try calculating this alternating expression in pairs."
+        ],
+        categories: [
+            "series",
+            "telescoping"
+        ],
+        chilis: 0
+    },
+    {
+        id: 37,
+        title: "Optimal Area",
+        text: "All the sides of a rectangle are whole numbers.  If it has area 60 square feet, what is the smallest possible perimeter it could have?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "inequality",
+            "number theory",
+            "quadratics"
+        ],
+        chilis: 0
+    },
+    {
+        id: 39,
+        title: "Ducks in a line",
+        text: "When six ducks sit next to each other in a row on a log, Amy sits next to Ben, Carl does not sit next to Diane, and Eddie sits somewhere to Fiona’s left.  In addition, Amy sits somewhere to Carl’s right, Ben sits next to Eddie, and Diane sits somewhere to Fiona’s left.  If Amy is somewhere to Eddie’s right, what are the initials of the friends from left to right?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "logic"
+        ],
+        chilis: 0
+    },
+    {
+        id: 41,
+        title: "The juice is loose",
+        text: "There are two pitchers of orange juice at a party. Pitcher A is 80% water and 20% orange juice concentrate.  Pitcher B is 90% water and 10% concentrate.  You want a 10 oz. drink that is 83% water and 17% concentrate.  How much of pitcher A will you need to mix with pitcher B to get the desired concentration?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "proportional reasoning"
+        ],
+        chilis: 1
+    },
+    {
+        id: 42,
+        title: "Office supplies",
+        text: "A pencil and five paper clips weighs the same as two erasers. A pencil weighs the same as 29 paper clips.  How many paper clips weigh the same as 3 erasers and two pencils?",
+        hints: null,
+        wrongAnswers: null,
+        categories: null,
+        chilis: 0
+    },
+    {
+        id: 43,
+        title: "Test scores",
+        text: "The test score of 4 students was 80%.  One more student takes the test and the class average drops to 75%.  What was the score of the last student to take the test?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "proportional reasoning",
+            "averages",
+            "percents"
+        ],
+        chilis: 1
+    },
+    {
+        id: 44,
+        title: "75 Lore",
+        text: "What is the smallest positive multiple of 75 that has exactly 75 positive integer factors (including 1 and the number itself)?",
+        hints: [
+            "How can a number have an odd number of factors?"
+        ],
+        wrongAnswers: null,
+        categories: [
+            "number theory",
+            "prime factors"
+        ],
+        chilis: 3
+    },
+    {
+        id: 45,
+        title: "Prime products",
+        text: "What is the units (ones) digit of the product of the first 99 prime numbers?",
+        hints: [
+            "It will divisible by 5..."
+        ],
+        wrongAnswers: null,
+        categories: [
+            "number theory",
+            "prime factors"
+        ],
+        chilis: 1
+    },
+    {
+        id: 46,
+        title: "Mixed nuts",
+        text: "Three kinds of nuts are mixed in a can.  You begin taking them out, one by one, and sorting them into piles according to their type.  How many nuts must you take out to ensure that at least one of your piles has at least 5 nuts in it?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "combinatorics",
+            "pigeon hole principal"
+        ],
+        chilis: 0
+    },
+    {
+        id: 47,
+        title: "Sharing pennies",
+        text: "We have 17 pennies to divide among Spencer, Nadav, Ryan, and Jude.  If Spencer must get at least 4 pennies, Nadav at least 3, Ryan at least 2, and Jude at least 1, how many ways can we distribute these pennies?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "combinatorics",
+            "stars and bars"
+        ]
+    },
+    {
+        id: 48,
+        title: "Runnin up that hill",
+        text: "A boy ran up a hill at 3 mph and came down the hill at 9 mph. The trip took him 6 hours.  How far, in miles, is it to the top of the hill?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "proportional reasoning",
+            "inverse proportion",
+            "rates",
+            "average speed"
+        ],
+        chilis: 1
+    },
+    {
+        id: 49,
+        title: "Riding Roy",
+        text: "Roy rode his scooter from home to the beach and returned along the same path.  He traveled at a constant speed of 30mph to the beach and Roy’s average speed for the whole trip was 24mph.  How fast did he travel on the way back?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "proportional reasoning",
+            "inverse proportion",
+            "rates",
+            "average speed"
+        ],
+        chilis: 1
+
+    },
+    {
+        id: 50,
+        title: "Mr. Sampson's drive",
+        text: "Mr. Sampson is going to the zoo.  He travels at the speed limit (it’s constant) on the way to the zoo and speeds 9 mph above the speed limit on his way home.  He tells you that his average speed was 40 mph.  What is the speed limit?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "proportional reasoning",
+            "inverse proportion",
+            "rates",
+            "average speed"
+        ],
+        chilis: 1
+    },
+    {
+        id: 51,
+        title: "Paddling upstream",
+        text: "Morten paddled his canoe upstream for 1 hour and downstream for 2.  The rate of the current was 3 mph.  When he stopped, Morten looked at his GPS and determined that he was 14 miles downstream from where he had started.  How many hours will it take him to paddle back to his starting point, assuming that he paddles with a constant effort?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "proportional reasoning",
+            "inverse proportion",
+            "rates",
+            "average speed"
+        ],
+        chilis: 2
+    },
+    {
+        id: 52,
+        title: "Slow cycling",
+        text: "A cyclist rides 30 miles at an average speed of 9 mph.  At what rate must she cover the next 10 miles in order to bring her overall average speed up to 10 mph?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "proportional reasoning",
+            "inverse proportion",
+            "rates",
+            "average speed"
+        ],
+        chilis: 1,
+    },
+    {
+        id: 53,
+        title: "Average speeds",
+        text: "A boy walks 1 mile at 2 mph and 1 mile at 4 mph, while a girl walks 1 hour at 2 mph and 1 hour at 4 mph. Calculate each childs average speed over their whole walk, and state which child moved faster on average.",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "proportional reasoning",
+            "inverse proportion",
+            "rates",
+            "average speed"
+        ],
+        chilis: 0
+    },
+    {
+        id: 54,
+        title: "Many mowers",
+        text: "Jina can mow a lawn in 3 hours, Josh can mow a lawn in 2 hours, and Gregg can mow a lawn in 1 hour.  If they work together, how many minutes (rounded to the nearest minute) will it take them to mow 2 lawns?",
+        hints: [
+            "How many lawns can they all mow together in 6 hours?"
+        ],
+        wrongAnswers: null,
+        categories: [
+            "proportional reasoning",
+            "inverse proportion",
+            "rates",
+            "harmonic mean"
+        ],
+        chilis: 2
+    },
+    {
+        id: 55,
+        title: "Faucet Flow",
+        text: "Three faucets are pouring water into a container.  One would fill the container in 6 hours by itself, another in 8 hours and the last in 12 hours.  Additionally, outflow from the container would empty it in one day (24hrs).  How long, to the nearest minute, does the container take to fill from empty?",
+        hints: [
+            "How much of the container is filled in 1 hour?"
+        ],
+        wrongAnswers: null,
+        categories: [
+            "proportional reasoning",
+            "inverse proportion",
+            "rates",
+            "harmonic mean"
         ],
         chilis: 2
     }
