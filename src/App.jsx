@@ -9,15 +9,15 @@ export default function App() {
 
   const [query, setQuery] = useState("")
   const headerHeight = '56px'
+  const sidebarWidth = '250px'
 
   return (
     <>
       <Header setQuery={setQuery} />
-      <Box bg='orange.200' p={headerHeight} minHeight='100vh'>
-        <Sidebar setQuery={setQuery} />
-        <Box>
+      <Box bg='orange.200' paddingTop={headerHeight} minHeight='100vh'>
+        <Sidebar setQuery={setQuery} width={sidebarWidth} />
+        <Box position='relative' left='250px' width={`calc(100% - ${sidebarWidth})`}>
           <ProblemsList query={query} />
-
         </Box>
       </Box>
     </>

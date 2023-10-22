@@ -66,7 +66,7 @@ export const problems = [
     {
         id: 5,
         title: "Primary Marbles",
-        text: "There are 320 marbles in a bag; all of them are either red or blue.  If there are three times as many red marbles as blue marbles, and twice as many yellow marbles as red marbles, how many RED marbles are in the bag?",
+        text: "There are 320 marbles in a bag; all of them have a single, solid color: red, blue, or yellow.  If there are three times as many red marbles as blue marbles, and twice as many yellow marbles as red marbles, how many RED marbles are in the bag?",
         hints: [
             "Separate the colors into sacks of equal sizes.  There is 1 blue sack. How many red sacks?",
             "How many yellow sacks?",
@@ -80,7 +80,7 @@ export const problems = [
     {
         id: 6,
         title: "Fence painting",
-        text: "If it takes 5 workers 12 hours to paint a fence, how long will it take 8 workers?",
+        text: "If it takes 5 workers 12 hours to paint a fence, how long will it take 8 workers to paint an identical fence?",
         hints: [
             "How long would it take 1 worker?"
         ],

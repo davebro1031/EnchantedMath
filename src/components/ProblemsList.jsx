@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { problems } from '../problems/data'
 import ProblemCard from './ProblemCard'
-import { VStack } from '@chakra-ui/react'
+import { Flex, Wrap } from '@chakra-ui/react'
 
 
 function ProblemsList({ query }) {
@@ -29,10 +29,9 @@ function ProblemsList({ query }) {
     }, [query])
 
     return (
-        <VStack gap="24px">
-
+        <Wrap justify="space-around" margin='1.5em'>
             {filteredProblems.map(problem => <ProblemCard key={problem.id} problem={problem} />)}
-        </VStack>
+        </Wrap>
     )
 }
 
