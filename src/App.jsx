@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Box } from '@chakra-ui/react'
+import { Box, useBreakpointValue } from '@chakra-ui/react'
 
 import Header from './components/Header'
 import ProblemsList from './components/ProblemsList'
@@ -12,13 +12,18 @@ export default function App() {
   const [query, setQuery] = useState("")
   const headerHeight = '66px'
   const sidebarWidth = '250px'
+  const showSidebar = useBreakpointValue({ base: false, md: true })
 
   return (
     <>
       <Header setQuery={setQuery} />
       <Box as="main" bg='orange.200' paddingTop={headerHeight} minHeight='100vh'>
-        <Sidebar setQuery={setQuery} width={sidebarWidth} />
-        <Box as="section" position='relative' left='250px' width={`calc(100% - ${sidebarWidth})`}>
+        {showSidebar ? <Sidebar setQuery={setQuery} width={sidebarWidth} /> : null}
+        <Box
+          as="section"
+          position='relative'
+          left={showSidebar ? sidebarWidth : 0}
+          width={showSidebar ? `calc(100% - ${sidebarWidth})` : '100%'}>
           <ProblemsList query={query} />
         </Box>
       </Box>
