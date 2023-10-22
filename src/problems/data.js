@@ -89,5 +89,10 @@ export const problems = [
             "inverse proportion",
         ],
         chilis: 1
+    },
+    {
+        id:7,
+        title:"Auditorium seats",
+        text:"The first row of an auditorium has 1 seat. The second row has 2. Third row has 3 and so on.  If the auditorium has 100 rows, how many seats does it have?"
     }
 ]

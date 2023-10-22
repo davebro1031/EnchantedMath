@@ -8,7 +8,7 @@ import Sidebar from './components/Sidebar'
 export default function App() {
 
   const [query, setQuery] = useState("")
-  const headerHeight = '56px'
+  const headerHeight = '52px'
   const sidebarWidth = '250px'
 
   return (

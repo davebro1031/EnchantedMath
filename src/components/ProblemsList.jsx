@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { problems } from '../problems/data'
 import ProblemCard from './ProblemCard'
-import { Flex, Wrap } from '@chakra-ui/react'
+import { Wrap, WrapItem } from '@chakra-ui/react'
 
 
 function ProblemsList({ query }) {
@@ -17,7 +17,7 @@ function ProblemsList({ query }) {
             problem.categories].join(" ").toLowerCase()
 
         let foundAllQueryWords = true
-        for(let word of queryWords) foundAllQueryWords = foundAllQueryWords && problemText.includes(word)
+        for (let word of queryWords) foundAllQueryWords = foundAllQueryWords && problemText.includes(word)
         return foundAllQueryWords
     }
     useEffect(() => {
@@ -30,7 +30,11 @@ function ProblemsList({ query }) {
 
     return (
         <Wrap justify="space-around" margin='1.5em'>
-            {filteredProblems.map(problem => <ProblemCard key={problem.id} problem={problem} />)}
+            {filteredProblems.map(problem =>
+                <WrapItem key={problem.id}>
+                    <ProblemCard problem={problem} />
+                </WrapItem>)
+            }
         </Wrap>
     )
 }

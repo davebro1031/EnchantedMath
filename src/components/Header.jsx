@@ -1,5 +1,6 @@
 import React from 'react'
-import { Flex, Heading, Spacer, ButtonGroup, Button } from '@chakra-ui/react'
+import { Flex, Heading, Spacer, ButtonGroup, Button, Image, Box, HStack } from '@chakra-ui/react'
+import NerdSnipe2 from '../assets/NerdSnipe2.png'
 import Search from './Search'
 
 function Header({ setQuery }) {
@@ -14,15 +15,22 @@ function Header({ setQuery }) {
             position='fixed'
             width='100%'
             zIndex={1}>
-            <Heading size='lg' color='white'>Nerd Snipes</Heading>
+            <HStack>
+                <Image src={NerdSnipe2} boxSize='50px' />
+                <Heading size='lg' color='white'>Nerd Snipes</Heading>
+            </HStack>
             <Spacer />
-            {/* <Search setQuery={setQuery} />
-            <ButtonGroup>
-                <Button
-                    colorScheme='teal'>
-                    Random Problem
-                </Button>
-            </ButtonGroup> */}
+            {false ?
+                <>
+                    <Search setQuery={setQuery} />
+                    <ButtonGroup>
+                        <Button
+                            colorScheme='teal'>
+                            Random Problem
+                        </Button>
+                    </ButtonGroup>
+                </> : null
+            }
         </Flex>
     )
 }

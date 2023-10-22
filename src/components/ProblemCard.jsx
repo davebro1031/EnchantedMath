@@ -1,15 +1,14 @@
 import React from 'react'
-import { Card, CardBody, CardHeader, Text, Heading } from '@chakra-ui/react'
+import { Card, CardBody, CardHeader, Text, Heading, } from '@chakra-ui/react'
 
 function ProblemCard({ problem }) {
     return (
-        <Card width='300px' marginBottom="1.5em">
+        <Card width='300px' marginBottom="1.5em" borderColor='red' variant='elevated'>
             <CardHeader>
-                <Heading>{problem.title}</Heading>
+                <Heading size='md'>{problem.title}</Heading>
             </CardHeader>
-
             <CardBody>
-                <Text>{problem.text}</Text>
+                <Text noOfLines={5}>{problem.text}</Text>
             </CardBody>
         </Card>
     )
