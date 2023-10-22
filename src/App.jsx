@@ -10,7 +10,7 @@ import './App.css'
 export default function App() {
 
   const [query, setQuery] = useState("")
-  const headerHeight = '66px'
+  const headerHeight = '61px'
   const sidebarWidth = '250px'
   const showSidebar = useBreakpointValue({ base: false, md: true })
 

@@ -11,7 +11,7 @@ function Header({ setQuery }) {
     return (
         <Flex
             as="header"
-            gap="2"
+            gap="1"
             align='center'
             p='2'
             bg='red.700'
@@ -20,7 +20,7 @@ function Header({ setQuery }) {
             width='100%'
             zIndex={1}>
             <HStack>
-                <Image src={NerdSnipe2} boxSize='50px' />
+                <Image src={NerdSnipe2} boxSize='45px' />
                 {showName ? <Heading size={['md','md','lg']} color='white'>Nerd Snipes</Heading> : null}
             </HStack>
             <Spacer />
