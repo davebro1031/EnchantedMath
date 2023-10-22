@@ -10,6 +10,7 @@ import './App.css'
 export default function App() {
 
   const [query, setQuery] = useState("")
+  const [chiliRange, setChiliRange] = useState([0, 3])
   const headerHeight = '61px'
   const sidebarWidth = '250px'
   const showSidebar = useBreakpointValue({ base: false, md: true })
@@ -18,13 +19,13 @@ export default function App() {
     <>
       <Header setQuery={setQuery} />
       <Box as="main" bg='orange.200' paddingTop={headerHeight} minHeight='100vh'>
-        {showSidebar ? <Sidebar setQuery={setQuery} width={sidebarWidth} /> : null}
+        {showSidebar ? <Sidebar setQuery={setQuery} width={sidebarWidth} setChiliRange={setChiliRange} /> : null}
         <Box
           as="section"
           position='relative'
           left={showSidebar ? sidebarWidth : 0}
           width={showSidebar ? `calc(100% - ${sidebarWidth})` : '100%'}>
-          <ProblemsList query={query} />
+          <ProblemsList query={query} chiliRange={chiliRange} />
         </Box>
       </Box>
     </>
