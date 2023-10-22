@@ -47,4 +47,47 @@ export const problems = [
         ],
         chilis: 1
     },
+    {
+        id: 4,
+        title: "Many Marbles",
+        text: "There are 500 marbles in a bag; all of them are either red or blue.  If there are 6 more red marbles than blue marbles, how many RED marbles are in the bag?",
+        hints: [
+            "What if there were the same number of red and blue?"
+        ],
+        wrongAnswers: [
+            "256 red marbles",
+            "247 red marbles",
+        ],
+        categories: [
+            "two variables"
+        ],
+        chilis: 1
+    },
+    {
+        id: 5,
+        title: "Primary Marbles",
+        text: "There are 320 marbles in a bag; all of them are either red or blue.  If there are three times as many red marbles as blue marbles, and twice as many yellow marbles as red marbles, how many RED marbles are in the bag?",
+        hints: [
+            "Separate the colors into sacks of equal sizes.  There is 1 blue sack. How many red sacks?",
+            "How many yellow sacks?",
+            "How many in each sack?"
+        ],
+        categories: [
+            "proportional reasoning"
+        ],
+        chilis: 1
+    },
+    {
+        id: 6,
+        title: "Fence painting",
+        text: "If it takes 5 workers 12 hours to paint a fence, how long will it take 8 workers?",
+        hints: [
+            "How long would it take 1 worker?"
+        ],
+        categories: [
+            "proportional reasoning",
+            "inverse proportion",
+        ],
+        chilis: 1
+    }
 ]

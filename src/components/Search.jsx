@@ -6,7 +6,7 @@ function Search({ setQuery }) {
         <Input
             width='auto'
             size='md'
-            focusBorderColor='purple.500'
+            focusBorderColor='teal.300'
             color='white'
             placeholder='Search problems'
             _placeholder={{ color: 'white' }}
