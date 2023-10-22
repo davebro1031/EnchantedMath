@@ -80,9 +80,12 @@ export const problems = [
     {
         id: 6,
         title: "Fence painting",
-        text: "If it takes 5 workers 12 hours to paint a fence, how long will it take 8 workers to paint an identical fence?",
+        text: "If it takes 10 workers 16 hours to paint a fence, how long will it take 15 workers to paint an identical fence?",
         hints: [
             "How long would it take 1 worker?"
+        ],
+        wrongAnswers:[
+            "12 hours"
         ],
         categories: [
             "proportional reasoning",
@@ -93,6 +96,14 @@ export const problems = [
     {
         id:7,
         title:"Auditorium seats",
-        text:"The first row of an auditorium has 1 seat. The second row has 2. Third row has 3 and so on.  If the auditorium has 100 rows, how many seats does it have?"
+        text:"The first row of an auditorium has 1 seat. The second row has 2, the third row has 3, and so on.  If the auditorium has 100 rows, how many seats does it have?",
+        hints: [
+            "Try adding the rows in pairs"
+        ],
+        categories: [
+            "series",
+            "quadratics"
+        ],
+        chilis: 2
     }
 ]

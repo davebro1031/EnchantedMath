@@ -20,6 +20,7 @@ function ProblemsList({ query }) {
         for (let word of queryWords) foundAllQueryWords = foundAllQueryWords && problemText.includes(word)
         return foundAllQueryWords
     }
+    
     useEffect(() => {
         setFilteredProblems(
             problems.filter(
