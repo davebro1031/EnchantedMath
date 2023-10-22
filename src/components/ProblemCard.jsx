@@ -5,7 +5,7 @@ import { faPepperHot } from '@fortawesome/free-solid-svg-icons'
 
 export default function ProblemCard({ problem }) {
     return (
-        <Card width='300px' marginBottom="1.5em" borderColor='red' variant='elevated'>
+        <Card width='300px' marginBottom="1.5em" variant='elevated' _hover={{boxShadow:'0 0 5px 3px #0BC5EA'}}>
             <CardHeader>
                 <Flex align='center'>
                     <Heading size='md'>{problem.title}</Heading>

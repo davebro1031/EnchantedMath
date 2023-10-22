@@ -4,7 +4,7 @@ import Search from './Search'
 
 function Sidebar({ setQuery, width }) {
     return (
-        <VStack height='100%' width={width} bg='teal' position='fixed' left='0' gap='24px'>
+        <VStack as="section" height='100%' width={width} bg='teal' position='fixed' left='0' gap='24px'>
             <Box />
             <VStack width='100%'>
                 <Search setQuery={setQuery} />

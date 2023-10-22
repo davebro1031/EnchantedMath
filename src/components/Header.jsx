@@ -7,6 +7,7 @@ function Header({ setQuery }) {
 
     return (
         <Flex
+            as="header"
             gap="2"
             align='center'
             p='2'
