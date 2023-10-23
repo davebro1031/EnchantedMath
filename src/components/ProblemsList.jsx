@@ -41,7 +41,7 @@ function ProblemsList({ query, chiliRange, categories }) {
     }, [query, filteredProblems])
 
     return (
-        <Wrap justify="space-around" margin='1.5em'>
+        <Wrap justify="space-around" margin='1em'>
             {queriedProblems.map(problem =>
                 <WrapItem key={problem.id}>
                     <ProblemCard problem={problem} />
