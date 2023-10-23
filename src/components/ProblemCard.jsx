@@ -8,7 +8,7 @@ export default function ProblemCard({ problem }) {
     const navigate = useNavigate()
     return (
         <Card
-            onClick={() => navigate(`/${problem.id}`)}
+            onClick={() => navigate(`/problem/${problem.id}`)}
             width='300px'
             marginBottom="1.5em"
             variant='elevated'

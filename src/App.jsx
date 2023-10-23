@@ -63,7 +63,7 @@ export default function App() {
                 categories={categories}
               />}
             />
-            <Route path="/:id" element={<ProblemDetails/>} />
+            <Route path="/problem/:id" element={<ProblemDetails/>} />
             <Route path="*" element={<div>404 not found</div>} />
 
           </Routes>
