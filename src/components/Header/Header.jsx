@@ -2,7 +2,7 @@ import React from 'react'
 import { Flex, Spacer, IconButton } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import { useBreakpointValue } from '@chakra-ui/react'
-import Search from './Search'
+import Search from '../Sidebar/Search'
 import Logo from './Logo'
 
 function Header({ setQuery, onOpen, btnRef }) {

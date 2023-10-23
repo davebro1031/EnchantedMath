@@ -1,7 +1,7 @@
 import { useNavigate, useParams } from 'react-router-dom'
 import { Tabs, TabList, Tab, TabPanels, TabPanel, Heading, Box, Text } from '@chakra-ui/react';
-import { problems } from '../problems/data';
-import Chilis from './Chilis'
+import { problems } from '../../problems/data';
+import Chilis from '../Home/Chilis'
 import { useEffect } from 'react';
 
 export default function ProblemDetails() {

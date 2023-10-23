@@ -1,6 +1,6 @@
 import { HStack, Heading, Image } from "@chakra-ui/react"
 import { useBreakpointValue } from "@chakra-ui/react"
-import NerdSnipe2 from '../assets/NerdSnipe2.png'
+import NerdSnipe2 from '../../assets/NerdSnipe2.png'
 import { useNavigate } from "react-router-dom"
 
 export default function Logo() {

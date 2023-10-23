@@ -2,13 +2,13 @@ import { useState, useRef, useEffect } from 'react'
 import { Box, useBreakpointValue, useDisclosure } from '@chakra-ui/react'
 import { Routes, Route } from 'react-router-dom'
 
-import Header from './components/Header'
-import ProblemsList from './components/ProblemsList'
-import Sidebar from './components/Sidebar'
+import Header from './components/Header/Header'
+import ProblemsList from './components/Home/ProblemsList'
+import Sidebar from './components/Sidebar/Sidebar'
 
 import './App.css'
-import SidebarDrawer from './components/SidebarDrawer'
-import ProblemDetails from './components/ProblemDetails'
+import SidebarDrawer from './components/Sidebar/SidebarDrawer'
+import ProblemDetails from './components/Problem Details/ProblemDetails'
 import { problems } from './problems/data'
 
 export default function App() {

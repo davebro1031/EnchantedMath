@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { problems } from '../problems/data'
+import { problems } from '../../problems/data'
 import ProblemCard from './ProblemCard'
 import { Wrap, WrapItem } from '@chakra-ui/react'
 
