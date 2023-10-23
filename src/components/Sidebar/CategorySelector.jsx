@@ -51,9 +51,9 @@ export default function CategorySelector({ categories, setCategories }) {
         <Box>
             <Text color='white' fontSize={20} mb={1}>Category</Text>
             <Flex mb={3} align='center'>
-                <Button p='1.5' fontSize={13} height='5' onClick={handleClearAll}>clear all</Button>
-                <Spacer />
                 <Button p='1.5' fontSize={13} height='5'onClick={handleSelectAll}>select all</Button>
+                <Spacer />
+                <Button p='1.5' fontSize={13} height='5' onClick={handleClearAll}>clear all</Button>
             </Flex>
             <Wrap>
                 <Category name="proportional reasoning" selected={ratios} setSelected={setRatios} />

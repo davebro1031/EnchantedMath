@@ -1,6 +1,8 @@
 import { useNavigate, useParams } from 'react-router-dom'
-import { Tabs, TabList, Tab, TabPanels, TabPanel, Heading, Box, Text } from '@chakra-ui/react';
+import { Tabs, TabList, Tab, TabPanels, TabPanel, Heading, Box, Text, Spacer, Flex } from '@chakra-ui/react';
 import { problems } from '../../problems/data';
+import Hints from './Hints';
+import RelatedProblems from './RelatedProblems';
 import Chilis from '../Home/Chilis'
 import { useEffect } from 'react';
 
@@ -15,9 +17,9 @@ export default function ProblemDetails() {
 
 
     return (
-        <Box bg={'white'} p={3} m={4}>
-            <Heading mb={3}> {problem.title}</Heading> 
-            <Heading size='md'> Difficulty: <Chilis rating={problem.chilis}/></Heading>
+        <Box bg={'white'} p={3} m={4} minHeight='80vh'>
+            <Heading mb={3}> {problem.title}</Heading>
+            <Heading size='md'> Difficulty: <Chilis rating={problem.chilis} /></Heading>
             <Tabs colorScheme='red'>
                 <TabList>
                     {/* fontWeight='bold' fontSize='20px' */}
@@ -27,38 +29,16 @@ export default function ProblemDetails() {
                 </TabList>
 
                 <TabPanels>
-                    <TabPanel>
+                    <TabPanel height='100%' flexGrow={1} display={'flex'}>
+                        <Flex direction='column'>
+                            <Text mb={3}>{problem.text}</Text>
+                            <Spacer />
+                            <Box>
 
-                        <Text mb={3}>{problem.text}</Text>
-
-                        {problem.hints ?
-                            <Tabs colorScheme='red'>
-                                <TabList>
-                                    <Tab>Hints</Tab>
-                                </TabList>
-                                <TabPanels>
-                                    <TabPanel>
-                                        {problem.hints}
-                                    </TabPanel>
-                                </TabPanels>
-                            </Tabs>
-                            // <Box mb={3}>
-                            //     <Heading size='md'>Hints</Heading>
-                            //     <Text>{problem.hints}</Text>
-                            // </Box >
-                        : null }
-                        <Tabs colorScheme='red'>
-                            <TabList>
-                                <Tab>See Also</Tab>
-                            </TabList>
-                            <TabPanels>
-                                <TabPanel>Relate problems</TabPanel>
-                            </TabPanels>
-                        </Tabs>
-                        {/* <Box>
-                            <Heading size='md'>See also</Heading>
-                            <Text>Related problems</Text>
-                        </Box> */}
+                                {problem.hints ? <Hints hints={problem.hints} /> : null}
+                                <RelatedProblems id={id} />
+                            </Box>
+                        </Flex>
                     </TabPanel>
                     <TabPanel>
                         <p>Solution</p>
