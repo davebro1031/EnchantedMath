@@ -1,18 +1,14 @@
 import React from 'react'
 import {
-    Button,
     Drawer,
     DrawerOverlay,
     DrawerContent,
-    DrawerHeader,
-    DrawerBody,
-    Input,
-    DrawerFooter,
-    DrawerCloseButton,
-
+    DrawerBody
 } from '@chakra-ui/react'
+import ChiliSlider from './ChiliSlider'
+import CategorySelector from './CategorySelector'
 
-export default function SidebarDrawer({ isOpen, onClose, btnRef }) {
+export default function SidebarDrawer({ isOpen, onClose, btnRef, setChiliRange, setCategories }) {
 
     return (
         <Drawer
@@ -22,20 +18,18 @@ export default function SidebarDrawer({ isOpen, onClose, btnRef }) {
             finalFocusRef={btnRef}
         >
             <DrawerOverlay />
-            <DrawerContent>
-                <DrawerCloseButton />
-                <DrawerHeader>Create your account</DrawerHeader>
-
-                <DrawerBody>
-                    <Input placeholder='Type here...' />
+            <DrawerContent bg='teal'>
+                <DrawerBody mt={2}>
+                    <ChiliSlider setChiliRange={setChiliRange} />
+                    <CategorySelector setCategories={setCategories} />
                 </DrawerBody>
 
-                <DrawerFooter>
+                {/* <DrawerFooter>
                     <Button variant='outline' mr={3} onClick={onClose}>
                         Cancel
                     </Button>
                     <Button colorScheme='blue'>Save</Button>
-                </DrawerFooter>
+                </DrawerFooter> */}
             </DrawerContent>
         </Drawer>
     )

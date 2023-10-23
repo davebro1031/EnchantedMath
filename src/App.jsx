@@ -48,7 +48,7 @@ export default function App() {
             chiliRange={chiliRange}
             categories={categories}
           />
-          <SidebarDrawer isOpen={isOpen} onClose={onClose} btnRef={btnRef} />
+          <SidebarDrawer isOpen={isOpen} onClose={onClose} btnRef={btnRef} setChiliRange={setChiliRange} setCategories={setCategories} />
         </Box>
       </Box>
     </>

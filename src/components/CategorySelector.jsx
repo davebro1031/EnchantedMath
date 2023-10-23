@@ -57,8 +57,8 @@ export default function CategorySelector({ setCategories }) {
             </Flex>
             <Wrap>
                 <Category name="proportional reasoning" selected={ratios} setSelected={setRatios} />
-                <Category name="graph theory" selected={graphs} setSelected={setGraphs} />
                 <Category name="counting" selected={combinatorics} setSelected={setCombinatorics} />
+                <Category name="graph theory" selected={graphs} setSelected={setGraphs} />
                 <Category name="number theory" selected={primes} setSelected={setPrimes} />
                 <Category name="multivariable" selected={multivariable} setSelected={setMultivariable} />
                 <Category name="series" selected={series} setSelected={setSeries} />
