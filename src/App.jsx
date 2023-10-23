@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { Box, useBreakpointValue, useDisclosure } from '@chakra-ui/react'
 import { Routes, Route } from 'react-router-dom'
 
@@ -9,6 +9,7 @@ import Sidebar from './components/Sidebar'
 import './App.css'
 import SidebarDrawer from './components/SidebarDrawer'
 import ProblemDetails from './components/ProblemDetails'
+import { problems } from './problems/data'
 
 export default function App() {
 
@@ -35,6 +36,45 @@ export default function App() {
   const sidebarWidth = '250px'
   const showSidebar = useBreakpointValue({ base: false, md: true })
 
+  // filter the problem list
+  const [filteredProblems, setFilteredProblems] = useState(problems)
+  const [queriedProblems, setQueriedProblems] = useState([])
+
+  const problemTextContainsQuery = (problem, str) => {
+    const queryWords = str.toLowerCase().split(" ")
+    if (str === "") return true
+
+    const problemText = [
+      problem.title,
+      problem.text,
+      problem.categories].join(" ").toLowerCase()
+
+    let foundAllQueryWords = true
+    for (let word of queryWords) foundAllQueryWords = foundAllQueryWords && problemText.includes(word)
+    return foundAllQueryWords
+  }
+
+  // update filtered list via difficulty and category filters
+  useEffect(() => {
+    let filteredProblemList = problems
+    filteredProblemList = filteredProblemList.filter(problem =>
+      (problem.chilis >= chiliRange[0] && problem.chilis <= chiliRange[1])
+    )
+    filteredProblemList = filteredProblemList.filter(problem =>
+      categories.some(category => problem.categories.includes(category))
+    )
+    setFilteredProblems(filteredProblemList)
+  }, [chiliRange, categories])
+
+  // update queried list, which uses the search to further specify the the filtered list
+  useEffect(() => {
+    const queriedList = filteredProblems.filter(
+      problem => problemTextContainsQuery(problem, query)
+    )
+    setQueriedProblems(queriedList)
+  }, [query, filteredProblems])
+
+
   return (
     <>
       <Header setQuery={setQuery} onOpen={onOpen} btnRef={btnRef} />
@@ -58,12 +98,13 @@ export default function App() {
           <Routes>
             <Route path="/" element={
               <ProblemsList
-                query={query}
-                chiliRange={chiliRange}
-                categories={categories}
+                queriedProblems={queriedProblems}
+                // query={query}
+                // chiliRange={chiliRange}
+                // categories={categories}
               />}
             />
-            <Route path="/problem/:id" element={<ProblemDetails/>} />
+            <Route path="/problem/:id" element={<ProblemDetails />} />
             <Route path="*" element={<div>404 not found</div>} />
 
           </Routes>
