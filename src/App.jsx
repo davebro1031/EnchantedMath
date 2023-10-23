@@ -1,13 +1,17 @@
-import { useState } from 'react'
-import { Box, useBreakpointValue } from '@chakra-ui/react'
+import { useState, useRef } from 'react'
+import { Box, useBreakpointValue, useDisclosure } from '@chakra-ui/react'
 
 import Header from './components/Header'
 import ProblemsList from './components/ProblemsList'
 import Sidebar from './components/Sidebar'
 
 import './App.css'
+import SidebarDrawer from './components/SidebarDrawer'
 
 export default function App() {
+
+  const { isOpen, onOpen, onClose } = useDisclosure()
+  const btnRef = useRef()
 
   const [query, setQuery] = useState("")
   const [chiliRange, setChiliRange] = useState([0, 3])
@@ -16,7 +20,10 @@ export default function App() {
     "graph theory",
     "combinatorics",
     "prime factors",
-    "many variables"
+    "many variables",
+    "series",
+    "inequality",
+    "potpourri",
   ])
   const headerHeight = '61px'
   const sidebarWidth = '250px'
@@ -24,13 +31,15 @@ export default function App() {
 
   return (
     <>
-      <Header setQuery={setQuery} />
+      <Header setQuery={setQuery} onOpen={onOpen} btnRef={btnRef} />
       <Box as="main" bg='orange.200' paddingTop={headerHeight} minHeight='100vh'>
         {showSidebar ?
           <Sidebar
             setQuery={setQuery}
             width={sidebarWidth}
+            chiliRange={chiliRange}
             setChiliRange={setChiliRange}
+            categories={categories}
             setCategories={setCategories}
           />
           : null}
@@ -44,6 +53,7 @@ export default function App() {
             chiliRange={chiliRange}
             categories={categories}
           />
+          <SidebarDrawer isOpen={isOpen} onClose={onClose} btnRef={btnRef} chiliRange={chiliRange} setChiliRange={setChiliRange} categories={categories} setCategories={setCategories} />
         </Box>
       </Box>
     </>

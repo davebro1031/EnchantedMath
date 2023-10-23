@@ -1,15 +1,15 @@
 import { useEffect } from 'react'
 import { Box, Text, useBoolean, Wrap, Button, Flex, Spacer } from '@chakra-ui/react'
 
-export default function CategorySelector({ setCategories }) {
-    const [ratios, setRatios] = useBoolean(true)
-    const [graphs, setGraphs] = useBoolean(true)
-    const [combinatorics, setCombinatorics] = useBoolean(true)
-    const [primes, setPrimes] = useBoolean(true)
-    const [multivariable, setMultivariable] = useBoolean(true)
-    const [series, setSeries] = useBoolean(true)
-    const [inequality, setInequality] = useBoolean(true)
-    const [potpourri, setPotpourri] = useBoolean(true)
+export default function CategorySelector({ categories, setCategories }) {
+    const [ratios, setRatios] = useBoolean(categories.includes("proportional reasoning"))
+    const [graphs, setGraphs] = useBoolean(categories.includes("graph theory"))
+    const [combinatorics, setCombinatorics] = useBoolean(categories.includes("combinatorics"))
+    const [primes, setPrimes] = useBoolean(categories.includes("prime factors"))
+    const [multivariable, setMultivariable] = useBoolean(categories.includes("many variables"))
+    const [series, setSeries] = useBoolean(categories.includes("series"))
+    const [inequality, setInequality] = useBoolean(categories.includes("inequality"))
+    const [potpourri, setPotpourri] = useBoolean(categories.includes("potpourri"))
 
     const handleClearAll = () => {
         setRatios.off()
@@ -57,8 +57,8 @@ export default function CategorySelector({ setCategories }) {
             </Flex>
             <Wrap>
                 <Category name="proportional reasoning" selected={ratios} setSelected={setRatios} />
-                <Category name="graph theory" selected={graphs} setSelected={setGraphs} />
                 <Category name="counting" selected={combinatorics} setSelected={setCombinatorics} />
+                <Category name="graph theory" selected={graphs} setSelected={setGraphs} />
                 <Category name="number theory" selected={primes} setSelected={setPrimes} />
                 <Category name="multivariable" selected={multivariable} setSelected={setMultivariable} />
                 <Category name="series" selected={series} setSelected={setSeries} />
