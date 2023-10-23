@@ -77,7 +77,7 @@ const Category = ({ name, selected, setSelected }) => {
             bg={selected ? 'red.700' : 'red.900'}
             _hover={{ bg: 'red.600' }}
             color='white'
-            boxShadow={selected ? "0 0 5px 1px yellow" : null}
+            boxShadow={selected ? "0 0 3px 1px orange" : null}
             onClick={setSelected.toggle}
         >
             {name}
