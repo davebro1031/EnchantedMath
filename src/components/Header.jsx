@@ -1,13 +1,17 @@
 import React from 'react'
-import { Flex, Heading, Spacer, ButtonGroup, Button, Image, Box, HStack } from '@chakra-ui/react'
+import { Flex, Heading, Spacer, IconButton, Button, Image, HStack } from '@chakra-ui/react'
+import { HamburgerIcon } from '@chakra-ui/icons'
+import { useBreakpointValue } from '@chakra-ui/react'
 import NerdSnipe2 from '../assets/NerdSnipe2.png'
 import Search from './Search'
 
 function Header({ setQuery }) {
-
+    const showNav = useBreakpointValue({ base: true, md: false })
+    const showName = useBreakpointValue({ base: false, sm: true })
     return (
         <Flex
-            gap="2"
+            as="header"
+            gap="1"
             align='center'
             p='2'
             bg='red.700'
@@ -16,19 +20,19 @@ function Header({ setQuery }) {
             width='100%'
             zIndex={1}>
             <HStack>
-                <Image src={NerdSnipe2} boxSize='50px' />
-                <Heading size='lg' color='white'>Nerd Snipes</Heading>
+                <Image src={NerdSnipe2} boxSize='45px' />
+                {showName ? <Heading size={['md','md','lg']} color='white'>Nerd Snipes</Heading> : null}
             </HStack>
             <Spacer />
-            {false ?
+            {showNav ?
                 <>
                     <Search setQuery={setQuery} />
-                    <ButtonGroup>
-                        <Button
-                            colorScheme='teal'>
-                            Random Problem
-                        </Button>
-                    </ButtonGroup>
+                    <IconButton
+                        color='yellow'
+                        bg='inherit'
+                        borderRadius='50%'
+                        _hover={{ backgroundColor: 'red.800' }}
+                        icon={<HamburgerIcon boxSize={7} />} />
                 </> : null
             }
         </Flex>

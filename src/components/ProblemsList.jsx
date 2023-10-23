@@ -4,8 +4,9 @@ import ProblemCard from './ProblemCard'
 import { Wrap, WrapItem } from '@chakra-ui/react'
 
 
-function ProblemsList({ query }) {
+function ProblemsList({ query, chiliRange, categories }) {
     const [filteredProblems, setFilteredProblems] = useState(problems)
+    const [queriedProblems, setQueriedProblems] = useState(problems)
 
     const problemTextContainsQuery = (problem, str) => {
         const queryWords = str.toLowerCase().split(" ")
@@ -20,18 +21,28 @@ function ProblemsList({ query }) {
         for (let word of queryWords) foundAllQueryWords = foundAllQueryWords && problemText.includes(word)
         return foundAllQueryWords
     }
-    
+
     useEffect(() => {
-        setFilteredProblems(
-            problems.filter(
-                problem => problemTextContainsQuery(problem, query)
-            )
+        let filteredProblemList = problems
+        filteredProblemList = filteredProblemList.filter(problem =>
+            (problem.chilis >= chiliRange[0] && problem.chilis <= chiliRange[1])
         )
-    }, [query])
+        filteredProblemList = filteredProblemList.filter(problem =>
+            categories.some(category => problem.categories.includes(category))
+        )
+        setFilteredProblems(filteredProblemList)
+    }, [chiliRange, categories])
+
+    useEffect(() => {
+        const queriedList = filteredProblems.filter(
+            problem => problemTextContainsQuery(problem, query)
+        )
+        setQueriedProblems(queriedList)
+    }, [query, filteredProblems])
 
     return (
         <Wrap justify="space-around" margin='1.5em'>
-            {filteredProblems.map(problem =>
+            {queriedProblems.map(problem =>
                 <WrapItem key={problem.id}>
                     <ProblemCard problem={problem} />
                 </WrapItem>)

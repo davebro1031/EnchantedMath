@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
-import { Input } from '@chakra-ui/react'
+import { Input, useBreakpointValue } from '@chakra-ui/react'
 
 function Search({ setQuery }) {
+    const borderColor = useBreakpointValue({base:'yellow.400', md:'teal.300'})
     return (
         <Input
             width='auto'
             size='md'
-            focusBorderColor='teal.300'
+            focusBorderColor={borderColor}
             color='white'
             placeholder='Search problems'
             _placeholder={{ color: 'white' }}
