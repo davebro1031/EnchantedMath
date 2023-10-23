@@ -3,7 +3,7 @@ import { Box, Text, RangeSlider, RangeSliderFilledTrack, RangeSliderTrack, Range
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPepperHot } from '@fortawesome/free-solid-svg-icons'
 
-function ChiliSlider({setChiliRange}) {
+function ChiliSlider({ setChiliRange }) {
     return (
         <Box width='100%'>
             <Text color='white' fontSize={20}>Difficulty</Text>

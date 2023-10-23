@@ -11,6 +11,26 @@ export default function CategorySelector({ setCategories }) {
     const [inequality, setInequality] = useBoolean(true)
     const [potpourri, setPotpourri] = useBoolean(true)
 
+    const handleClearAll = () => {
+        setRatios.off()
+        setGraphs.off()
+        setCombinatorics.off()
+        setPrimes.off()
+        setMultivariable.off()
+        setSeries.off()
+        setInequality.off()
+        setPotpourri.off()
+    }
+    const handleSelectAll = () => {
+        setRatios.on()
+        setGraphs.on()
+        setCombinatorics.on()
+        setPrimes.on()
+        setMultivariable.on()
+        setSeries.on()
+        setInequality.on()
+        setPotpourri.on()
+    }
     useEffect(() => {
 
         const selectedCategories = [
@@ -31,9 +51,9 @@ export default function CategorySelector({ setCategories }) {
         <Box>
             <Text color='white' fontSize={20} mb={1}>Category</Text>
             <Flex mb={3} align='center'>
-                <Button p='2' height='6'>clear all</Button>
-                <Spacer/>
-                <Button p='2' height='6'>select all</Button>
+                <Button p='1.5' fontSize={13} height='5' onClick={handleClearAll}>clear all</Button>
+                <Spacer />
+                <Button p='1.5' fontSize={13} height='5'onClick={handleSelectAll}>select all</Button>
             </Flex>
             <Wrap>
                 <Category name="proportional reasoning" selected={ratios} setSelected={setRatios} />

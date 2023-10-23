@@ -472,7 +472,7 @@ export const problems = [
             "rates",
             "average speed"
         ],
-        chilis: 0
+        chilis: 1
     },
     {
         id: 54,
