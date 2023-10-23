@@ -34,6 +34,7 @@ export default function App() {
           <Sidebar
             setQuery={setQuery}
             width={sidebarWidth}
+            chiliRange={chiliRange}
             setChiliRange={setChiliRange}
             setCategories={setCategories}
           />
@@ -48,7 +49,7 @@ export default function App() {
             chiliRange={chiliRange}
             categories={categories}
           />
-          <SidebarDrawer isOpen={isOpen} onClose={onClose} btnRef={btnRef} setChiliRange={setChiliRange} setCategories={setCategories} />
+          <SidebarDrawer isOpen={isOpen} onClose={onClose} btnRef={btnRef} chiliRange={chiliRange} setChiliRange={setChiliRange} setCategories={setCategories} />
         </Box>
       </Box>
     </>
