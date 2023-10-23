@@ -12,7 +12,7 @@ export default function ProblemCard({ problem }) {
             width='300px'
             marginBottom="1.5em"
             variant='elevated'
-            _hover={{ boxShadow: '0 0 5px 3px #0BC5EA' }}>
+            _hover={{ boxShadow: '0 0 5px 3px #0BC5EA', cursor:'pointer' }}>
             <CardHeader>
                 <Flex align='center'>
                     <Heading size='md'>{problem.title}</Heading>
