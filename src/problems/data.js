@@ -175,7 +175,9 @@ export const problems = [
             "Draw a calendar"
         ],
         wrongAnswers: null,
-        categories: null,
+        categories: [
+            "potpourri"
+        ],
         chilis: 1
     },
     {
@@ -197,7 +199,9 @@ export const problems = [
             "What is the 4th, 8th, 12th, etc. digit?"
         ],
         wrongAnswers: null,
-        categories: null,
+        categories: [
+            "potpourri"
+        ],
         chilis: 0
     },
     {
@@ -256,7 +260,9 @@ export const problems = [
             "5 years ago, how old was Ben's daughter? How old was he?"
         ],
         wrongAnswers: null,
-        categories: null,
+        categories: [
+            "potpourri"
+        ],
         chilis: 0
     },
     {
@@ -292,7 +298,7 @@ export const problems = [
         hints: null,
         wrongAnswers: null,
         categories: [
-            "logic"
+            "potpourri"
         ],
         chilis: 0
     },
@@ -313,7 +319,9 @@ export const problems = [
         text: "A pencil and five paper clips weighs the same as two erasers. A pencil weighs the same as 29 paper clips.  How many paper clips weigh the same as 3 erasers and two pencils?",
         hints: null,
         wrongAnswers: null,
-        categories: null,
+        categories: [
+            "potpourri"
+        ],
         chilis: 0
     },
     {
@@ -378,7 +386,8 @@ export const problems = [
         categories: [
             "combinatorics",
             "stars and bars"
-        ]
+        ],
+        chilis:2
     },
     {
         id: 48,

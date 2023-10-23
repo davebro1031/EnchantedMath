@@ -6,7 +6,7 @@ import { faPepperHot } from '@fortawesome/free-solid-svg-icons'
 function ChiliSlider({setChiliRange}) {
     return (
         <Box width='100%'>
-            <Text color='white'>Difficulty</Text>
+            <Text color='white' fontSize={20}>Difficulty</Text>
             <RangeSlider
                 onChangeEnd={(val) => setChiliRange(val)}
                 aria-label={['min', 'max']}

@@ -4,7 +4,7 @@ import ProblemCard from './ProblemCard'
 import { Wrap, WrapItem } from '@chakra-ui/react'
 
 
-function ProblemsList({ query, chiliRange }) {
+function ProblemsList({ query, chiliRange, categories }) {
     const [filteredProblems, setFilteredProblems] = useState(problems)
     const [queriedProblems, setQueriedProblems] = useState(problems)
 
@@ -27,9 +27,12 @@ function ProblemsList({ query, chiliRange }) {
         filteredProblemList = filteredProblemList.filter(problem =>
             (problem.chilis >= chiliRange[0] && problem.chilis <= chiliRange[1])
         )
+        filteredProblemList = filteredProblemList.filter(problem =>
+            categories.some(category => problem.categories.includes(category))
+        )
         setFilteredProblems(filteredProblemList)
-    }, [chiliRange])
-    
+    }, [chiliRange, categories])
+
     useEffect(() => {
         const queriedList = filteredProblems.filter(
             problem => problemTextContainsQuery(problem, query)
