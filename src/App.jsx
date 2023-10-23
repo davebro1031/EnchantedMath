@@ -20,7 +20,10 @@ export default function App() {
     "graph theory",
     "combinatorics",
     "prime factors",
-    "many variables"
+    "many variables",
+    "series",
+    "inequality",
+    "potpourri",
   ])
   const headerHeight = '61px'
   const sidebarWidth = '250px'
@@ -36,6 +39,7 @@ export default function App() {
             width={sidebarWidth}
             chiliRange={chiliRange}
             setChiliRange={setChiliRange}
+            categories={categories}
             setCategories={setCategories}
           />
           : null}
@@ -49,7 +53,7 @@ export default function App() {
             chiliRange={chiliRange}
             categories={categories}
           />
-          <SidebarDrawer isOpen={isOpen} onClose={onClose} btnRef={btnRef} chiliRange={chiliRange} setChiliRange={setChiliRange} setCategories={setCategories} />
+          <SidebarDrawer isOpen={isOpen} onClose={onClose} btnRef={btnRef} chiliRange={chiliRange} setChiliRange={setChiliRange} categories={categories} setCategories={setCategories} />
         </Box>
       </Box>
     </>

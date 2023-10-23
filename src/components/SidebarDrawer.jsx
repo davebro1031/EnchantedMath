@@ -8,7 +8,7 @@ import {
 import ChiliSlider from './ChiliSlider'
 import CategorySelector from './CategorySelector'
 
-export default function SidebarDrawer({ isOpen, onClose, btnRef, chiliRange, setChiliRange, setCategories }) {
+export default function SidebarDrawer({ isOpen, onClose, btnRef, chiliRange, setChiliRange, categories, setCategories }) {
 
     return (
         <Drawer
@@ -21,7 +21,7 @@ export default function SidebarDrawer({ isOpen, onClose, btnRef, chiliRange, set
             <DrawerContent bg='teal'>
                 <DrawerBody mt={2}>
                     <ChiliSlider chiliRange={chiliRange} setChiliRange={setChiliRange} />
-                    <CategorySelector setCategories={setCategories} />
+                    <CategorySelector categories={categories} setCategories={setCategories} />
                 </DrawerBody>
 
                 {/* <DrawerFooter>
