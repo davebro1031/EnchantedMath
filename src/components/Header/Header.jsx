@@ -1,13 +1,12 @@
 import React from 'react'
-import { Flex, Heading, Spacer, IconButton, Image, HStack } from '@chakra-ui/react'
+import { Flex, Spacer, IconButton } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import { useBreakpointValue } from '@chakra-ui/react'
-import NerdSnipe2 from '../assets/NerdSnipe2.png'
-import Search from './Search'
+import Search from '../Sidebar/Search'
+import Logo from './Logo'
 
 function Header({ setQuery, onOpen, btnRef }) {
     const showNav = useBreakpointValue({ base: true, md: false })
-    const showName = useBreakpointValue({ base: false, sm: true })
 
     return (
         <Flex
@@ -20,10 +19,7 @@ function Header({ setQuery, onOpen, btnRef }) {
             position='fixed'
             width='100%'
             zIndex={1}>
-            <HStack>
-                <Image src={NerdSnipe2} boxSize='45px' />
-                {showName ? <Heading size={['md','md','lg']} color='white'>Nerd Snipes</Heading> : null}
-            </HStack>
+            <Logo />
             <Spacer />
             {showNav ?
                 <>
