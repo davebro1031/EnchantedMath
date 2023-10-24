@@ -1,9 +1,10 @@
 import { useNavigate, useParams } from 'react-router-dom'
-import { Tabs, TabList, Tab, TabPanels, TabPanel, Heading, Box, Text, Spacer, Flex, VStack } from '@chakra-ui/react';
+import { Tabs, TabList, Tab, TabPanels, TabPanel, Heading, Box, Text, Spacer, Flex } from '@chakra-ui/react';
 import { problems } from '../../problems/data';
 import Hints from './Hints';
 import RelatedProblems from './RelatedProblems';
 import Chilis from '../Home/Chilis'
+import Tags from './Tags';
 import { useEffect } from 'react';
 
 export default function ProblemDetails() {
@@ -36,6 +37,7 @@ export default function ProblemDetails() {
                             <Box>
                                 {problem.hints ? <Hints hints={problem.hints} /> : null}
                                 <RelatedProblems id={id} />
+                                {/* <Tags categories={problem.categories} /> */}
                             </Box>
                         </Flex>
                     </TabPanel>
