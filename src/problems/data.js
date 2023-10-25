@@ -246,7 +246,7 @@ export const problems = [
         title: "Counting diagonals",
         text: "A square has two diagonals, a pentagon has five.  How many diagonals does an octagon have?",
         hints: [
-            "if you're stuck, try making a sequence"
+            "Square -> 2, pentgon -> 5, hexagon -> ?  Find a pattern in this sequence."
         ],
         wrongAnswers: null,
         categories: [

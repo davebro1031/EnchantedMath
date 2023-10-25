@@ -1,7 +1,7 @@
 import { useNavigate, useParams } from 'react-router-dom'
 import { useEffect } from 'react';
 
-import { Tabs, TabList, Tab, TabPanels, TabPanel, Heading, Box, Text, Spacer, Flex, Image } from '@chakra-ui/react';
+import { Tabs, TabList, Tab, TabPanels, TabPanel, Heading, Box, Text, Spacer, Flex, Wrap } from '@chakra-ui/react';
 
 import { problems } from '../../problems/data';
 import { images } from '../../problems/images';
@@ -11,6 +11,8 @@ import Hints from './Hints';
 import RelatedProblems from './RelatedProblems';
 import Feedback from './Feedback';
 import Tags from './Tags';
+import ProblemImages from './ProblemImages';
+import Problem from './Problem';
 
 export default function ProblemDetails() {
     let { id } = useParams();
@@ -38,29 +40,13 @@ export default function ProblemDetails() {
 
                 <TabPanels flexGrow={1} display={'flex'} flexDirection='column'>
                     <TabPanel flexGrow={1} display={'flex'} flexDirection='column' >
-                        <Flex direction='column' grow='1'>
-                            <Flex gap='4'>
-                                {problemImages ?
-                                    problemImages.data.map( image => {return (
-                                        <Image key={image.key} src={image.src} alt={image.alt} boxSize='200px' />
-                                    )})
-                                    : null}
-                                <Text mb={3}>{problem.text}</Text>
-
-                            </Flex>
-                            <Spacer />
-                            <Box>
-                                {problem.hints ? <Hints hints={problem.hints} /> : null}
-                                <RelatedProblems id={id} />
-                                {/* <Tags categories={problem.categories} /> */}
-                            </Box>
-                        </Flex>
+                        <Problem problem={problem} problemImages={problemImages}/>
                     </TabPanel>
                     <TabPanel>
                         <p>Solution</p>
                     </TabPanel>
                     <TabPanel>
-                        <Feedback id={problem.id} title={problem.title} />
+                        <Feedback title={problem.title} />
                     </TabPanel>
                 </TabPanels>
             </Tabs>
