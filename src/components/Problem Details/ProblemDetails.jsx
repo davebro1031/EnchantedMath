@@ -1,5 +1,5 @@
 import { useNavigate, useParams } from 'react-router-dom'
-import { Tabs, TabList, Tab, TabPanels, TabPanel, Heading, Box, Text, Spacer, Flex } from '@chakra-ui/react';
+import { Tabs, TabList, Tab, TabPanels, TabPanel, Heading, Box, Text, Spacer, Flex, Image } from '@chakra-ui/react';
 import { problems } from '../../problems/data';
 import Hints from './Hints';
 import RelatedProblems from './RelatedProblems';
@@ -34,6 +34,7 @@ export default function ProblemDetails() {
                     <TabPanel flexGrow={1} display={'flex'} flexDirection='column' >
                         <Flex direction='column' grow='1'>
                             <Text mb={3}>{problem.text}</Text>
+                            {/* <Image></Image> */}
                             <Spacer />
                             <Box>
                                 {problem.hints ? <Hints hints={problem.hints} /> : null}
