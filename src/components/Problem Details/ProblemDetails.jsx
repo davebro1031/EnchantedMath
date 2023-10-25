@@ -46,7 +46,7 @@ export default function ProblemDetails() {
                         <p>Solution</p>
                     </TabPanel>
                     <TabPanel>
-                        <Feedback/>
+                        <Feedback id={problem.id} title={problem.title}/>
                     </TabPanel>
                 </TabPanels>
             </Tabs>
