@@ -1,88 +1,107 @@
+import { useRef } from 'react';
 import { Field, Form, Formik } from 'formik';
-import { FormControl, FormLabel, Input, FormErrorMessage, Button, Select, Box, Textarea } from '@chakra-ui/react'
+import { FormControl, FormLabel, Input, FormErrorMessage, Button, Select, Box, Textarea, useToast } from '@chakra-ui/react'
+import emailjs from '@emailjs/browser'
 
-export default function Feedback() {
-    function validateName(value) {
-        let error
-        if (!value) {
-            error = 'Name is required'
-        } else if (value.toLowerCase() !== 'naruto') {
-            error = "Jeez! You're not a fan 😱"
-        }
-        return error
-    }
-
+export default function Feedback({ title }) {
+    const form = useRef()
+    const toast = useToast()
     return (
         <Box maxWidth='500px'>
             <Formik
-                initialValues={{ name: '' }}
-                onSubmit={(values, actions) => {
+                initialValues={{ user_email: '', topic: '', message: '' }}
+                validate={values => {
+                    const errors = {};
+                    if (values.user_email && !values.user_email.includes('@')) errors.user_email = 'Invalid email address';
+                    if (!values.topic || values.topic === "-- select one --") errors.topic = 'Select a topic';
+                    if (!values.message) errors.message = 'Cannot be blank'
+                    return errors;
+                }}
+                onSubmit={(values, { setSubmitting }) => {
                     setTimeout(() => {
-                        alert(JSON.stringify(values, null, 2))
-                        actions.setSubmitting(false)
-                    }, 1000)
+                     
+                        emailjs.sendForm('service_1k8zvyk', 'template_rnm6u4q', form.current, '3JjiwyeBApVMWrxjU')
+                            .then((result) => {
+                                toast({
+                                    title: 'Message sent',
+                                    description: 'Thank you for your feedback!',
+                                    status: 'success',
+                                    duration: 3000,
+                                    isClosable: true
+                                })
+                            }, (error) => {
+                                console.error(error)
+                                toast({
+                                    title: 'Error',
+                                    description: 'Something went wrong :(',
+                                    status: 'error',
+                                    duration: 3000,
+                                    isClosable: true
+                                })
+                            });
+    
+                    
+                    setSubmitting(false)
+                    values.user_email = ""
+                    values.topic = "-- select one --"
+                    values.message = ""
+                }, 1000)
+
                 }}
             >
-                {(props) => (
-                    <Form>
-                        <Field name='name' validate={validateName}>
-                            {({ field, form }) => (
-                                <FormControl isInvalid={form.errors.name && form.touched.name}>
-                                    <FormLabel>First name</FormLabel>
-                                    <Input {...field} placeholder='name' />
-                                    <FormErrorMessage>{form.errors.name}</FormErrorMessage>
-                                </FormControl>
-                            )}
-                        </Field>
+            {(props) => (
+                <Form ref={form}>
+                    <input name="title" value={title} style={{display:'none'}} onChange={()=>1}/>
 
-                        {/* <Field name='user_email' >
+                    <Field name='user_email' >
                         {({ field, form }) => (
-                            <FormControl isInvalid={form.errors.name && form.touched.name} >
+                            <FormControl isInvalid={form.errors.user_email && form.touched.user_email} >
                                 <FormLabel>Your email (optional)</FormLabel>
-                                <Input {...field} placeholder='someone@somewhere.com' />
-                                <FormErrorMessage>{form.errors.name}</FormErrorMessage>
+                                <Input {...field} placeholder='someone@somewhere.com' focusBorderColor='teal.500' />
+                                <FormErrorMessage>{form.errors.user_email}</FormErrorMessage>
                             </FormControl>
                         )}
-                    </Field> */}
+                    </Field>
 
-                        {/* <Field name='topic' >
+                    <Field name='topic' >
                         {({ field, form }) => (
-                            <FormControl mt={4} isInvalid={form.errors.name && form.touched.name} isRequired>
+                            <FormControl mt={4} isInvalid={form.errors.topic && form.touched.topic}>
                                 <FormLabel>Subject</FormLabel>
                                 <Select {...field} placeholder='-- select one --'>
                                     <option value="suggested change">Suggest change</option>
                                     <option value="new solution">New solution</option>
                                     <option value="correction">Corrections</option>
                                     <option value="comment">Comments</option>
-                                    <option value="miscellaneous">Other</option>
+                                    <option value="other feedback">Other</option>
                                 </Select>
+                                <FormErrorMessage>{form.errors.topic}</FormErrorMessage>
                             </FormControl>
                         )}
-                    </Field> */}
+                    </Field>
 
-                        {/* <Field name='message' >
+                    <Field name='message' >
                         {({ field, form }) => (
-                            <FormControl isInvalid={form.errors.name && form.touched.name} mt={4} isRequired>
+                            <FormControl isInvalid={form.errors.message && form.touched.message} mt={4}>
                                 <FormLabel>Message</FormLabel>
-                                <Textarea {...field} placeholder='message' resize='vertical' />
-                                <FormErrorMessage>{form.errors.name}</FormErrorMessage>
+                                <Textarea {...field} placeholder='message' resize='vertical' focusBorderColor='teal.500' />
+                                <FormErrorMessage>{form.errors.message}</FormErrorMessage>
                             </FormControl>
                         )}
-                    </Field> */}
+                    </Field>
 
 
-                        <Button
-                            mt={4}
-                            colorScheme='teal'
-                            isLoading={props.isSubmitting}
-                            type='submit'
-                        >
-                            Submit
-                        </Button>
-                    </Form>
-                )}
-            </Formik>
-        </Box>
+                    <Button
+                        mt={4}
+                        colorScheme='teal'
+                        isLoading={props.isSubmitting}
+                        type='submit'
+                    >
+                        Submit
+                    </Button>
+                </Form>
+            )}
+        </Formik>
+        </Box >
     )
 }
 
