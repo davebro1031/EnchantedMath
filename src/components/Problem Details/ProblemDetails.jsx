@@ -1,17 +1,23 @@
 import { useNavigate, useParams } from 'react-router-dom'
+import { useEffect } from 'react';
+
 import { Tabs, TabList, Tab, TabPanels, TabPanel, Heading, Box, Text, Spacer, Flex, Image } from '@chakra-ui/react';
+
 import { problems } from '../../problems/data';
+import { images } from '../../problems/images';
+
+import Chilis from '../Home/Chilis'
 import Hints from './Hints';
 import RelatedProblems from './RelatedProblems';
-import Chilis from '../Home/Chilis'
-import Tags from './Tags';
-import { useEffect } from 'react';
 import Feedback from './Feedback';
+import Tags from './Tags';
 
 export default function ProblemDetails() {
-    const { id } = useParams();
+    let { id } = useParams();
+    id = Number(id)
     const navigate = useNavigate()
-    const problem = problems.find(problem => problem.id === Number(id))
+    const problem = problems.find(problem => problem.id === id)
+    const problemImages = images.find(image => image.id === id)
 
     useEffect(() => {
         if (!problem) navigate("/notfound")
@@ -33,8 +39,11 @@ export default function ProblemDetails() {
                 <TabPanels flexGrow={1} display={'flex'} flexDirection='column'>
                     <TabPanel flexGrow={1} display={'flex'} flexDirection='column' >
                         <Flex direction='column' grow='1'>
-                            <Text mb={3}>{problem.text}</Text>
-                            {/* <Image></Image> */}
+                            <Flex gap='4'>
+                                {problemImages ? <Image src={problemImages.image} boxSize='200px' /> : null}
+                                <Text mb={3}>{problem.text}</Text>
+
+                            </Flex>
                             <Spacer />
                             <Box>
                                 {problem.hints ? <Hints hints={problem.hints} /> : null}
@@ -47,7 +56,7 @@ export default function ProblemDetails() {
                         <p>Solution</p>
                     </TabPanel>
                     <TabPanel>
-                        <Feedback id={problem.id} title={problem.title}/>
+                        <Feedback id={problem.id} title={problem.title} />
                     </TabPanel>
                 </TabPanels>
             </Tabs>
