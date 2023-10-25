@@ -96,17 +96,9 @@ export default function App() {
           width={showSidebar ? `calc(100% - ${sidebarWidth})` : '100%'}
           p={2}>
           <Routes>
-            <Route path="/" element={
-              <ProblemsList
-                queriedProblems={queriedProblems}
-                // query={query}
-                // chiliRange={chiliRange}
-                // categories={categories}
-              />}
-            />
+            <Route path="/" element={<ProblemsList queriedProblems={queriedProblems} />} />
             <Route path="/problem/:id" element={<ProblemDetails />} />
             <Route path="*" element={<div>404 not found</div>} />
-
           </Routes>
         </Box>
         <SidebarDrawer

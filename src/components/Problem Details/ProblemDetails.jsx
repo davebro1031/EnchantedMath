@@ -6,6 +6,7 @@ import RelatedProblems from './RelatedProblems';
 import Chilis from '../Home/Chilis'
 import Tags from './Tags';
 import { useEffect } from 'react';
+import Feedback from './Feedback';
 
 export default function ProblemDetails() {
     const { id } = useParams();
@@ -45,7 +46,7 @@ export default function ProblemDetails() {
                         <p>Solution</p>
                     </TabPanel>
                     <TabPanel>
-                        <p>Feedback</p>
+                        <Feedback id={problem.id} title={problem.title}/>
                     </TabPanel>
                 </TabPanels>
             </Tabs>
