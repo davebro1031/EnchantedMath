@@ -40,7 +40,11 @@ export default function ProblemDetails() {
                     <TabPanel flexGrow={1} display={'flex'} flexDirection='column' >
                         <Flex direction='column' grow='1'>
                             <Flex gap='4'>
-                                {problemImages ? <Image src={problemImages.image} boxSize='200px' /> : null}
+                                {problemImages ?
+                                    problemImages.data.map( image => {return (
+                                        <Image key={image.key} src={image.src} alt={image.alt} boxSize='200px' />
+                                    )})
+                                    : null}
                                 <Text mb={3}>{problem.text}</Text>
 
                             </Flex>

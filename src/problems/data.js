@@ -140,6 +140,19 @@ export const problems = [
         chilis: 2
     },
     {
+        id: 16,
+        title: "Repeating Digits",
+        text: "What is the 322nd digit in the expansion of the repeating decimal 0.135713571357…?",
+        hints: [
+            "What is the 4th, 8th, 12th, etc. digit?"
+        ],
+        wrongAnswers: null,
+        categories: [
+            "potpourri"
+        ],
+        chilis: 0
+    },
+    {
         id: 20,
         title: "Mixed drinks",
         text: "A solution is 5% alcohol and 95% water.  A second solution is 20% alcohol and 80% water.  If 2 gallons of the first solution is mixed with 1 gallon of the second solution, what percentage of the resulting solution is alcohol?",
@@ -192,19 +205,6 @@ export const problems = [
         chilis: 0
     },
     {
-        id: 16,
-        title: "Repeating Digits",
-        text: "What is the 322nd digit in the expansion of the repeating decimal 0.135713571357…?",
-        hints: [
-            "What is the 4th, 8th, 12th, etc. digit?"
-        ],
-        wrongAnswers: null,
-        categories: [
-            "potpourri"
-        ],
-        chilis: 0
-    },
-    {
         id: 25,
         title: "3 Hoses, 4 Hoses",
         text: "One hose pumps water at a rate of 2.5 gallons per minute.  Three hoses pumping water simultaneously fill a pool in 60 minutes.  How long would it take 4 hoses pumping simultaneously to fill that same pool?",
@@ -240,6 +240,19 @@ export const problems = [
             "combinatorics"
         ],
         chilis: 0
+    },
+    {
+        id: 29,
+        title: "Counting diagonals",
+        text: "A square has two diagonals, a pentagon has five.  How many diagonals does an octagon have?",
+        hints: [
+            "if you're stuck, try making a sequence"
+        ],
+        wrongAnswers: null,
+        categories: [
+            "combinatorics"
+        ],
+        chilis: 1
     },
     {
         id: 34,
