@@ -1,8 +1,11 @@
+import { useRef } from 'react';
 import { Field, Form, Formik } from 'formik';
-import { FormControl, FormLabel, Input, FormErrorMessage, Button, Select, Box, Textarea } from '@chakra-ui/react'
+import { FormControl, FormLabel, Input, FormErrorMessage, Button, Select, Box, Textarea, useToast } from '@chakra-ui/react'
+import emailjs from '@emailjs/browser'
 
-export default function Feedback({ id, title }) {
-
+export default function Feedback({ title }) {
+    const form = useRef()
+    const toast = useToast()
     return (
         <Box maxWidth='500px'>
             <Formik
@@ -16,73 +19,88 @@ export default function Feedback({ id, title }) {
                 }}
                 onSubmit={(values, { setSubmitting }) => {
                     setTimeout(() => {
-                        // Make a copy of the form data
-                        const data = {}
-                        for (let key of Object.keys(values)) {
-                            data[key] = values[key]
-                        }
+                     
+                        emailjs.sendForm('service_1k8zvyk', 'template_rnm6u4q', form.current, '3JjiwyeBApVMWrxjU')
+                            .then((result) => {
+                                toast({
+                                    title: 'Message sent',
+                                    description: 'Thank you for your feedback!',
+                                    status: 'success',
+                                    duration: 3000,
+                                    isClosable: true
+                                })
+                            }, (error) => {
+                                console.error(error)
+                                toast({
+                                    title: 'Error',
+                                    description: 'Something went wrong :(',
+                                    status: 'error',
+                                    duration: 3000,
+                                    isClosable: true
+                                })
+                            });
+    
+                    
+                    setSubmitting(false)
+                    values.user_email = ""
+                    values.topic = "-- select one --"
+                    values.message = ""
+                }, 1000)
 
-                        // update the email data if needed
-                        !data.user_email && (data.user_email = "anonymous")
-
-                        // pass in the problem id as well
-                        data.id = id
-
-                        console.log(data)
-                        setSubmitting(false)
-                    }, 1000)
                 }}
             >
-                {(props) => (
-                    <Form>
-                        <Field name='user_email' >
-                            {({ field, form }) => (
-                                <FormControl isInvalid={form.errors.user_email && form.touched.user_email} >
-                                    <FormLabel>Your email (optional)</FormLabel>
-                                    <Input {...field} placeholder='someone@somewhere.com' focusBorderColor='teal.500' />
-                                    <FormErrorMessage>{form.errors.user_email}</FormErrorMessage>
-                                </FormControl>
-                            )}
-                        </Field>
+            {(props) => (
+                <Form ref={form}>
+                    <input name="title" value={title} style={{display:'none'}} onChange={()=>1}/>
 
-                        <Field name='topic' >
-                            {({ field, form }) => (
-                                <FormControl mt={4} isInvalid={form.errors.topic && form.touched.topic}>
-                                    <FormLabel>Subject</FormLabel>
-                                    <Select {...field} placeholder='-- select one --'>
-                                        <option value="suggested change">Suggest change</option>
-                                        <option value="new solution">New solution</option>
-                                        <option value="correction">Corrections</option>
-                                        <option value="comment">Comments</option>
-                                        <option value="miscellaneous">Other</option>
-                                    </Select>
-                                    <FormErrorMessage>{form.errors.topic}</FormErrorMessage>
-                                </FormControl>
-                            )}
-                        </Field>
+                    <Field name='user_email' >
+                        {({ field, form }) => (
+                            <FormControl isInvalid={form.errors.user_email && form.touched.user_email} >
+                                <FormLabel>Your email (optional)</FormLabel>
+                                <Input {...field} placeholder='someone@somewhere.com' focusBorderColor='teal.500' />
+                                <FormErrorMessage>{form.errors.user_email}</FormErrorMessage>
+                            </FormControl>
+                        )}
+                    </Field>
 
-                        <Field name='message' >
-                            {({ field, form }) => (
-                                <FormControl isInvalid={form.errors.message && form.touched.message} mt={4}>
-                                    <FormLabel>Message</FormLabel>
-                                    <Textarea {...field} placeholder='message' resize='vertical' focusBorderColor='teal.500' />
-                                    <FormErrorMessage>{form.errors.message}</FormErrorMessage>
-                                </FormControl>
-                            )}
-                        </Field>
+                    <Field name='topic' >
+                        {({ field, form }) => (
+                            <FormControl mt={4} isInvalid={form.errors.topic && form.touched.topic}>
+                                <FormLabel>Subject</FormLabel>
+                                <Select {...field} placeholder='-- select one --'>
+                                    <option value="suggested change">Suggest change</option>
+                                    <option value="new solution">New solution</option>
+                                    <option value="correction">Corrections</option>
+                                    <option value="comment">Comments</option>
+                                    <option value="other feedback">Other</option>
+                                </Select>
+                                <FormErrorMessage>{form.errors.topic}</FormErrorMessage>
+                            </FormControl>
+                        )}
+                    </Field>
+
+                    <Field name='message' >
+                        {({ field, form }) => (
+                            <FormControl isInvalid={form.errors.message && form.touched.message} mt={4}>
+                                <FormLabel>Message</FormLabel>
+                                <Textarea {...field} placeholder='message' resize='vertical' focusBorderColor='teal.500' />
+                                <FormErrorMessage>{form.errors.message}</FormErrorMessage>
+                            </FormControl>
+                        )}
+                    </Field>
 
 
-                        <Button
-                            mt={4}
-                            colorScheme='teal'
-                            isLoading={props.isSubmitting}
-                            type='submit'
-                        >
-                            Submit
-                        </Button>
-                    </Form>
-                )}
-            </Formik>
+                    <Button
+                        mt={4}
+                        colorScheme='teal'
+                        isLoading={props.isSubmitting}
+                        type='submit'
+                    >
+                        Submit
+                    </Button>
+                </Form>
+            )}
+        </Formik>
         </Box >
     )
 }
