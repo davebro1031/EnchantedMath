@@ -140,6 +140,20 @@ export const problems = [
         chilis: 2
     },
     {
+        id: 12,
+        title:"The tabby and the turtle",
+        text: "A tabby and a turtle take turns on a table.  When the tabby is on the table and the turtle on the floor below, the top of the tabby is 170cm above the top of the turtle. When they trade places, the distance shrinks to 130cm.  How tall is the table?",
+        hints: [
+            "Imagine they're both cats, but a 'turtle' is a cat lying down.",
+            "Try stacking tables." 
+        ],
+        wrongAnswers: null,
+        categories: [
+            "many variables",
+        ],
+        chilis: 1
+    },
+    {
         id: 13,
         title: "How much water?",
         text: "When a 21cm tall water bottle is placed on a table, water fills it up to a height of 12cm. When the bottle is turned upside down, because the neck is tapered, water fills the bottle up to a height of 15cm.  What fraction of the bottle is filled?",
