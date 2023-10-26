@@ -5,6 +5,7 @@ import { Tabs, TabList, Tab, TabPanels, TabPanel, Heading, Flex } from '@chakra-
 
 import { problems } from '../../problems/data';
 import { images } from '../../problems/images';
+import { solutions } from '../../problems/solutions';
 
 import Chilis from '../Home/Chilis'
 import Problem from './Problem';
@@ -17,6 +18,7 @@ export default function ProblemDetails() {
     const navigate = useNavigate()
     const problem = problems.find(problem => problem.id === id)
     const image = images.find(image => image.id === id)
+    const solution = solutions.find(solution => solution.id === id)
 
     useEffect(() => {
         if (!problem) navigate("/notfound")
