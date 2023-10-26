@@ -203,6 +203,20 @@ export const problems = [
         chilis: 0
     },
     {
+        id: 19,
+        title: "More than one way...",
+        text: "How many ways can a travelling merchant go from Naples to Rome if they are not allowed to take any road more than once, but they ARE allowed to cross over a road they have taken before?",
+        hints: [
+            "Label the middle three roads with A, B, and C. Routes can be written as 'words' - how many valid words are there?"
+        ],
+        wrongAnswers: null,
+        categories: [
+            "graph theory",
+            "combinatorics"
+        ],
+        chilis: 1
+    },
+    {
         id: 20,
         title: "Mixed drinks",
         text: "A solution is 5% alcohol and 95% water.  A second solution is 20% alcohol and 80% water.  If 2 gallons of the first solution is mixed with 1 gallon of the second solution, what percentage of the resulting solution is alcohol?",
