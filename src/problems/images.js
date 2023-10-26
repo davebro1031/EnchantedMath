@@ -6,6 +6,7 @@ import p19_two_cities from '../images/p19_two_cities.png'
 import p29_pentagon_diagonals from '../images/p29_pentagon_diagonals.png'
 import p29_square_diagonals from '../images/p29_square_diagonals.png'
 import p29_octagon_question from '../images/p29_octagon_question.png'
+import p31_matchstick_houses from '../images/p31_matchstick_houses.png'
 
 export const images = [
     {
@@ -78,5 +79,15 @@ export const images = [
                 alt: 'an octagon with a ? in the center'
             }
         ],
+    },
+    {
+        id: 31,
+        data: [
+            {
+                key: 1,
+                src: p31_matchstick_houses,
+                alt: 'a series of matchstick houses'
+            }
+        ]
     }
 ]

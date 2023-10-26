@@ -319,6 +319,19 @@ export const problems = [
         chilis: 1
     },
     {
+        id: 31,
+        title: "Matchstick Houses",
+        text: "In the image below, 6 toothpicks are used to form Figure 1.  11 toothpicks are used to form Figure 2, and 16 toothpicks are used to form Figure 3.  How many toothpicks would be needed to form Figure 50?",
+        hint: [
+            "How many toothpicks does each ADDITIONAL house take?"
+        ],
+        wrongAnswers: null,
+        categories: [
+            "series"
+        ],
+        chilis: 1
+    },
+    {
         id: 34,
         title: "Laps on laps",
         text: "Two people start running in the same direction from the starting line on a quarter-mile long track.  One of them runs 4 miles per hour (mph) and the other runs at 8 mph.  How many times will they be at the same point on the track if they run for 8 hours, including their starting point and perhaps their ending point?",
