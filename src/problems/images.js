@@ -14,103 +14,48 @@ import p33_shapes_colors from '../images/p33_shapes_colors.png'
 export const images = [
     {
         id: 12,
-        data: [
-            {
-                key: 1,
-                src: p12_cat_turtle,
-                alt: 'cat and turtle taking turns on table'
-            }
-        ]
+        src: p12_cat_turtle,
+        alt: 'cat and turtle taking turns on table'
     },
     {
         id: 13,
-        data: [
-            {
-                key: 1,
-                src: p13_water_bottles,
-                alt: 'a partially filled water bottle right side up and upside down'
-            }
-        ]
+        src: p13_water_bottles,
+        alt: 'a partially filled water bottle right side up and upside down'
     },
     {
         id: 14,
-        data: [
-            {
-                key: 1,
-                src: p14_postman_route,
-                alt: "a nice neighborhood with several streets"
-            }
-        ]
+        src: p14_postman_route,
+        alt: "a nice neighborhood with several streets"
+
     },
     {
         id: 15,
-        data: [
-            {
-                key: 1,
-                src: p15_konigsberg_bridges,
-                alt: "a mysterious town with 7 seven bridges over a funky river"
-            }
-        ]
+        src: p15_konigsberg_bridges,
+        alt: "a mysterious town with 7 seven bridges over a funky river"
     },
     {
         id: 18,
-        data: [
-            {
-                key: 1,
-                src: p18_city_blocks,
-                alt: "a map of a city with 21 blocks"
-            }
-        ]
+        src: p18_city_blocks,
+        alt: "a map of a city with 21 blocks"
     },
     {
         id: 19,
-        data: [
-            {
-                key: 1,
-                src: p19_two_cities,
-                alt: 'two cities connected by a network of roads'
-            }
-        ]
+        src: p19_two_cities,
+        alt: 'two cities connected by a network of roads'
     },
     {
         id: 29,
-        data: [
-            {
-                key: 1,
-                src: p29_square_diagonals,
-                alt: 'a square with both diagonals drawn'
-
-            },
-            {
-                key: 2,
-                src: p29_pentagon_diagonals,
-                alt: 'a pentagon with all 5 diagonals drawn'
-            },
-            {
-                key: 3,
-                src: p29_octagon_question,
-                alt: 'an octagon with a ? in the center'
-            }
-        ],
+        src: p29_shapes_diagonals,
+        alt: 'a square and pentgon with diagonals drawn and an octagon with a question mark in the center'
     },
     {
         id: 31,
-        data: [
-            {
-                key: 1,
-                src: p31_matchstick_houses,
-                alt: 'a series of matchstick houses'
-            }
-        ]
+        src: p31_matchstick_houses,
+        alt: 'a series of matchstick houses'
     },
     {
         id: 33,
-        data: [
-            {
-                key: 1,
-                src: p33_shapes_colors,
-                alt: 'six colored shapes with smaller colored shapes inside them'
-            }
-        ]
+        src: p33_shapes_colors,
+        alt: 'six colored shapes with smaller colored shapes inside them'
     }
 ]
