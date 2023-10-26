@@ -1,18 +1,15 @@
 import { useNavigate, useParams } from 'react-router-dom'
 import { useEffect } from 'react';
 
-import { Tabs, TabList, Tab, TabPanels, TabPanel, Heading, Box, Text, Spacer, Flex, Wrap } from '@chakra-ui/react';
+import { Tabs, TabList, Tab, TabPanels, TabPanel, Heading, Flex } from '@chakra-ui/react';
 
 import { problems } from '../../problems/data';
 import { images } from '../../problems/images';
 
 import Chilis from '../Home/Chilis'
-import Hints from './Hints';
-import RelatedProblems from './RelatedProblems';
-import Feedback from './Feedback';
-import Tags from './Tags';
-import ProblemImages from './ProblemImages';
 import Problem from './Problem';
+import Feedback from './Feedback';
+
 
 export default function ProblemDetails() {
     let { id } = useParams();
@@ -32,7 +29,6 @@ export default function ProblemDetails() {
             <Heading size='md'> Difficulty: <Chilis rating={problem.chilis} /></Heading>
             <Tabs colorScheme='red' flexGrow={1} display={'flex'} flexDirection='column'>
                 <TabList>
-                    {/* fontWeight='bold' fontSize='20px' */}
                     <Tab >Problem</Tab>
                     <Tab >Solution</Tab>
                     <Tab >Feedback</Tab>

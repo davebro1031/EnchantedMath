@@ -140,6 +140,19 @@ export const problems = [
         chilis: 2
     },
     {
+        id: 13,
+        title: "How much water?",
+        text: "When a 21cm tall water bottle is placed on a table, water fills it up to a height of 12cm. When the bottle is turned upside down, because the neck is tapered, water fills the bottle up to a height of 15cm.  What fraction of the bottle is filled?",
+        hints: [
+            "try to imagine that the bottle had a consistent cross section.  How much water would be in it? How much air?"
+        ],
+        wrongAnswers: null,
+        categories: [
+            "potpourri"
+        ],
+        chilis: 1
+    },
+    {
         id: 16,
         title: "Repeating Digits",
         text: "What is the 322nd digit in the expansion of the repeating decimal 0.135713571357…?",

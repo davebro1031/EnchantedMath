@@ -3,6 +3,7 @@ import { Flex, Wrap, Text, Spacer, Box } from "@chakra-ui/react"
 import Hints from "./Hints"
 import RelatedProblems from "./RelatedProblems"
 import ProblemImages from "./ProblemImages"
+import Tags from './Tags';
 
 export default function Problem({problem, problemImages}) {
     return (
