@@ -332,6 +332,17 @@ export const problems = [
         chilis: 1
     },
     {
+        id: 33,
+        title: "Colored shapes",
+        text: "Which of the shapes in the image breaks the pattern? How should that shape be fixed?",
+        hints: null,
+        wrongAnswers: null,
+        categories:[
+            "potpourri"
+        ],
+        chilis: 1
+    },
+    {
         id: 34,
         title: "Laps on laps",
         text: "Two people start running in the same direction from the starting line on a quarter-mile long track.  One of them runs 4 miles per hour (mph) and the other runs at 8 mph.  How many times will they be at the same point on the track if they run for 8 hours, including their starting point and perhaps their ending point?",
