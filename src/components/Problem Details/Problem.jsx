@@ -8,7 +8,7 @@ export default function Problem({problem, image}) {
     return (
         <Flex direction='column' grow='1'>
             <Box gap='4'>
-                {image ? <Image src={image.src} alt={image.alt} boxSize='30%' float='left' /> : null}
+                {image ? <Image src={image.src} alt={image.alt} boxSize='30%' float='left' p='4'/> : null}
                 <Text mb={3}>{problem.text}</Text>
 
             </Box>
