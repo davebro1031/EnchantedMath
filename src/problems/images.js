@@ -2,13 +2,14 @@ import p12_cat_turtle from '../images/p12_cat_turtle.png'
 import p13_water_bottles from '../images/p13_water_bottles.png'
 import p14_postman_route from '../images/p14_postman_route.png'
 import p15_konigsberg_bridges from '../images/p15_konigsberg_bridges.png'
+import p19_two_cities from '../images/p19_two_cities.png'
 import p29_pentagon_diagonals from '../images/p29_pentagon_diagonals.png'
 import p29_square_diagonals from '../images/p29_square_diagonals.png'
 import p29_octagon_question from '../images/p29_octagon_question.png'
 
 export const images = [
     {
-        id:12,
+        id: 12,
         data: [
             {
                 key: 1,
@@ -28,8 +29,8 @@ export const images = [
         ]
     },
     {
-        id:14,
-        data:[
+        id: 14,
+        data: [
             {
                 key: 1,
                 src: p14_postman_route,
@@ -38,12 +39,22 @@ export const images = [
         ]
     },
     {
-        id:15,
-        data:[
+        id: 15,
+        data: [
             {
                 key: 1,
                 src: p15_konigsberg_bridges,
                 alt: "a mysterious town with 7 seven bridges over a funky river."
+            }
+        ]
+    },
+    {
+        id: 19,
+        data: [
+            {
+                key: 1,
+                src: p19_two_cities,
+                alt: 'two cities connected by a network of roads'
             }
         ]
     },
