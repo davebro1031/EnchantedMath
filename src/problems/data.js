@@ -140,6 +140,69 @@ export const problems = [
         chilis: 2
     },
     {
+        id: 12,
+        title: "The tabby and the turtle",
+        text: "A tabby and a turtle take turns on a table.  When the tabby is on the table and the turtle on the floor below, the top of the tabby is 170cm above the top of the turtle. When they trade places, the distance shrinks to 130cm.  How tall is the table?",
+        hints: [
+            "Imagine they're both cats, but a 'turtle' is a cat lying down.",
+            "Try stacking tables."
+        ],
+        wrongAnswers: null,
+        categories: [
+            "many variables",
+        ],
+        chilis: 1
+    },
+    {
+        id: 13,
+        title: "How much water?",
+        text: "When a 21cm tall water bottle is placed on a table, water fills it up to a height of 12cm. When the bottle is turned upside down, because the neck is tapered, water fills the bottle up to a height of 15cm.  What fraction of the bottle is filled?",
+        hints: [
+            "try to imagine that the bottle had a consistent cross section.  How much water would be in it? How much air?"
+        ],
+        wrongAnswers: null,
+        categories: [
+            "potpourri"
+        ],
+        chilis: 1
+    },
+    {
+        id: 14,
+        title: 'Traveling postman',
+        text: "A postman needs to deliver mail to all the houses in his neighborhood.  There are houses on each of the streets in his neighborhood, so the postman must travel each street at least once. He wants to walk the shortest path possible through his neighborhood, to expend the least amount of time and energy possible. At which intersections should he start and finish his walk?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "graph theory"
+        ],
+        chilis: 1
+    },
+    {
+        id: 15,
+        title: "Bridges of Konigsberg",
+        text: "In a certain town, there is a river that splits and rejoins and splits again, forming an island in the center of town.  There are 7 bridges in this town, and the townsfolk hold a competition to see who can find a bicycle path through the town that crosses each bridge exactly once. Try to find a winning path.",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "graph theory"
+        ],
+        chilis: 3
+
+    },
+    {
+        id: 16,
+        title: "Repeating Digits",
+        text: "What is the 322nd digit in the expansion of the repeating decimal 0.135713571357…?",
+        hints: [
+            "What is the 4th, 8th, 12th, etc. digit?"
+        ],
+        wrongAnswers: null,
+        categories: [
+            "potpourri"
+        ],
+        chilis: 0
+    },
+    {
         id: 20,
         title: "Mixed drinks",
         text: "A solution is 5% alcohol and 95% water.  A second solution is 20% alcohol and 80% water.  If 2 gallons of the first solution is mixed with 1 gallon of the second solution, what percentage of the resulting solution is alcohol?",
@@ -192,19 +255,6 @@ export const problems = [
         chilis: 0
     },
     {
-        id: 16,
-        title: "Repeating Digits",
-        text: "What is the 322nd digit in the expansion of the repeating decimal 0.135713571357…?",
-        hints: [
-            "What is the 4th, 8th, 12th, etc. digit?"
-        ],
-        wrongAnswers: null,
-        categories: [
-            "potpourri"
-        ],
-        chilis: 0
-    },
-    {
         id: 25,
         title: "3 Hoses, 4 Hoses",
         text: "One hose pumps water at a rate of 2.5 gallons per minute.  Three hoses pumping water simultaneously fill a pool in 60 minutes.  How long would it take 4 hoses pumping simultaneously to fill that same pool?",
@@ -240,6 +290,19 @@ export const problems = [
             "combinatorics"
         ],
         chilis: 0
+    },
+    {
+        id: 29,
+        title: "Counting diagonals",
+        text: "A square has two diagonals, a pentagon has five.  How many diagonals does an octagon have?",
+        hints: [
+            "Square -> 2, pentgon -> 5, hexagon -> ?  Find a pattern in this sequence."
+        ],
+        wrongAnswers: null,
+        categories: [
+            "combinatorics"
+        ],
+        chilis: 1
     },
     {
         id: 34,
@@ -387,7 +450,7 @@ export const problems = [
             "combinatorics",
             "stars and bars"
         ],
-        chilis:2
+        chilis: 2
     },
     {
         id: 48,
