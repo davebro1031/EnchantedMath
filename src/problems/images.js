@@ -7,6 +7,7 @@ import p29_pentagon_diagonals from '../images/p29_pentagon_diagonals.png'
 import p29_square_diagonals from '../images/p29_square_diagonals.png'
 import p29_octagon_question from '../images/p29_octagon_question.png'
 import p31_matchstick_houses from '../images/p31_matchstick_houses.png'
+import p33_shapes_colors from '../images/p33_shapes_colors.png'
 
 export const images = [
     {
@@ -25,7 +26,7 @@ export const images = [
             {
                 key: 1,
                 src: p13_water_bottles,
-                alt: 'a partially filled water bottle right side up and upside down.'
+                alt: 'a partially filled water bottle right side up and upside down'
             }
         ]
     },
@@ -35,7 +36,7 @@ export const images = [
             {
                 key: 1,
                 src: p14_postman_route,
-                alt: "a nice neighborhood with several streets."
+                alt: "a nice neighborhood with several streets"
             }
         ]
     },
@@ -45,7 +46,7 @@ export const images = [
             {
                 key: 1,
                 src: p15_konigsberg_bridges,
-                alt: "a mysterious town with 7 seven bridges over a funky river."
+                alt: "a mysterious town with 7 seven bridges over a funky river"
             }
         ]
     },
@@ -87,6 +88,16 @@ export const images = [
                 key: 1,
                 src: p31_matchstick_houses,
                 alt: 'a series of matchstick houses'
+            }
+        ]
+    },
+    {
+        id: 33,
+        data: [
+            {
+                key: 1,
+                src: p33_shapes_colors,
+                alt: 'six colored shapes with smaller colored shapes inside them'
             }
         ]
     }
