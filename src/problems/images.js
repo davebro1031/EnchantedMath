@@ -7,6 +7,7 @@ import p19_two_cities from '../images/p19_two_cities.png'
 import p29_pentagon_diagonals from '../images/p29_pentagon_diagonals.png'
 import p29_square_diagonals from '../images/p29_square_diagonals.png'
 import p29_octagon_question from '../images/p29_octagon_question.png'
+import p29_shapes_diagonals from '../images/p29_shapes_diagonals.png'
 import p31_matchstick_houses from '../images/p31_matchstick_houses.png'
 import p33_shapes_colors from '../images/p33_shapes_colors.png'
 
