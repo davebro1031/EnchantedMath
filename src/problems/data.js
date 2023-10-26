@@ -141,11 +141,11 @@ export const problems = [
     },
     {
         id: 12,
-        title:"The tabby and the turtle",
+        title: "The tabby and the turtle",
         text: "A tabby and a turtle take turns on a table.  When the tabby is on the table and the turtle on the floor below, the top of the tabby is 170cm above the top of the turtle. When they trade places, the distance shrinks to 130cm.  How tall is the table?",
         hints: [
             "Imagine they're both cats, but a 'turtle' is a cat lying down.",
-            "Try stacking tables." 
+            "Try stacking tables."
         ],
         wrongAnswers: null,
         categories: [
@@ -165,6 +165,29 @@ export const problems = [
             "potpourri"
         ],
         chilis: 1
+    },
+    {
+        id: 14,
+        title: 'Traveling postman',
+        text: "A postman needs to deliver mail to all the houses in his neighborhood.  There are houses on each of the streets in his neighborhood, so the postman must travel each street at least once. He wants to walk the shortest path possible through his neighborhood, to expend the least amount of time and energy possible. At which intersections should he start and finish his walk?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "graph theory"
+        ],
+        chilis: 1
+    },
+    {
+        id: 15,
+        title: "Bridges of Konigsberg",
+        text: "In a certain town, there is a river that splits and rejoins and splits again, forming an island in the center of town.  There are 7 bridges in this town, and the townsfolk hold a competition to see who can find a bicycle path through the town that crosses each bridge exactly once. Try to find a winning path.",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "graph theory"
+        ],
+        chilis: 3
+
     },
     {
         id: 16,
@@ -427,7 +450,7 @@ export const problems = [
             "combinatorics",
             "stars and bars"
         ],
-        chilis:2
+        chilis: 2
     },
     {
         id: 48,
