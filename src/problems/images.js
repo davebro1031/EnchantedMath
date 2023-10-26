@@ -12,47 +12,56 @@ export const images = [
     {
         id: 12,
         src: p12_cat_turtle,
-        alt: 'cat and turtle taking turns on table'
+        alt: 'cat and turtle taking turns on table',
+        float: ''
     },
     {
         id: 13,
         src: p13_water_bottles,
-        alt: 'a partially filled water bottle right side up and upside down'
+        alt: 'a partially filled water bottle right side up and upside down',
+        float: 'left'
     },
     {
         id: 14,
         src: p14_postman_route,
-        alt: "a nice neighborhood with several streets"
+        alt: "a nice neighborhood with several streets",
+        float: 'left'
 
     },
     {
         id: 15,
         src: p15_konigsberg_bridges,
-        alt: "a mysterious town with 7 seven bridges over a funky river"
+        alt: "a mysterious town with 7 seven bridges over a funky river",
+        float: 'left'
     },
     {
         id: 18,
         src: p18_city_blocks,
-        alt: "a map of a city with 21 blocks"
+        alt: "a map of a city with 21 blocks",
+        float: 'left'
     },
     {
         id: 19,
         src: p19_two_cities,
-        alt: 'two cities connected by a network of roads'
+        alt: 'two cities connected by a network of roads',
+        float: ''
     },
     {
         id: 29,
         src: p29_shapes_diagonals,
-        alt: 'a square and pentgon with diagonals drawn and an octagon with a question mark in the center'
+        alt: 'a square and pentgon with diagonals drawn and an octagon with a question mark in the center',
+        float: ''
     },
     {
         id: 31,
         src: p31_matchstick_houses,
-        alt: 'a series of matchstick houses'
+        alt: 'a series of matchstick houses',
+        float: ''
     },
     {
         id: 33,
         src: p33_shapes_colors,
-        alt: 'six colored shapes with smaller colored shapes inside them'
+        alt: 'six colored shapes with smaller colored shapes inside them',
+        float: 'left'
     }
 ]
