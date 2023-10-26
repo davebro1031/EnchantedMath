@@ -28,6 +28,26 @@ export const images = [
         ]
     },
     {
+        id:14,
+        data:[
+            {
+                key: 1,
+                src: p14_postman_route,
+                alt: "a nice neighborhood with several streets."
+            }
+        ]
+    },
+    {
+        id:15,
+        data:[
+            {
+                key: 1,
+                src: p15_konigsberg_bridges,
+                alt: "a mysterious town with 7 seven bridges over a funky river."
+            }
+        ]
+    },
+    {
         id: 29,
         data: [
             {
