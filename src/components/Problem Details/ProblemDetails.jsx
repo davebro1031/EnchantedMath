@@ -10,6 +10,7 @@ import { solutions } from '../../problems/solutions';
 import Chilis from '../Home/Chilis'
 import Problem from './Problem';
 import Feedback from './Feedback';
+import Solutions from './Solutions';
 
 
 export default function ProblemDetails() {
@@ -42,7 +43,7 @@ export default function ProblemDetails() {
                     </TabPanel>
                     {solution ?
                         <TabPanel>
-                            <p>Solution</p>
+                            <Solutions solution={solution}/>
                         </TabPanel>
                         : null
                     }
