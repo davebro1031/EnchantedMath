@@ -16,7 +16,7 @@ export default function ProblemDetails() {
     id = Number(id)
     const navigate = useNavigate()
     const problem = problems.find(problem => problem.id === id)
-    const problemImages = images.find(image => image.id === id)
+    const problemImage = images.find(image => image.id === id)
 
     useEffect(() => {
         if (!problem) navigate("/notfound")
@@ -36,7 +36,7 @@ export default function ProblemDetails() {
 
                 <TabPanels flexGrow={1} display={'flex'} flexDirection='column'>
                     <TabPanel flexGrow={1} display={'flex'} flexDirection='column' >
-                        <Problem problem={problem} problemImages={problemImages}/>
+                        <Problem problem={problem} problemImage={problemImage}/>
                     </TabPanel>
                     <TabPanel>
                         <p>Solution</p>

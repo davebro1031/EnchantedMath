@@ -2,14 +2,14 @@ import { Flex, Wrap, Text, Spacer, Box } from "@chakra-ui/react"
 
 import Hints from "./Hints"
 import RelatedProblems from "./RelatedProblems"
-import ProblemImages from "./ProblemImages"
+import ProblemImage from "./ProblemImage"
 import Tags from './Tags';
 
-export default function Problem({problem, problemImages}) {
+export default function Problem({problem, problemImage}) {
     return (
         <Flex direction='column' grow='1'>
             <Box gap='4'>
-                {problemImages ? <ProblemImages images={problemImages.data} /> : null}
+                {problemImage ? <ProblemImage image={problemImage} /> : null}
                 <Text mb={3}>{problem.text}</Text>
 
             </Box>
