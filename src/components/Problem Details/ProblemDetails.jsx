@@ -32,17 +32,20 @@ export default function ProblemDetails() {
             <Tabs colorScheme='red' flexGrow={1} display={'flex'} flexDirection='column'>
                 <TabList>
                     <Tab >Problem</Tab>
-                    <Tab >Solution</Tab>
+                    {solution ? <Tab >Solution</Tab> : null}
                     <Tab >Feedback</Tab>
                 </TabList>
 
                 <TabPanels flexGrow={1} display={'flex'} flexDirection='column'>
                     <TabPanel flexGrow={1} display={'flex'} flexDirection='column' >
-                        <Problem problem={problem} image={image}/>
+                        <Problem problem={problem} image={image} />
                     </TabPanel>
-                    <TabPanel>
-                        <p>Solution</p>
-                    </TabPanel>
+                    {solution ?
+                        <TabPanel>
+                            <p>Solution</p>
+                        </TabPanel>
+                        : null
+                    }
                     <TabPanel>
                         <Feedback title={problem.title} />
                     </TabPanel>
