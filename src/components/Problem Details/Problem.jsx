@@ -8,11 +8,11 @@ import Tags from './Tags';
 export default function Problem({problem, problemImages}) {
     return (
         <Flex direction='column' grow='1'>
-            <Wrap gap='4'>
+            <Box gap='4'>
                 {problemImages ? <ProblemImages images={problemImages.data} /> : null}
                 <Text mb={3}>{problem.text}</Text>
 
-            </Wrap>
+            </Box>
             <Spacer />
             <Box>
                 {problem.hints ? <Hints hints={problem.hints} /> : null}
