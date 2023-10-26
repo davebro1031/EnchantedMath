@@ -42,7 +42,7 @@ export default function ProblemDetails() {
                         <Problem problem={problem} image={image} />
                     </TabPanel>
                     {solution ?
-                        <TabPanel>
+                        <TabPanel flexGrow={1} display={'flex'} flexDirection='column'>
                             <Solutions solution={solution}/>
                         </TabPanel>
                         : null
