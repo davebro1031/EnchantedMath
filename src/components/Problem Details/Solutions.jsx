@@ -10,7 +10,7 @@ export default function Solutions({ solution }) {
             {solutions.map((solution, index) => {
                 return (
                     <Box key={index}>
-                        <TabHeader text={["Solution", solutions.length > 1 ? index : null].join(" ")} width={solutions.length > 1 ? '7em' : '5.5em'} />
+                        <TabHeader text={["Solution", solutions.length > 1 ? index + 1 : null].join(" ")} width={solutions.length > 1 ? '7em' : '5.5em'} />
                         <Text mt='2'>{solution}</Text>
                     </Box>
                 )
