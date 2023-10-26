@@ -203,6 +203,18 @@ export const problems = [
         chilis: 0
     },
     {
+        id: 18,
+        title: "Walking the blocks",
+        text: "You live in a city where avenues run East-West and are labeled with letters, while streets run North-South and are labeled with numbers.  Your house is at point X, at the intersection of A avenue and 1st street.  The grocery store is at the intersection of D avenue and 8th street.  You want to walk from your house to the grocery store along the shortest path possible, but you cannot cut through city blocks because there are buildings in the way.  The best paths, then, are ones where you walk along the city grid in the East and South directions until you reach the grocery store.  You could walk 7 blocks East along A avenue then 3 blocks south on 8th street, or you could walk 3 blocks south on 1st street, then 7 blocks East along D avenue, or you could take some path alternating between South and East as you go. No matter what 'shortest path' you take, however, you will always wind up walking exactly 10 blocks. If you take a random shortest path to the grocery store, what is the probability that you pass by Jimmy's house on B avenue and 5th street?",
+        hints: [
+            "Try using the letters 'S' for 'South' and 'E' for 'East' to represent paths with 'words' using those letters."
+        ],
+        categories: [
+            "combinatorics"
+        ],
+        chilis: 3
+    },
+    {
         id: 19,
         title: "More than one way...",
         text: "How many ways can a travelling merchant go from Naples to Rome if they are not allowed to take any road more than once, but they ARE allowed to cross over a road they have taken before?",
