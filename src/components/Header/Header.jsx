@@ -28,7 +28,7 @@ function Header({ setQuery, onOpen, btnRef }) {
                     <IconButton
                         ref={btnRef}
                         onClick={onOpen}
-                        color='yellow'
+                        color='white'
                         bg='inherit'
                         borderRadius='50%'
                         _hover={{ backgroundColor: 'red.800' }}

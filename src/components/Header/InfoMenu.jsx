@@ -10,7 +10,7 @@ export default function InfoMenu() {
             icon={<InfoIcon color='white' boxSize={6} />} 
             isRound
             bg='red.700'
-            _hover={{bg:'red.500'}}
+            _hover={{bg:'red.800'}}
             _active={{bg:'red.500'}}
             />
             <MenuList>
