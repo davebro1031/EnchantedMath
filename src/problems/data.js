@@ -50,7 +50,7 @@ export const problems = [
     },
     {
         id: 4,
-        title: "Many Marbles",
+        title: "Many marbles",
         text: "There are 500 marbles in a bag; all of them are either red or blue.  If there are 6 more red marbles than blue marbles, how many RED marbles are in the bag?",
         hints: [
             "What if there were the same number of red and blue?"
@@ -66,8 +66,8 @@ export const problems = [
     },
     {
         id: 5,
-        title: "Primary Marbles",
-        text: "There are 320 marbles in a bag; all of them have a single, solid color: red, blue, or yellow.  If there are three times as many red marbles as blue marbles, and twice as many yellow marbles as red marbles, how many RED marbles are in the bag?",
+        title: "Primary marbles",
+        text: "There are 330 marbles in a bag; all of them have a single, solid color: red, blue, or yellow.  If there are three times as many red marbles as blue marbles, and twice as many yellow marbles as red marbles, how many RED marbles are in the bag?",
         hints: [
             "Separate the colors into sacks of equal sizes.  There is 1 blue sack. How many red sacks?",
             "How many yellow sacks?",
@@ -112,7 +112,7 @@ export const problems = [
     },
     {
         id: 8,
-        title: "The Piggy Bank",
+        title: "The piggy bank",
         text: "A piggy bank is filled with coins: nickles, dimes, and quarters (these are the only types). For every 2 nickels there are 3 dimes.  For every 2 dimes there are 5 quarters. If there are 500 coins in total, how much money is in the piggy bank?",
         hints: [
             "For every 6 dimes there are how many nickles? how many quarters?"
@@ -122,11 +122,11 @@ export const problems = [
             "many variables",
             "proportional reasoning"
         ],
-        chilis: 2
+        chilis: 1
     },
     {
         id: 11,
-        title: "Carroll's Cats",
+        title: "Carroll's cats",
         text: "6 cats eat 6 rats in 6 minutes.  How many cats are needed to eat 100 rats in 50 minutes?",
         hints: [
             "How many rats will 6 cats eat in 1 minute?"
@@ -191,7 +191,7 @@ export const problems = [
     },
     {
         id: 16,
-        title: "Repeating Digits",
+        title: "Repeating digits",
         text: "What is the 322nd digit in the expansion of the repeating decimal 0.135713571357…?",
         hints: [
             "What is the 4th, 8th, 12th, etc. digit?"
@@ -258,7 +258,7 @@ export const problems = [
     },
     {
         id: 23,
-        title: 'Days of the Week',
+        title: 'Days of the week',
         text: "In some years, July (which has 31 days) has exactly 4 Mondays and 4 Fridays.  During these years, what day of the week is the 4th of July?",
         hints: [
             "Draw a calendar"
@@ -332,7 +332,7 @@ export const problems = [
     },
     {
         id: 31,
-        title: "Matchstick Houses",
+        title: "Matchstick houses",
         text: "In the image below, 6 toothpicks are used to form Figure 1.  11 toothpicks are used to form Figure 2, and 16 toothpicks are used to form Figure 3.  How many toothpicks would be needed to form Figure 50?",
         hint: [
             "How many toothpicks does each ADDITIONAL house take?"
@@ -380,7 +380,7 @@ export const problems = [
     },
     {
         id: 36,
-        title: "Alternating Fun",
+        title: "Alternating fun",
         text: "What is 100 - 99 + 98 - 97 + … - 3 + 2 - 1 ?",
         hints: [
             "Try calculating this alternating expression in pairs."
@@ -393,7 +393,7 @@ export const problems = [
     },
     {
         id: 37,
-        title: "Optimal Area",
+        title: "Optimal area",
         text: "All the sides of a rectangle are whole numbers.  If it has area 60 square feet, what is the smallest possible perimeter it could have?",
         hints: null,
         wrongAnswers: null,
@@ -605,7 +605,7 @@ export const problems = [
     },
     {
         id: 55,
-        title: "Faucet Flow",
+        title: "Faucet flow",
         text: "Three faucets are pouring water into a container.  One would fill the container in 6 hours by itself, another in 8 hours and the last in 12 hours.  Additionally, outflow from the container would empty it in one day (24hrs).  How long, to the nearest minute, does the container take to fill from empty?",
         hints: [
             "How much of the container is filled in 1 hour?"

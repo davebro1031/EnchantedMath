@@ -5,10 +5,12 @@ import { Tabs, TabList, Tab, TabPanels, TabPanel, Heading, Flex } from '@chakra-
 
 import { problems } from '../../problems/data';
 import { images } from '../../problems/images';
+import { solutions } from '../../problems/solutions';
 
 import Chilis from '../Home/Chilis'
 import Problem from './Problem';
 import Feedback from './Feedback';
+import Solutions from './Solutions';
 
 
 export default function ProblemDetails() {
@@ -17,6 +19,7 @@ export default function ProblemDetails() {
     const navigate = useNavigate()
     const problem = problems.find(problem => problem.id === id)
     const image = images.find(image => image.id === id)
+    const solution = solutions.find(solution => solution.id === id)
 
     useEffect(() => {
         if (!problem) navigate("/notfound")
@@ -30,17 +33,20 @@ export default function ProblemDetails() {
             <Tabs colorScheme='red' flexGrow={1} display={'flex'} flexDirection='column'>
                 <TabList>
                     <Tab >Problem</Tab>
-                    <Tab >Solution</Tab>
+                    {solution ? <Tab >Solution</Tab> : null}
                     <Tab >Feedback</Tab>
                 </TabList>
 
                 <TabPanels flexGrow={1} display={'flex'} flexDirection='column'>
                     <TabPanel flexGrow={1} display={'flex'} flexDirection='column' >
-                        <Problem problem={problem} image={image}/>
+                        <Problem problem={problem} image={image} />
                     </TabPanel>
-                    <TabPanel>
-                        <p>Solution</p>
-                    </TabPanel>
+                    {solution ?
+                        <TabPanel flexGrow={1} display={'flex'} flexDirection='column'>
+                            <Solutions solution={solution}/>
+                        </TabPanel>
+                        : null
+                    }
                     <TabPanel>
                         <Feedback title={problem.title} />
                     </TabPanel>
