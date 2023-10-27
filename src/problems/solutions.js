@@ -64,8 +64,12 @@ export const solutions = [
         ],
         links: [
             {
-                href: "https://www.youtube.com/watch?v=fw1kRz83Fj0",
-                text: "Mathologer - Youtube"
+                href: "https://www.youtube.com/watch?v=Dd81F6-Ar_0&t=60s",
+                text: "Numberphile - Youtube"
+            },
+            {
+                href: "https://www.youtube.com/watch?v=3p87wDxR0LM",
+                text: "Mathematics Proofs - Youtube"
             },
             {
                 href: "https://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=D3F0A406F79BC3EBAA6A3EB64CED7D68?doi=10.1.1.209.85&rep=rep1&type=pdf",
