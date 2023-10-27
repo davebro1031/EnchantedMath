@@ -14,10 +14,9 @@ export default function InfoMenu() {
             _active={{bg:'red.500'}}
             />
             <MenuList>
-                <MenuItem>Hello</MenuItem>
-                <MenuItem>Hello</MenuItem>
-                <MenuItem>Hello</MenuItem>
-                <MenuItem>Hello</MenuItem>
+                <MenuItem _hover={{bg:'teal.100'}}>About Nerd Snipes</MenuItem>
+                <MenuItem _hover={{bg:'teal.100'}}>Contact Us</MenuItem>
+                <MenuItem _hover={{bg:'teal.100'}}>Problem Submissions</MenuItem>
             </MenuList>
         </Menu>
     )
