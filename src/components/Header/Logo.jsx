@@ -8,8 +8,8 @@ export default function Logo() {
     const navigate = useNavigate()
     return (
         <HStack onClick={()=>navigate("/")} _hover={{cursor:'pointer'}}>
-            <Image src={NerdSnipe2} boxSize='45px' />
-            {showName ? <Heading size={['md', 'md', 'lg']} color='white'>Nerd Snipes</Heading> : null}
+            <Image src={NerdSnipe2} boxSize='45px' minWidth='45px' />
+            {showName ? <Heading size={['md', 'md', 'lg']} width={['','6em','']}color='white'>Nerd Snipes</Heading> : null}
         </HStack>
     )
 }

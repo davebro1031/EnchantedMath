@@ -5,10 +5,10 @@ import { Routes, Route } from 'react-router-dom'
 import Header from './components/Header/Header'
 import ProblemsList from './components/Home/ProblemsList'
 import Sidebar from './components/Sidebar/Sidebar'
-
-import './App.css'
 import SidebarDrawer from './components/Sidebar/SidebarDrawer'
 import ProblemDetails from './components/Problem Details/ProblemDetails'
+import About from './components/Home/About'
+
 import { problems } from './problems/data'
 
 export default function App() {
@@ -98,6 +98,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<ProblemsList queriedProblems={queriedProblems} />} />
             <Route path="/problem/:id" element={<ProblemDetails />} />
+            <Route path="/about" element={<About/>} />
             <Route path="*" element={<div>404 not found</div>} />
           </Routes>
         </Box>
