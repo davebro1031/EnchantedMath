@@ -1,8 +1,10 @@
-import { Menu, MenuButton, IconButton, MenuList, MenuItem } from "@chakra-ui/react";
+import { Menu, MenuButton, IconButton, MenuList, MenuItem, Link } from "@chakra-ui/react";
 import { InfoIcon } from "@chakra-ui/icons";
+import { useNavigate } from "react-router-dom";
 
 
 export default function InfoMenu() {
+    const navigate = useNavigate()
     return (
         <Menu autoSelect={false}>
             <MenuButton 
@@ -14,7 +16,7 @@ export default function InfoMenu() {
             _active={{bg:'red.500'}}
             />
             <MenuList border='3px solid #38B2AC'>
-                <MenuItem _hover={{bg:'teal.100'}}>About Nerd Snipes</MenuItem>
+                <MenuItem _hover={{bg:'teal.100'}} onClick={()=>navigate('/about')}>About Nerd Snipes</MenuItem>
                 <MenuItem _hover={{bg:'teal.100'}}>Contact us</MenuItem>
                 <MenuItem _hover={{bg:'teal.100'}}>Problem submissions</MenuItem>
             </MenuList>
