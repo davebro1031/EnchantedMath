@@ -1,4 +1,6 @@
 import { Box, Text, Heading, Flex, Spacer } from '@chakra-ui/react'
+import 'katex/dist/katex.min.css'
+import Latex from 'react-latex-next'
 
 import TabHeader from './TabHeader'
 
@@ -11,7 +13,7 @@ export default function Solutions({ solution }) {
                 return (
                     <Box key={index}>
                         <TabHeader text={["Solution", solutions.length > 1 ? index + 1 : null].join(" ")} width={solutions.length > 1 ? '7em' : '5.5em'} />
-                        <Text mt='2'>{solution}</Text>
+                        <Text mt='2'><Latex>{solution}</Latex></Text>
                     </Box>
                 )
             })}
