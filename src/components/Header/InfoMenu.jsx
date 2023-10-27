@@ -4,7 +4,7 @@ import { InfoIcon } from "@chakra-ui/icons";
 
 export default function InfoMenu() {
     return (
-        <Menu>
+        <Menu autoSelect={false}>
             <MenuButton 
             as={IconButton}
             icon={<InfoIcon color='white' boxSize={6} />} 
@@ -13,7 +13,7 @@ export default function InfoMenu() {
             _hover={{bg:'red.800'}}
             _active={{bg:'red.500'}}
             />
-            <MenuList>
+            <MenuList border='3px solid #38B2AC'>
                 <MenuItem _hover={{bg:'teal.100'}}>About Nerd Snipes</MenuItem>
                 <MenuItem _hover={{bg:'teal.100'}}>Contact Us</MenuItem>
                 <MenuItem _hover={{bg:'teal.100'}}>Problem Submissions</MenuItem>
