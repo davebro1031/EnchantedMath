@@ -81,5 +81,17 @@ export const solutions = [
         ],
         links: null
     },
-    
+    {
+        id: 11,
+        answer: "It depends on how the 6 cats kill the 6 rats.  Valid solutions exist for 12, 13, or 14 cats.",
+        solutions: [
+            "Several different solutions are well-explained in chapter 1 of the book <em>Lewis Carroll's Cats and Rats</em> by Yossi Elran.  Check out the link below."
+        ],
+        links: [
+            {
+                href: "https://www.worldscientific.com/doi/pdf/10.1142/9789811233975_0001",
+                text: "Lewis Carroll's Cats and Rats - Yossi Elran"
+            }
+        ]
+    }
 ]
