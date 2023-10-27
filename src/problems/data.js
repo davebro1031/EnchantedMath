@@ -122,7 +122,7 @@ export const problems = [
             "many variables",
             "proportional reasoning"
         ],
-        chilis: 2
+        chilis: 1
     },
     {
         id: 11,

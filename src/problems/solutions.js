@@ -72,5 +72,14 @@ export const solutions = [
                 text: "Gauss's Day of Reckoning - Bryan Hayes"
             },
         ]
-    }
+    },
+    {
+        id: 8,
+        answer: "$91",
+        solutions: [
+            "We begin by making piles of coins. In each pile we place 25 coins: 4 nickles, 6 dimes, and 15 quarters.  The ratios given ensure that we will run out of each type of coin at the same time. For example, if there are 3 dimes for every 2 nickels, then we will have 6 dimes for every 4 nickels, so we will run out of nickels at the same time we run out of dimes.  Since there are 300 coins in total and each pile has 25 coins, there must be 12 piles.  "
+        ],
+        links: null
+    },
+    
 ]
