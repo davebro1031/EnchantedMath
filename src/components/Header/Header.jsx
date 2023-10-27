@@ -3,6 +3,7 @@ import { Flex, Spacer, IconButton } from '@chakra-ui/react'
 import { HamburgerIcon, InfoIcon } from '@chakra-ui/icons'
 import { useBreakpointValue } from '@chakra-ui/react'
 import Search from '../Sidebar/Search'
+import InfoMenu from './InfoMenu'
 import Logo from './Logo'
 
 function Header({ setQuery, onOpen, btnRef }) {
@@ -34,12 +35,13 @@ function Header({ setQuery, onOpen, btnRef }) {
                         icon={<HamburgerIcon boxSize={7} />} />
                 </> : null
             }
-            <IconButton
+            {/* <IconButton
                 isRound
                 icon={<InfoIcon color='white' boxSize={6} />}
                 bg='red.700'
                 _hover={{bg:'red.600'}}
-            />
+            /> */}
+            <InfoMenu/>
         </Flex>
     )
 }
