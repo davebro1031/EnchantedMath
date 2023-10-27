@@ -7,7 +7,7 @@ import TabHeader from './TabHeader'
 export default function Hints({ hints }) {
     return (
         <Box>
-            <TabHeader text="Hints" width='4em' />
+            <TabHeader text="Hints" width='60px' />
             <Box p='2'>
                 {hints.map((hint, index) => (<Hint key={index} text={hint} /> ))}
 
