@@ -13,7 +13,7 @@ export default function Solutions({ solution }) {
             {solutions.map((solution, index) => {
                 return (
                     <Box key={index}>
-                        <TabHeader text={["Solution", solutions.length > 1 ? index + 1 : null].join(" ")} width={solutions.length > 1 ? '7em' : '5.5em'} />
+                        <TabHeader text={["Solution", solutions.length > 1 ? index + 1 : null].join(" ")} width={solutions.length > 1 ? '100px' : '80px'} />
                         <Text mt='2'><Latex>{solution}</Latex></Text>
                     </Box>
                 )
@@ -21,7 +21,7 @@ export default function Solutions({ solution }) {
             <Spacer />
             {solution.links ?
                 <Box>
-                    <TabHeader text="Links" width="3.5em" />
+                    <TabHeader text="Links" width="55px" />
                     {solution.links.map((link, index) => {
                         return (
                             <HStack key={index}>
