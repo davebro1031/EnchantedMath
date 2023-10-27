@@ -64,11 +64,11 @@ export const solutions = [
         ],
         links: [
             {
-                href:"https://www.youtube.com/watch?v=fw1kRz83Fj0",
+                href: "https://www.youtube.com/watch?v=fw1kRz83Fj0",
                 text: "Mathologer - Youtube"
             },
             {
-                href:"https://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=D3F0A406F79BC3EBAA6A3EB64CED7D68?doi=10.1.1.209.85&rep=rep1&type=pdf",
+                href: "https://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=D3F0A406F79BC3EBAA6A3EB64CED7D68?doi=10.1.1.209.85&rep=rep1&type=pdf",
                 text: "Gauss's Day of Reckoning - Bryan Hayes"
             },
         ]
@@ -91,6 +91,20 @@ export const solutions = [
             {
                 href: "https://www.worldscientific.com/doi/pdf/10.1142/9789811233975_0001",
                 text: "Lewis Carroll's Cats and Rats - Yossi Elran"
+            }
+        ]
+    },
+    {
+        id: 12,
+        answer: "150 cm",
+        solutions: [
+            "Imagine, instead, that we have two cats and that a 'turtle' is actually just a cat who is lying down.  We begin with two cats sitting upright: one on the table and one on the floor.  The distance between their ear tips is precisely equal to the height of the table.  Imagine that the floor cat lies down: the distance between the ear tips increases by some amount 'x' to 170cm.  Now imagine the floor cat sits up again and restores the distance between their ear tips to again equal the height of the table.  If the table cat now lies down, the distance between their ear tips <em>decreases by that same amount 'x' </em> to a distane of 130cm. So evidently, the height of the table is directly between 130cm and 170cm: the table must be 150cm tall.  Note that by this approach, we simultaneously learn that the cat is 20cm taller than the turtle.",
+            "For two other solutions, visit the link below."
+        ],
+        links: [
+            {
+                href: "https://www.youtube.com/watch?app=desktop&v=BPRueCu3fXU",
+                text: "Mind Your Decisions - Youtube"
             }
         ]
     }
