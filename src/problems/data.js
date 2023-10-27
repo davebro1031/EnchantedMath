@@ -67,7 +67,7 @@ export const problems = [
     {
         id: 5,
         title: "Primary Marbles",
-        text: "There are 320 marbles in a bag; all of them have a single, solid color: red, blue, or yellow.  If there are three times as many red marbles as blue marbles, and twice as many yellow marbles as red marbles, how many RED marbles are in the bag?",
+        text: "There are 330 marbles in a bag; all of them have a single, solid color: red, blue, or yellow.  If there are three times as many red marbles as blue marbles, and twice as many yellow marbles as red marbles, how many RED marbles are in the bag?",
         hints: [
             "Separate the colors into sacks of equal sizes.  There is 1 blue sack. How many red sacks?",
             "How many yellow sacks?",
