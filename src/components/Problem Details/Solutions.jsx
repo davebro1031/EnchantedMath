@@ -1,4 +1,5 @@
-import { Box, Text, Heading, Flex, Spacer } from '@chakra-ui/react'
+import { Box, Text, Heading, Flex, Spacer, Link, HStack } from '@chakra-ui/react'
+import { ExternalLinkIcon } from '@chakra-ui/icons'
 import 'katex/dist/katex.min.css'
 import Latex from 'react-latex-next'
 
@@ -20,10 +21,13 @@ export default function Solutions({ solution }) {
             <Spacer />
             {solution.links ?
                 <Box>
-                    <TabHeader text="External Links" width="8em" />
+                    <TabHeader text="Links" width="3.5em" />
                     {solution.links.map((link, index) => {
                         return (
-                            <p key={index}>{link.text}</p>
+                            <HStack key={index}>
+                                <Link href={link.href} isExternal>{link.text} </Link>
+                                <ExternalLinkIcon />
+                            </HStack>
                         )
                     })}
                 </Box>

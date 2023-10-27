@@ -15,7 +15,7 @@ export const solutions = [
         ], 
         links: [
             {
-                to:"https://www.youtube.com/watch?v=hiCu-3YNSPQ",
+                href:"https://www.youtube.com/watch?v=hiCu-3YNSPQ",
                 text:"Mind Your Decisions (Youtube)"
             }
         ]
