@@ -8,14 +8,14 @@ export default function About() {
             <Heading>About Nerd Snipes</Heading>
             <Box>
 
-                <TabHeader text='The Developer' width='8.7em' />
+                <TabHeader text='Background' width='7em' />
                 <Avatar size='2xl' name='Dave Broaddus' src={developer} float='left' m={4} />
-                <Text>Hi, I'm Dave.  I've spent my years since undergrad teaching math from high school calculus all the way down to 6th grade. Over the years I have accumulated a collection of problems that, while accessible to a 6th grader, still pose a challenge to the average high school student or adult.  I believe that these sorts of problems offer a unique opportunity for mathematics outreach. </Text>
+                <Text>Hi, I'm Dave.  I've spent my years since undergrad teaching math from high school calculus all the way down to 6th grade. Over the years I have accumulated a collection of problems that, while accessible to a 6th grader, still pose a challenge to the average high school student or adult.  I believe these sorts of problems posses a unique value for mathematics outreach. On countless occasions, I have watched these problems ensnare the minds of students and adults who would otherwise never want to spend time doing math.  The simplicity of these questions disguises the cleverness required for their solution, so many people find process of solving one to be a startlingly compelling mathematical experience. The name of this website comes from the xkcd webcomic "Nerd Sniping," shown below.  I hope that more than just people who self-identify as "nerds" will find themselves enjoying our problems.</Text>
+                <Image src="https://imgs.xkcd.com/comics/nerd_sniping.png" margin='auto'/>
             </Box>
             <Box>
-                <TabHeader text='The Design' width='7em' />
-                <Text>Our name comes from the xkcd webcomic "Nerd Sniping," shown below.</Text>
-                <Image src="https://imgs.xkcd.com/comics/nerd_sniping.png" />
+                <TabHeader text='Design' width='7em' />
+                <Text>If you have ever been to New Mexico, you'll find the symbols and color scheme on this website familiar.  I am a recent transplant to this beautiful State and have loved experiencing its rich visual culture.  The chili pepper difficulty rating, incidentally, is not a reference to the State question ('red or green?'), but rather an homage to my abstract algebra professor Dr. Lovett.   </Text>
             </Box>
         </Box>
     )
