@@ -30,7 +30,7 @@ function Header({ setQuery, onOpen, btnRef }) {
                         onClick={onOpen}
                         color='white'
                         bg='inherit'
-                        borderRadius='50%'
+                        isRound
                         _hover={{ backgroundColor: 'red.800' }}
                         icon={<HamburgerIcon boxSize={7} />} />
                 </> : null
