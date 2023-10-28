@@ -102,7 +102,7 @@ export default function App() {
             <Route path="/" element={<ProblemsList queriedProblems={queriedProblems} />} />
             <Route path="/problem/:id" element={<ProblemDetails />} />
             <Route path="/about" element={<About />} />
-            <Route path="/blank" element={<BlankCard/>}/>
+            <Route path="/blank" element={<BlankCard />} />
             <Route path="*" element={<div>404 not found</div>} />
           </Routes>
         </Flex>
@@ -115,8 +115,7 @@ export default function App() {
           categories={categories}
           setCategories={setCategories}
         />
-        <Spacer />
-        <Footer />
+        <Footer ml={showSidebar? sidebarWidth: 0} width={showSidebar ? `calc(100% - ${sidebarWidth})` : '100%'} />
       </Flex>
     </>
   )

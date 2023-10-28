@@ -32,7 +32,6 @@ export default function ProblemDetails() {
             p={3} m={4}
             direction='column'
             grow='1'
-            // minHeight='80vh'
         >
             <Heading mb={3}> {problem.title}</Heading>
             <Heading size='md'> Difficulty: <Chilis rating={problem.chilis} /></Heading>
