@@ -8,6 +8,7 @@ import Sidebar from './components/Sidebar/Sidebar'
 import SidebarDrawer from './components/Sidebar/SidebarDrawer'
 import ProblemDetails from './components/Problem Details/ProblemDetails'
 import About from './components/Home/About'
+import BlankCard from './components/BlankCard'
 import Footer from './components/Footer'
 
 import { problems } from './problems/data'
@@ -79,7 +80,7 @@ export default function App() {
   return (
     <>
       <Header setQuery={setQuery} onOpen={onOpen} btnRef={btnRef} />
-      <Flex as="main" bg='orange.200' paddingTop={headerHeight} direction='column' grow={1}>
+      <Flex as="main" bg='orange.200' paddingTop={headerHeight} direction='column' grow={1} height='100%'>
         {showSidebar ?
           <Sidebar
             setQuery={setQuery}
@@ -101,7 +102,7 @@ export default function App() {
             <Route path="/" element={<ProblemsList queriedProblems={queriedProblems} />} />
             <Route path="/problem/:id" element={<ProblemDetails />} />
             <Route path="/about" element={<About />} />
-            <Route path="/blank" element={<Blank/>}/>
+            <Route path="/blank" element={<BlankCard/>}/>
             <Route path="*" element={<div>404 not found</div>} />
           </Routes>
         </Flex>
