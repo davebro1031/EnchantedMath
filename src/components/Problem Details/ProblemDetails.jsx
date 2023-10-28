@@ -31,6 +31,7 @@ export default function ProblemDetails() {
             bg={'white'}
             p={3} m={4}
             direction='column'
+            grow='1'
             // minHeight='80vh'
         >
             <Heading mb={3}> {problem.title}</Heading>
