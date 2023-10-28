@@ -17,7 +17,7 @@ export default function InfoMenu() {
             />
             <MenuList border='3px solid #38B2AC'>
                 <MenuItem _hover={{bg:'teal.100'}} onClick={()=>navigate('/about')}>About Nerd Snipes</MenuItem>
-                <MenuItem _hover={{bg:'teal.100'}}>Contact us</MenuItem>
+                <MenuItem _hover={{bg:'teal.100'}}><Link href="mailto:nerdsnipesfeedback@gmail.com" _hover={{textDecoration:'none'}} width='100%'>Contact us</Link></MenuItem>
                 <MenuItem _hover={{bg:'teal.100'}}>Problem submissions</MenuItem>
             </MenuList>
         </Menu>

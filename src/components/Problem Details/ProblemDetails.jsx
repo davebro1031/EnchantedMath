@@ -27,7 +27,12 @@ export default function ProblemDetails() {
 
 
     return (
-        <Flex bg={'white'} p={3} m={4} minHeight='80vh' direction='column' >
+        <Flex
+            bg={'white'}
+            p={3} m={4}
+            direction='column'
+            grow='1'
+        >
             <Heading mb={3}> {problem.title}</Heading>
             <Heading size='md'> Difficulty: <Chilis rating={problem.chilis} /></Heading>
             <Tabs colorScheme='red' flexGrow={1} display={'flex'} flexDirection='column'>
@@ -43,7 +48,7 @@ export default function ProblemDetails() {
                     </TabPanel>
                     {solution ?
                         <TabPanel flexGrow={1} display={'flex'} flexDirection='column'>
-                            <Solutions solution={solution}/>
+                            <Solutions solution={solution} />
                         </TabPanel>
                         : null
                     }
