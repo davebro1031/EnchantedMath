@@ -9,7 +9,7 @@ export default function ProblemSubmissions({ isOpen, onClose }) {
             <AlertDialogOverlay>
                 <AlertDialogContent>
                     <AlertDialogHeader fontSize='lg' fontWeight='bold'>
-                        Delete Customer
+                        Submit a new problem
                     </AlertDialogHeader>
 
                     <AlertDialogBody>
@@ -20,8 +20,8 @@ export default function ProblemSubmissions({ isOpen, onClose }) {
                         <Button onClick={onClose}>
                             Cancel
                         </Button>
-                        <Button colorScheme='red' onClick={onClose} ml={3}>
-                            Delete
+                        <Button colorScheme='teal' onClick={onClose} ml={3}>
+                            Submit
                         </Button>
                     </AlertDialogFooter>
                 </AlertDialogContent>
