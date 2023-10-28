@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react'
-import { Box, useBreakpointValue, useDisclosure } from '@chakra-ui/react'
+import { Box, Flex, Spacer, useBreakpointValue, useDisclosure } from '@chakra-ui/react'
 import { Routes, Route } from 'react-router-dom'
 
 import Header from './components/Header/Header'
@@ -8,6 +8,7 @@ import Sidebar from './components/Sidebar/Sidebar'
 import SidebarDrawer from './components/Sidebar/SidebarDrawer'
 import ProblemDetails from './components/Problem Details/ProblemDetails'
 import About from './components/Home/About'
+import Footer from './components/Footer'
 
 import { problems } from './problems/data'
 
@@ -78,7 +79,7 @@ export default function App() {
   return (
     <>
       <Header setQuery={setQuery} onOpen={onOpen} btnRef={btnRef} />
-      <Box as="main" bg='orange.200' paddingTop={headerHeight} minHeight='100vh'>
+      <Flex as="main" bg='orange.200' paddingTop={headerHeight} direction='column' grow={1}>
         {showSidebar ?
           <Sidebar
             setQuery={setQuery}
@@ -89,19 +90,21 @@ export default function App() {
             setCategories={setCategories}
           />
           : null}
-        <Box
+        <Flex
           as="section"
           position='relative'
           left={showSidebar ? sidebarWidth : 0}
           width={showSidebar ? `calc(100% - ${sidebarWidth})` : '100%'}
-          p={2}>
+          p={2}
+          grow='1'>
           <Routes>
             <Route path="/" element={<ProblemsList queriedProblems={queriedProblems} />} />
             <Route path="/problem/:id" element={<ProblemDetails />} />
-            <Route path="/about" element={<About/>} />
+            <Route path="/about" element={<About />} />
+            <Route path="/blank" element={<Blank/>}/>
             <Route path="*" element={<div>404 not found</div>} />
           </Routes>
-        </Box>
+        </Flex>
         <SidebarDrawer
           isOpen={isOpen}
           onClose={onClose}
@@ -111,7 +114,9 @@ export default function App() {
           categories={categories}
           setCategories={setCategories}
         />
-      </Box>
+        <Spacer />
+        <Footer />
+      </Flex>
     </>
   )
 }
