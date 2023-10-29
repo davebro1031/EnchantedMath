@@ -217,6 +217,14 @@ export const solutions = [
             "If the month starts on a Monday, for example, it will have four full weeks and then an extra Monday, Tuesday, and Wednesday because 31-28 = 3 extra days after the four full weeks.  So if it starts on a Monday, it will have 5 Mondays, 5 Tuesdays, 5 Wednesdays, and 4 of every other kind of day.  It should then be easy to see that the month must start on a Tuesday (so that it has 5 Tuesdays, Wednesdays, and Thursdays, and 4 of every other kind of day) - it is easy to verify that this is the only day it could start on.  So because July 1st is a Tuesday, then the 4th is a Friday."
         ],
         links: null
+    },
+    {
+        id: 24,
+        answer: "30 seconds",
+        solutions: [
+            "The first light flashes when the number of seconds elapsed is a multiple of 6; the second flashes when the time elapsed is a multiple of 10 seconds.  The least common multiple of 6 and 10 is 30 seconds."
+        ],
+        links: null
     }
 
 ]
