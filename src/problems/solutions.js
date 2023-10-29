@@ -205,8 +205,8 @@ export const solutions = [
         ],
         links: [
             {
-                href:"",
-                text: "????"
+                href:"100 Lockers - Youtube",
+                text: "https://www.youtube.com/watch?v=_njfdUQJqio"
             }
         ]
     },
@@ -214,7 +214,7 @@ export const solutions = [
         id: 23,
         answer: "The 4th of July must be a Friday",
         solutions: [
-            "If the month starts on a Monday, for example, it will have four full weeks and then an extra Monday, Tuesday, and Wednesday because 31-28 = 3 extra days after the four full weeks.  So if it starts on a Monday, it will have 5 Mondays, 5 Tuesdays, 5 Wednesdays, and 4 of every other kind of day.  It should then be easy to see that the month must start on a Tuesday (so that it has 5 Tuesdays, Wednesdays, and Thursdays, and 4 of every other kind of day) - it is easy to verify that this is the only day it could start on.  So if July 1st is a Tuesday, then the 4th is a Friday."
+            "If the month starts on a Monday, for example, it will have four full weeks and then an extra Monday, Tuesday, and Wednesday because 31-28 = 3 extra days after the four full weeks.  So if it starts on a Monday, it will have 5 Mondays, 5 Tuesdays, 5 Wednesdays, and 4 of every other kind of day.  It should then be easy to see that the month must start on a Tuesday (so that it has 5 Tuesdays, Wednesdays, and Thursdays, and 4 of every other kind of day) - it is easy to verify that this is the only day it could start on.  So because July 1st is a Tuesday, then the 4th is a Friday."
         ],
         links: null
     }
