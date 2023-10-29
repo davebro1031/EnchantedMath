@@ -189,6 +189,13 @@ export const solutions = [
             }
         ]
     },
-    
+    {
+        id: 20,
+        answer: "10% alcohol, 90% water",
+        solutions: [
+            "We will refer to the 5% solution as 'solution A' and the other as 'solution B.'  We will also refer to the 2 gallons of solution A and 1 gallon of solution B as one 'batch' of mixture. If we make 100 batches of the mixture, it is easy to see that we will use 200 gallons of solution A and 100 gallons of solution B.  Since 5% of the 200 gallons of solution A is alcohol, 10 gallons of those 200 are alcohol.  Similarly because solution B is 20% alcohol, 20 gallons of alcohol are in the 100 gallons of solution B.  So in the 300 gallons of mixture, 10 + 20 = 30 gallons of the resulting solution is alcohol; it is 10% alcohol.  Since each batch is made with the same mixture, each batch will be 10% alcohol."
+        ],
+        links: null
+    }
 
 ]
