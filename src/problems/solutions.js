@@ -175,6 +175,20 @@ export const solutions = [
                 text: "??"
             }
         ]
-    }
+    },
+    {
+        id: 19,
+        answer: "There are 9 such paths",
+        solutions: [
+            "See the video below for a full explanation"
+        ],
+        links: [
+            {
+                href:"",
+                text: "??? - Youtube"
+            }
+        ]
+    },
+    
 
 ]
