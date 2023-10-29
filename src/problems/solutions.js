@@ -162,6 +162,19 @@ export const solutions = [
             "The fourth digit is 7.  The 8th and 12th digits are also 7.  In fact, any digit whose index is divisible by 4 is 7.  So the 320th digit is 7, which means the 321st digit is 1, and then the 322nd digit is 3."
         ],
         links: null
+    },
+    {
+        id: 18,
+        answer: "There is a 3/10 probability that you pass by Jimmy's house",
+        solutions: [
+            "Every shortest path consists of walking South 3 blocks and East 7 blocks; it should be easy to see that every such path can be encoded as a 'word' using the letters 'S' and 'E.'  For example, one path to the grocery store would be 'SSSEEEEEEE' - this is the route where you first walk 3 blocks South along 1st street and then walk 7 blocks East along D avenue.  Another path could go 'ESEESEESEE' Where you walk East one block on A avenue, then walk South one block on 2nd street, then walk East two blocks on B avenue, then walk South one block on 4th, then East two blocks on C, then South one block on 6th, then East two blocks on D. <br><br> Every 'shortest' path from your house to the grocery store can be encoded as a unique 10 letter 'word' consisting of 7 E's and 3 S's.  Every such word corresponds to a unique route.  There is a one-to-one correspondence between these words and the shortest paths.  <br><br> For an explanation of this next step, please see the links below.  For now, take it on good authority that the number of these words is $\\frac{10!}{(7!)(3!)}$ = 120.  There are 120 shortest paths to the grocery store.  Similarly, we can calculate that there are 6 shortest paths to Jimmy's house and there are 6 shortest paths from Jimmy's to the grocery store. There are thus 6 $\\times$ 6 = 36 shortest paths from your house to the grocery store that pass by Jimmy's house (6 choices for the first part, going to Jimmy's, then another 6 choices for the remainder of the trip to the store).  So the probability that we choose one of these 36 routes at random from a pool of 120 is 36/120 = 3/10."
+        ],
+        links: [
+            {
+                href: "",
+                text: "??"
+            }
+        ]
     }
 
 ]
