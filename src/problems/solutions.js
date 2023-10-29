@@ -205,8 +205,8 @@ export const solutions = [
         ],
         links: [
             {
-                href:"100 Lockers - Youtube",
-                text: "https://www.youtube.com/watch?v=_njfdUQJqio"
+                href: "https://www.youtube.com/watch?v=_njfdUQJqio",
+                text:"100 Lockers - Youtube",
             }
         ]
     },
