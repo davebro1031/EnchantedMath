@@ -34,22 +34,23 @@ export default function ProblemSubmissions({ isOpen, onClose }) {
                     </AlertDialogHeader>
 
                     <Formik
-                        initialValues={{ user_email: '', topic: '', message: '' }}
+                        initialValues={{ user_email: '', title: '', problem: '', solution: '' }}
                         validate={values => {
                             const errors = {};
                             if (values.user_email && !values.user_email.includes('@')) errors.user_email = 'Invalid email address';
-                            if (!values.topic || values.topic === "-- select one --") errors.topic = 'Select a topic';
-                            if (!values.message) errors.message = 'Cannot be blank'
+                            if (!values.title) errors.title = 'Please suggest a title';
+                            if (!values.problem) errors.problem = 'Cannot be blank';
+                            if (!values.solution) errors.solution = 'Please write a solution or provide a link to one'
                             return errors;
                         }}
                         onSubmit={(values, { setSubmitting }) => {
                             setTimeout(() => {
 
-                                emailjs.sendForm('service_1k8zvyk', 'template_rnm6u4q', form.current, '3JjiwyeBApVMWrxjU')
+                                emailjs.sendForm('service_1k8zvyk', 'template_qqqt1zj', form.current, '3JjiwyeBApVMWrxjU')
                                     .then((result) => {
                                         toast({
                                             title: 'Message sent',
-                                            description: 'Thank you for your feedback!',
+                                            description: 'Thank you for your submission!',
                                             status: 'success',
                                             duration: 3000,
                                             isClosable: true
@@ -67,9 +68,7 @@ export default function ProblemSubmissions({ isOpen, onClose }) {
 
 
                                 setSubmitting(false)
-                                values.user_email = ""
-                                values.topic = "-- select one --"
-                                values.message = ""
+                                onClose()
                             }, 1000)
 
                         }}
@@ -87,28 +86,32 @@ export default function ProblemSubmissions({ isOpen, onClose }) {
                                         )}
                                     </Field>
 
-                                    <Field name='topic' >
+                                    <Field name='title' >
                                         {({ field, form }) => (
-                                            <FormControl mt={4} isInvalid={form.errors.topic && form.touched.topic}>
-                                                <FormLabel>Subject</FormLabel>
-                                                <Select {...field} placeholder='-- select one --'>
-                                                    <option value="suggested change">Suggest change</option>
-                                                    <option value="new solution">New solution</option>
-                                                    <option value="correction">Corrections</option>
-                                                    <option value="comment">Comments</option>
-                                                    <option value="other feedback">Other</option>
-                                                </Select>
-                                                <FormErrorMessage>{form.errors.topic}</FormErrorMessage>
+                                            <FormControl isInvalid={form.errors.title && form.touched.title} >
+                                                <FormLabel>Title</FormLabel>
+                                                <Input {...field} focusBorderColor='teal.500' />
+                                                <FormErrorMessage>{form.errors.title}</FormErrorMessage>
                                             </FormControl>
                                         )}
                                     </Field>
 
-                                    <Field name='message' >
+                                    <Field name='problem' >
                                         {({ field, form }) => (
-                                            <FormControl isInvalid={form.errors.message && form.touched.message} mt={4}>
-                                                <FormLabel>Message</FormLabel>
-                                                <Textarea {...field} placeholder='message' resize='vertical' focusBorderColor='teal.500' />
-                                                <FormErrorMessage>{form.errors.message}</FormErrorMessage>
+                                            <FormControl isInvalid={form.errors.problem && form.touched.problem} mt={4}>
+                                                <FormLabel>Problem</FormLabel>
+                                                <Textarea {...field} resize='vertical' focusBorderColor='teal.500' />
+                                                <FormErrorMessage>{form.errors.problem}</FormErrorMessage>
+                                            </FormControl>
+                                        )}
+                                    </Field>
+
+                                    <Field name='solution' >
+                                        {({ field, form }) => (
+                                            <FormControl isInvalid={form.errors.solution && form.touched.solution} mt={4}>
+                                                <FormLabel>Solution</FormLabel>
+                                                <Textarea {...field} resize='vertical' focusBorderColor='teal.500' />
+                                                <FormErrorMessage>{form.errors.solution}</FormErrorMessage>
                                             </FormControl>
                                         )}
                                     </Field>
