@@ -111,5 +111,19 @@ export const solutions = [
                 text: "Mind Your Decisions - Youtube"
             }
         ]
+    },
+    {
+        id: 13,
+        answer: "2/3rds of the bottle is filled",
+        solutions: [
+            "Imagine that we have a second bottle with the same volume, but doesn't taper at the top (it will thus be shorter than the given bottle, of course).  We pour the same amount of water into our second bottle.  The water again fills it up to the 12cm mark.  It is also easy to see that because the volume of air in both bottles must be equal, there must be 6cm remaining to the top of the bottle (we can see that is how much air is in the given bottle when we flip it upside down).  So both bottles are 2/3rds filled."
+        ],
+        links: [
+            {
+                href: "https://www.youtube.com/watch?v=L9XxPr3xuQU",
+                text: "Mind Your Decisions - Youtube"
+            }
+        ]
     }
+    
 ]
