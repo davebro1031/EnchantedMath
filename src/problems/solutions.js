@@ -133,7 +133,7 @@ export const solutions = [
         ],
         links: [
             {
-                herf: "https://en.wikipedia.org/wiki/Eulerian_path",
+                href: "https://en.wikipedia.org/wiki/Eulerian_path",
                 text: "Eulerian path - Wikipedia" 
             },
         ]
@@ -184,8 +184,8 @@ export const solutions = [
         ],
         links: [
             {
-                href:"",
-                text: "??? - Youtube"
+                href:"https://www.youtube.com/watch?v=LUVKuyfpe2I&t=49s",
+                text: "Zhuli - Youtube"
             }
         ]
     },
