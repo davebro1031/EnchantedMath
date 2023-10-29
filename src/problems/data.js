@@ -179,7 +179,7 @@ export const problems = [
     },
     {
         id: 15,
-        title: "Bridges of Konigsberg",
+        title: "Bridges of Königsberg",
         text: "In a certain town, there is a river that splits and rejoins and splits again, forming an island in the center of town.  There are 7 bridges in this town, and the townsfolk hold a competition to see who can find a bicycle path through the town that crosses each bridge exactly once. Try to find a winning path.",
         hints: null,
         wrongAnswers: null,

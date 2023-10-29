@@ -142,16 +142,16 @@ export const solutions = [
         id: 15,
         answer: "It is impossible",
         solutions: [
-            "Please see the links below for a full solution"
+            "Please see the links below for a full solution.  The first is a video series by Eddie Woo.  It may not be the briefest explanation you'll find out there but his energy and clarity of exposition is truly exceptional - I cannot overstate my admiration for Eddie Woo's instructional presence."
         ],
         links: [
             {
-                href: "",
-                text: "The Bridges of Konigsberg - Youtube"
+                href: "https://www.youtube.com/watch?v=yaozMlBL7Mk&list=PL5KkMZvBpo5DHyEf5LCbd8fs_yfIIIk_8",
+                text: "Eddie Woo - Youtube"
             },
             {
-                href: "",
-                text: "The Bridges of Konigsberg - Wikipedia"
+                href: "https://en.wikipedia.org/wiki/Seven_Bridges_of_K%C3%B6nigsberg",
+                text: "Seven Bridges of Königsberg - Wikipedia"
             }
         ]
     },
