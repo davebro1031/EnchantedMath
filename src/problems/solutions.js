@@ -383,6 +383,19 @@ export const solutions = [
                 text: "Pigeonhole Principle - Wikipedia"
             }
         ]
+    },
+    {
+        id: 47,
+        answer: "120 ways",
+        solutions: [
+            "Begin by giving Spencer three pennies, Nadav two, and Ryan one.  There are now 11 pennies left to distribute, and we must distribute them in such a way that each child gets at least one.  Line up the pennies in a row and take 3 colored pencils (red, blue, and yellow - we will use the colors later) which we will use as dividers.  There are 10 spaces between the 11 pennies for us to place the 3 pencils and we will place them so that each pencil occupies a different space than the others. Any placement of pencils in this way divides the pennies into four groups, so that Spencer gets the first group, Nadav gets the second, Ryan the third, and Jude the fourth.  For example, we could place the pencils into the first three spots and the result would look like: o|o|o|oooooooo, where 'o' represents a penny and '|' represents a pencil.  With this placement, Spencer, Nadav, and Ryan would each get one additional penny, while Jude would recieve 8.  Placements of pencils are in one-to-one correspondence with ways to distribute the remaining 11 pennies in such a way that each child gets at least one, so we need only count pencil placements.  We have 10 choices for the red pencil's placement, then 9 choices for the blue, and finally 8 for the yellow.  However, the colors of the pencils do not affect the division of the pennies.  Indeed, for any of the 10 $\\times$ 9 $\\times$ 8 = 720 placements of the pencils, we could shuffle the 3 pencils into any order of red, blue, and yellow, without producing a different division of pennies.  Since there are 3 $\\times$ 2 $\\times$ 1 = 6 ways that we can shuffle the three colors, then we have over-counted the number of ways we can distribute the pennies by a factor of 6.  There are thus 720 / 6 = 120 different ways that we could distribute the remaining 11 pennies among the 4 boys so that each gets one."
+        ],
+        links: [
+            {
+                href: "https://en.wikipedia.org/wiki/Stars_and_bars_(combinatorics)",
+                text: "Stars and Bars - Wikipedia"
+            }
+        ]
     }
 
 
