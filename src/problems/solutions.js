@@ -225,6 +225,16 @@ export const solutions = [
             "The first light flashes when the number of seconds elapsed is a multiple of 6; the second flashes when the time elapsed is a multiple of 10 seconds.  The least common multiple of 6 and 10 is 30 seconds."
         ],
         links: null
+    },
+    {
+        id: 25,
+        answer: "45 minutes",
+        solutions: [
+            "if three hoses take 60 minutes, then twelve would take 15.  If twelve hoses take 15 minutes, then four take 45.",
+            "If three hoses take 60 minutes, then one would take 180 minutes.  If one hose would take 180 minutes, then four hoses would take 180/4 = 45.",
+            "The pool contains 2.5 gal/min * 60 min * 3 hoses = 450 gallons of water. Four hoses working together pump 2.5 * 4 = 10 gallons per minute, so it takes 45 minutes.  Note that this solution used the flow rate, but it is clear from the above examples that the flow rate <em> was not needed.</em>"
+        ],
+        links: null
     }
 
 ]
