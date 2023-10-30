@@ -324,6 +324,14 @@ export const solutions = [
             "We will refer to our solution as a 'word' consisting of the letters A, B, C, D, E, and F. We are told that Amy sits next to Ben and Ben sits next to Eddie, so we have either ABE or EBA in our word.  We are also told that Amy sits somewhere to Eddie's right, so we must have EBA. We are told Amy sits somewhere to Carls right, which means the C must appear before the EBA block. Similarly, we are told Eddie sits somewhere to Fiona's left, so F must appear after EBA.  Since Carl and Diane do not sit by one another, we must have that Diana also appears after EBA as well.  So we have either CEBADF or CEBAFD.  Finally, we are told that Diana sits somewhere to Fiona's left, so it must be that the order is CEBADF."
         ],
         links: null
+    },
+    {
+        id: 41,
+        answer: "7oz of pitcher A and 3oz of pitcher B",
+        solutions: [
+            "Suppose we start with 10oz of pitcher A.  That will be only 80% water, which is too low of a percentage.  On the other hand, if we replace 5oz of pitcher A with 5oz of pitcher B, it is easy to see that the resulting mixture will be 85% water, which is too watery. Furthermore, if you had instead replaced all 10 oz of pitcher A with 10 oz of pitcher B, your resulting solution would be much too watery; it would be 90% water.  It might seem pointless to go even further past 85%, but we did so to point out a relationship between replacing ounces and increases in the resulting percentage:  If we replace 5oz, the water percentage increases by 5%; if we replace 10oz, the percentage increases by 10%.  This isn't by any means a <em>proof</em> that the relationship between those quantities is linear, it is simply just an effort to make that suspicion seem reasonable.  Under this suspicion, we guess that if we start with 10oz of pitcher A and replace 3oz with pitcher B, then the resulting juice will be 83% water.  It is easy to verify that this is the case: $\\frac{0.8(7)+0.9(3)}{10}$ = 0.83"
+        ],
+        links: null
     }
 
 
