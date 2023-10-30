@@ -321,7 +321,7 @@ export const problems = [
     },
     {
         id: 31,
-        title: "Matchstick houses",
+        title: "Toothpick houses",
         text: "In the image below, 6 toothpicks are used to form Figure 1.  11 toothpicks are used to form Figure 2, and 16 toothpicks are used to form Figure 3.  How many toothpicks would be needed to form Figure 50?",
         hint: [
             "How many toothpicks does each ADDITIONAL house take?"
