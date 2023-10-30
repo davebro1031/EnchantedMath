@@ -275,6 +275,17 @@ export const solutions = [
             "There are other patterns going on but I think the simplest is this:  All of the squares are red, all of the hexagons are blue, and all but ONE of the circles are yellow.  The circle in shape 6 should also be yellow."
         ],
         links: null
+    },
+    {
+        id: 34,
+        answer: "129 times",
+        solutions: [
+            "They start in the same location.  The first time that the two share a location on the track again is at the precise second that the slower person finishes his first lap (the faster person will be finishing her second lap).  This process will repeat with every lap completed by the slower runner, so we simply calculate: 4 laps/mile * 4 miles/hr * 8 hrs = 128 laps, plus the start of the race gives 129 times that the two runners are in the same place."
+        ],
+        links: null
+    },
+    {
+        // id: 
     }
 
 
