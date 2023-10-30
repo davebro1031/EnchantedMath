@@ -494,7 +494,7 @@ export const problems = [
     {
         id: 48,
         title: "Runnin up that hill",
-        text: "A boy ran up a hill at 3 mph and came down the hill at 9 mph. The trip took him 6 hours.  How far, in miles, is it to the top of the hill?",
+        text: "Kate ran up a hill at 4 mph and came down the hill at 6 mph. The whole trip took her 2 hours.  How far, in miles, is it to the top of the hill?",
         hints: null,
         wrongAnswers: null,
         categories: [

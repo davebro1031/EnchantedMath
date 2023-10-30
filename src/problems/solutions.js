@@ -128,13 +128,13 @@ export const solutions = [
     {
         id: 14,
         answer: "His route must begin and end at intersections C and D (in either order)",
-        solutions:[
+        solutions: [
             'We will call continuous sections of road that are uninterrupted by intersections "segments." Any valid path through the neighborhood will visit each segment at least once (or else the postman would miss some houses on his route).  A shortest path through the neighborhood, then, would ideally visit each segment exactly once (no more than is needed). It is not necessarily clear from the outset, however, that this is possible.  We will demonstrate that it is indeed possible and give a simple general criterion that will help decide whether it is possible for any other neighborhood map (even ones far more complicated than this).  <br></br> Note that intersections C and D each join 3 road segments, while A, B, and E each join 4. Whenever the postman passes through an intersection, he enters on one segment and then leaves on another.  So when he passes through an intersection, he uses up two of its segments. This means he can pass through each of A, B, and E exactly twice, but he cannot pass through each of C and D more than once.  When he passes through C, for example, he uses up two of its 3 segments, leaving only one segment untraveled.  So the next time he visits C, he <em>must</em> stop; C must be an endpoint (or a starting point, of course).  Similarly, D must be an endpoint. You will find that it is easy to draw a route starting at C and ending at D that traverses each segment exactly once.  <br></br>Notice that what caused C and D to be endpoints was the fact that they both joined an <em>odd</em> number of segments.  Clearly, if there had more than two such intersections, it would have been impossible to draw a path that traversed each segment exactly once.  As it turns out, it is only possible to draw such a path when there are either precisely two "odd" intersections or there are none.  In the case that there are none, one can draw such a path by starting and ending at any of the given intersections. For proofs and more of the history on this problem, see the article below or research Eulerian paths.'
         ],
         links: [
             {
                 href: "https://en.wikipedia.org/wiki/Eulerian_path",
-                text: "Eulerian path - Wikipedia" 
+                text: "Eulerian path - Wikipedia"
             },
         ]
     },
@@ -184,7 +184,7 @@ export const solutions = [
         ],
         links: [
             {
-                href:"https://www.youtube.com/watch?v=LUVKuyfpe2I&t=49s",
+                href: "https://www.youtube.com/watch?v=LUVKuyfpe2I&t=49s",
                 text: "Zhuli - Youtube"
             }
         ]
@@ -206,7 +206,7 @@ export const solutions = [
         links: [
             {
                 href: "https://www.youtube.com/watch?v=_njfdUQJqio",
-                text:"100 Lockers - Youtube",
+                text: "100 Lockers - Youtube",
             }
         ]
     },
@@ -244,8 +244,8 @@ export const solutions = [
         ],
         links: [
             {
-                href:"https://en.wikipedia.org/wiki/Chinese_remainder_theorem",
-                text:"Chinese Remainder Theorem - Wikipedia"
+                href: "https://en.wikipedia.org/wiki/Chinese_remainder_theorem",
+                text: "Chinese Remainder Theorem - Wikipedia"
             }
         ]
     },
@@ -395,6 +395,13 @@ export const solutions = [
                 href: "https://en.wikipedia.org/wiki/Stars_and_bars_(combinatorics)",
                 text: "Stars and Bars - Wikipedia"
             }
+        ]
+    },
+    {
+        id: 48,
+        answer: "",
+        solutions: [
+            "We can use the least common multiple of 4 and 6: if it were 12 miles to the top, it would take her 12 mi / 4 mph = 3 hours to go up and 12 mi / 6 mph = 2 hours to go down; the trip would take her 5 hours. If a 12 mile hill takes 5 hours, then a 2.4 mile hill takes 1 hour.  Since the trip took 2 hours, the hill must be 4.8 miles to the top."
         ]
     }
 
