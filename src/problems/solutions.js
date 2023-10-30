@@ -268,6 +268,14 @@ export const solutions = [
         ],
         links: null
     },
-    
+    {
+        id: 33,
+        answer: "In shape 6, the circle should be yellow",
+        solutions: [
+            "There are other patterns going on but I think the simplest is this:  All of the squares are red, all of the hexagons are blue, and all but ONE of the circles are yellow.  The circle in shape 6 should also be yellow."
+        ],
+        links: null
+    }
+
 
 ]
