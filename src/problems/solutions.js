@@ -235,6 +235,19 @@ export const solutions = [
             "The pool contains 2.5 gal/min * 60 min * 3 hoses = 450 gallons of water. Four hoses working together pump 2.5 * 4 = 10 gallons per minute, so it takes 45 minutes.  Note that this solution used the flow rate, but it is clear from the above examples that the flow rate <em> was not needed.</em>"
         ],
         links: null
+    },
+    {
+        id: 26,
+        answer: "59 members",
+        solutions: [
+            "Honestly, the easiest way to solve this problem is via guess and check:  Start with the largest number: 20.  There could be 39, 59, 79, 99, etc. members in the choir.  It is easy to see, however, that 39 cannot be the number of members in the choir because when 39 people are arranged in groups of 12, for example, there are 3 members in the last row, not 11.  At a moments glance, we notice that 59 members is possible and that it is the smallest possible number.  The Chinese Remainder Theorem has a close connection to this problem, you may enjoy reading further about these sorts of puzzles."
+        ],
+        links: [
+            {
+                href:"https://en.wikipedia.org/wiki/Chinese_remainder_theorem",
+                text:"Chinese Remainder Theorem - Wikipedia"
+            }
+        ]
     }
 
 ]
