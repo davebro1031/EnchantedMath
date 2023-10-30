@@ -307,17 +307,6 @@ export const problems = [
         chilis: 1
     },
     {
-        id: 28,
-        title: "Simple subs",
-        text: "Mark and Juanita own a sandwich shop.  They offer 3 kinds of breads, 5 kinds of meats, and 3 kinds of cheeses.  Each type of sandwich consists of a combination of 1 type of bread, 1 type of meat, and 1 type of cheese.  How many types of sandwiches are possible?",
-        hints: null,
-        wrongAnswers: null,
-        categories: [
-            "combinatorics"
-        ],
-        chilis: 0
-    },
-    {
         id: 29,
         title: "Counting diagonals",
         text: "A square has two diagonals, a pentagon has five.  How many diagonals does an octagon have?",

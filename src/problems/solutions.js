@@ -248,6 +248,19 @@ export const solutions = [
                 text:"Chinese Remainder Theorem - Wikipedia"
             }
         ]
+    },
+    {
+        id: 29,
+        answer: "20 diagonals",
+        solutions: [
+            "Choose a vertex and draw every possible diagonal from that vertex as a ray originating at that point.  You will have drawn 5 rays, because of the 8 vertices on the octagon there are exactly 3 to which no diagonal can be drawn: the vertex you started with and its two immediate neighbors.  Imagine repeating this same process for each of the remaining 7 vertices.  By the time you finish, you will have drawn 8 $\\times$ 5 = 40 rays.  The number of diagonals, however, is not 40.  Each diagonal, of course, will have been covered exactly twice by this process, so there are in fact 40/2 = 20 distinct diagonals appearing in our final drawing.  We note that this method clearly extends to a formula for the number of diagonals in a regular $n$-sided polygon: $\\frac{n(n-3)}{2}$",
+            "Start with a square and draw its two diagonals.  Now add a new vertex bisecting one edge of the square, and deform it into a pentagon.  This process will add 3 new diagonals: 2 diagonals drawn from the new vertex to each of the two vertices not belonging to the bisected edge and a new diagonal now joining the vertices whose edge was bisected.  There are thus 2 + 3 = 5 diagonals now. Repeat this process, forming a hexagon. Doing so will produce four new diagonals: one for each of the three vertices not belonging to the bisected edge and one joining the vertices whose edge was bisected.  So the hexagon has 5 + 4 = 9 diagonals.  In this same way, we find that the heptagon has 9 + 5 = 14 diagonals, and the octagon has 14 + 6 = 20 diagonals."
+        ],
+        links: null
+    },
+    {
+        id: 31,
+        answer: "251 toothpicks"
     }
 
 ]
