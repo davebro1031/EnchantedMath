@@ -260,7 +260,14 @@ export const solutions = [
     },
     {
         id: 31,
-        answer: "251 toothpicks"
-    }
+        answer: "251 toothpicks",
+        solutions: [
+            "Note that while the first house requires 6 toothpicks, each <em>additional</em> house requires only an <em>additional</em> 5 toothpicks.  So in some sense, we could consider the '0th' house to be a single vertical toothpick (the lefthand 'wall' of the first house). From this perspective, if we wanted to get 3 houses, for example, we would just take that 1 toothpick and add an <em>additional</em> 3 $\\times$ 5 = 15 toothpicks to it: it takes 1 + 15 = 16 toothpicks to get 3 houses.  In the same way, to get 50 houses, we simply need 1 + 5 $\\times$ 50 = 251 toothpicks.",
+            "Again note that while the first house requires 6 toothpicks, each <em>additional</em> house requires only an <em>additional</em> 5 toothpicks.  So to get 50 houses, we need 6 toothpicks for the first house and then 5 toothpicks for each of the 49 remaining houses:  6 + 5 $\\times$ 49 = 251 toothpicks.",
+            "Each house, if it stood alone, would need 6 toothpicks.  So if we had 50 houses that were separate, we would need 6 $\\times$ 50 = 300 toothpicks.  However, by adjoining the houses as they are in these figures, we save toothpicks.  In fact, we save exactly 1 toothpick for each shared wall.  If there are 50 houses, then there are 49 shared walls and hence the final diagram will use 300 - 49 = 251 toothpicks.",
+        ],
+        links: null
+    },
+    
 
 ]
