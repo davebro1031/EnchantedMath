@@ -299,7 +299,25 @@ export const solutions = [
             "(100 - 99) + (98 - 97) + (96 - 95) + ... + (2 -1) = 1 + 1 + 1 ... + 1 = 1(50) = 50"
         ],
         links: null
+    },
+    {
+        id: 37,
+        answer: "32",
+        solutions: [
+            "It is easy to show that for a given area, the rectangle with smallest perimeter is a square. One can use the calculus of a single variable, Lagrange multipliers, quadratic algebra, the AM-GM inequality, and other methods to show that this is true.  For this problem, however, a square cannot be the solution because the sides must be integers and 60 is not a perfect square. 6 by 10 is the closest we can get to a square under this constraint, so the minimum perimeter is 32.  If you do not feel convinced by this argument, feel free to check the perimeters of rectangles with dimensions 5$\\times$12, 4$\\times$15, 3$\\times$20, 2$\\times$30, and 1$\\times$60."
+        ],
+        links: [
+            {
+                href: "https://www.youtube.com/watch?v=Nk1JpxwbKhQ",
+                text: "The square has minimum perimeter for a given area - calculus"
+            },
+            {
+                href: "https://en.wikipedia.org/wiki/AM-GM_Inequality#Geometric_interpretation",
+                text: "AM-GM inequality - Wikipedia"
+            }
+        ]
     }
+
 
 
 ]
