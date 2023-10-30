@@ -470,7 +470,7 @@ export const problems = [
     {
         id: 46,
         title: "Mixed nuts",
-        text: "Three kinds of nuts are mixed in a can.  You begin taking them out, one by one, and sorting them into piles according to their type.  How many nuts must you take out to ensure that at least one of your piles has at least 5 nuts in it?",
+        text: "Three kinds of nuts are mixed in a can.  You begin taking them out one by one and sorting them into piles according to their type.  How many nuts must you take out to ensure that at least one of your piles has at least 5 nuts in it?",
         hints: null,
         wrongAnswers: null,
         categories: [

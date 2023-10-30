@@ -373,11 +373,16 @@ export const solutions = [
     },
     {
         id: 46,
-        answer: "",
+        answer: "13 nuts",
         solutions: [
-            ""
+            "If you draw 12 nuts, it is possible (although unlikely) that you draw 4 of each type, so that each pile has only 4 nuts in it. This is the <em>only</em> way for each of the three piles to contain fewer than 5 nuts. In this case, drawing one more nut means that one of the piles will have 5.  Clearly, it is possible that you reach a pile of size 5 much sooner than the 13th draw (if, for example, the first five nuts are all of the same type), but 13 is the smallest number of draws that guarantees at least one of the piles to have 5 nuts (or more)."
         ],
-        links: null
+        links: [
+            {
+                href: "https://en.wikipedia.org/wiki/Pigeonhole_principle",
+                text: "Pigeonhole Principle - Wikipedia"
+            }
+        ]
     }
 
 
