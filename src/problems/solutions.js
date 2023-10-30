@@ -342,7 +342,13 @@ export const solutions = [
         links: null
     },
     {
-        // id: 
+        id: 43,
+        answer: "55%",
+        solutions: [
+            "Suppose the test has 100 points on it.  If four kids take the test and their collective average was 80%, that means that they collectively earned 320 out of the 400 possible points among them, because 320 is 80% of 400.   If 5 kids take the test and their average is 75%, then that means they earned 375 out of the 500 possible points.  The last student, therefore, earned 375 - 320 = 55 of the 100 possible points on his test; he scored a 55%.",
+            "Call the fifth student Dave. If Dave had gotten an 80%, the average would have remained exactly 80%.  However, because the average went down by 5%, that means his score was so far below the average that the result was as if <em>every student in the class lost 5% off their score.</em>  There are 5 students in the class, so we know that the class total is 5$\\times$5% = 25% lower than what it would have been if Dave had gotten an 80%.  Since the other students scores are fixed, we know that the 25% was lost from Dave's score.  Dave therefore, earned 80% - 25% = 55% on his exam."
+        ],
+        links: null
     }
 
 
