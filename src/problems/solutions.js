@@ -349,6 +349,19 @@ export const solutions = [
             "Call the fifth student Dave. If Dave had gotten an 80%, the average would have remained exactly 80%.  However, because the average went down by 5%, that means his score was so far below the average that the result was as if <em>every student in the class lost 5% off their score.</em>  There are 5 students in the class, so we know that the class total is 5$\\times$5% = 25% lower than what it would have been if Dave had gotten an 80%.  Since the other students scores are fixed, we know that the 25% was lost from Dave's score.  Dave therefore, earned 80% - 25% = 55% on his exam."
         ],
         links: null
+    },
+    {
+        id: 44,
+        answer: "32,400",
+        solutions: [
+            "For a given integer $n$ with prime factorization $n = p_{1}^{\\alpha_{1}}p_{2}^{\\alpha_{2}}...p_{k}^{\\alpha_{k}}$, $n$ has exactly $(\\alpha_{1} + 1)(\\alpha_{2} + 1)(...)(\\alpha_{k} + 1)$ factors.  In order for a number to have 75 factors (an odd number of factors), it must be a square.  We also must be a square multiple of 225, because that is the smallest square number containing 75.  225 has 9 factors, and 9 doesn't go into 75, so we need to use either more 3s or more 5s to get to a number of factors that does.  3s are better because we want the smallest number, so we multiply by 9.  Doing so results in a number with 15 factors, which is great.  So now we just need to multiply by some number $p^4$, where $p\\neq$3, p$\\neq$5, which will multiply the number of factors by 5 (and then we will have 75 factors).  The smallest choice of p is 2, so we have 225 $\\times$ 9 $\\times 2^4$ = 32,400.  This solution was probably not super clear, so in the future I will be making a video with lattice diagrams to help explain the formula used because it is a truly beautiful bit of mathematics."
+        ],
+        links: [
+            {
+                href: "https://artofproblemsolving.com/wiki/index.php/1990_AIME_Problems/Problem_5",
+                text: "AIME - 1990"
+            }
+        ]
     }
 
 
