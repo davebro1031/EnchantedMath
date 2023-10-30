@@ -418,7 +418,7 @@ export const problems = [
     {
         id: 42,
         title: "Office supplies",
-        text: "A pencil and five paper clips weighs the same as two erasers. A pencil weighs the same as 29 paper clips.  How many paper clips weigh the same as 3 erasers and two pencils?",
+        text: "A pencil and five paper clips weighs the same as two erasers. A pencil weighs the same as 29 paper clips.  How many paper clips weigh the same as three erasers and two pencils?",
         hints: null,
         wrongAnswers: null,
         categories: [

@@ -332,6 +332,17 @@ export const solutions = [
             "Suppose we start with 10oz of pitcher A.  That will be only 80% water, which is too low of a percentage.  On the other hand, if we replace 5oz of pitcher A with 5oz of pitcher B, it is easy to see that the resulting mixture will be 85% water, which is too watery. Furthermore, if you had instead replaced all 10 oz of pitcher A with 10 oz of pitcher B, your resulting solution would be much too watery; it would be 90% water.  It might seem pointless to go even further past 85%, but we did so to point out a relationship between replacing ounces and increases in the resulting percentage:  If we replace 5oz, the water percentage increases by 5%; if we replace 10oz, the percentage increases by 10%.  This isn't by any means a <em>proof</em> that the relationship between those quantities is linear, it is simply just an effort to make that suspicion seem reasonable.  Under this suspicion, we guess that if we start with 10oz of pitcher A and replace 3oz with pitcher B, then the resulting juice will be 83% water.  It is easy to verify that this is the case: $\\frac{0.8(7)+0.9(3)}{10}$ = 0.83"
         ],
         links: null
+    },
+    {
+        id: 42,
+        answer: "109 paperclips",
+        solutions: [
+            "A pencil is 29 paper clips, so a pencil and 5 paper clips weighs the same as 34 paper clips.  Since two erasers are equivalent to a pencil and 5 paper clips, then two erasers is equivalent to 34 paper clips; each eraser must be 17 paper clips.  Then three erasers and two pencils is equivalent to 17(3) + 29(2) = 109 paper clips."
+        ],
+        links: null
+    },
+    {
+        // id: 
     }
 
 
