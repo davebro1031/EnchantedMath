@@ -285,7 +285,12 @@ export const solutions = [
         links: null
     },
     {
-        // id: 
+        id: 35,
+        answer: "41 years old",
+        solutions: [
+            "Five years ago, his daughter was 12.  At that time, he was three times her age, so Ben was 36.  If Ben was 36 five years ago, then he is 41 years old now."
+        ],
+        links: null
     }
 
 

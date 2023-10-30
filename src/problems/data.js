@@ -350,7 +350,7 @@ export const problems = [
         hints: null,
         wrongAnswers: null,
         categories: [
-            "prime factors"
+            "potpourri"
         ],
         chilis: 1
     },
