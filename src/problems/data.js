@@ -396,7 +396,7 @@ export const problems = [
     {
         id: 39,
         title: "Ducks in a line",
-        text: "When six ducks sit next to each other in a row on a log, Amy sits next to Ben, Carl does not sit next to Diane, and Eddie sits somewhere to Fiona’s left.  In addition, Amy sits somewhere to Carl’s right, Ben sits next to Eddie, and Diane sits somewhere to Fiona’s left.  If Amy is somewhere to Eddie’s right, what are the initials of the friends from left to right?",
+        text: "When six ducks sit next to each other in a row on a log, Amy sits next to Ben, Carl does not sit next to Diane, and Eddie sits somewhere to Fiona's left.  In addition, Amy sits somewhere to Carl's right, Ben sits next to Eddie, and Diane sits somewhere to Fiona's left.  If Amy is somewhere to Eddie's right, what are the initials of the friends from left to right?",
         hints: null,
         wrongAnswers: null,
         categories: [

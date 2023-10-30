@@ -316,6 +316,14 @@ export const solutions = [
                 text: "AM-GM inequality - Wikipedia"
             }
         ]
+    },
+    {
+        id: 39,
+        answer: "CEBADF",
+        solutions: [
+            "We will refer to our solution as a 'word' consisting of the letters A, B, C, D, E, and F. We are told that Amy sits next to Ben and Ben sits next to Eddie, so we have either ABE or EBA in our word.  We are also told that Amy sits somewhere to Eddie's right, so we must have EBA. We are told Amy sits somewhere to Carls right, which means the C must appear before the EBA block. Similarly, we are told Eddie sits somewhere to Fiona's left, so F must appear after EBA.  Since Carl and Diane do not sit by one another, we must have that Diana also appears after EBA as well.  So we have either CEBADF or CEBAFD.  Finally, we are told that Diana sits somewhere to Fiona's left, so it must be that the order is CEBADF."
+        ],
+        links: null
     }
 
 
