@@ -399,10 +399,22 @@ export const solutions = [
     },
     {
         id: 48,
-        answer: "",
+        answer: "4.8 miles to the top",
         solutions: [
             "We can use the least common multiple of 4 and 6: if it were 12 miles to the top, it would take her 12 mi / 4 mph = 3 hours to go up and 12 mi / 6 mph = 2 hours to go down; the trip would take her 5 hours. If a 12 mile hill takes 5 hours, then a 2.4 mile hill takes 1 hour.  Since the trip took 2 hours, the hill must be 4.8 miles to the top."
-        ]
+        ],
+        links: null
+    },
+    {
+        id: 49,
+        answer: "20 mph",
+        solutions: [
+            "The distance to the zoo is not given, so let us suppose that it is 60 miles away (the reason we chose 60 miles will soon become apparent). Then, because the average speed for the entire trip is 24 mph, the entire 120 mile journey will have taken 5 hours.  Similarly we know that it took him 2 hours to get there because he drove 30mph for the 60 mile journey there.  This means that the 60 mile return turn trip took him 3 hours; he drove 60 / 3 = 20 mph on the way back.  In this solution, we chose 60 miles because it is the smallest multiple of 30 whose double (120) is a multiple of 24, but it turns out that choosing any other distance would yeild the same result."
+        ],
+        links: null
+    },
+    {
+        // id: 
     }
 
 
