@@ -362,6 +362,22 @@ export const solutions = [
                 text: "AIME - 1990"
             }
         ]
+    },
+    {
+        id: 45,
+        answer: "0",
+        solutions: [
+            "The number will have 2 and 5 as factors, so it will be a multiple of 10."
+        ],
+        links: null
+    },
+    {
+        id: 46,
+        answer: "",
+        solutions: [
+            ""
+        ],
+        links: null
     }
 
 
