@@ -20,6 +20,7 @@ export default function Problem({ problem, image }) {
                         boxSize='100%'
                         maxWidth={image.float ? floatMaxWidth : '500px'}
                         float={['', image.float, image.float]}
+                        height='auto'
                         p='4' />
                     :
                     null
