@@ -97,20 +97,6 @@ export const problems = [
         chilis: 2
     },
     {
-        id: 8,
-        title: "The piggy bank",
-        text: "A piggy bank is filled with coins: nickles, dimes, and quarters (these are the only types). For every 2 nickels there are 3 dimes.  For every 2 dimes there are 5 quarters. If there are 500 coins in total, how much money is in the piggy bank?",
-        hints: [
-            "For every 6 dimes there are how many nickles? how many quarters?"
-        ],
-        wrongAnswers: null,
-        categories: [
-            "many variables",
-            "proportional reasoning"
-        ],
-        chilis: 1
-    },
-    {
         id: 11,
         title: "Carroll's cats",
         text: "6 cats eat 6 rats in 6 minutes.  How many cats are needed to eat 100 rats in 50 minutes?",
@@ -301,6 +287,20 @@ export const problems = [
         ],
         wrongAnswers: null,
         categories: [
+            "proportional reasoning"
+        ],
+        chilis: 1
+    },
+    {
+        id: 28,
+        title: "The piggy bank",
+        text: "A piggy bank is filled with coins: nickles, dimes, and quarters (these are the only types). For every 2 nickels there are 3 dimes.  For every 2 dimes there are 5 quarters. If there are 500 coins in total, how much money is in the piggy bank?",
+        hints: [
+            "For every 6 dimes there are how many nickles? how many quarters?"
+        ],
+        wrongAnswers: null,
+        categories: [
+            "many variables",
             "proportional reasoning"
         ],
         chilis: 1
