@@ -437,8 +437,18 @@ export const solutions = [
             "Average speed is total distance divided by the total time.  So if we want the average speed over the full 40 miles to be 10 miles per hour, then the whole ride must take 4 hours.  Up until this point, the cyclist has ridden for 30 miles / 9 mph = 3.3333... hours, or 3 hours and 20 minutes.  So she must cover the next 10 miles in 40 minutes, which means she pedals at a rate of 1 mile every 4 minutes, or 15 mph."
         ],
         links: null
+    },
+    {
+        id: 53,
+        answer: "The girl travels faster (3 mph) than the boy (roughly 2.667 mph)",
+        solutions: [
+            "The boy travels a total distance of 2 miles in 45 minutes (30 minutes for the first mile and 15 minutes for the second), is an average speed of roughly 2.667 mph.  On the other hand, the girl travels a total of 6 miles in 2 hours, so she walks at an average speed of exactly 3 mph.  The interesting thing to note here is that with speeds you can take a shortcut and simply find the arithmetic mean $\\left(\\frac{v_1 + v_2}{2}\\right)$ when the two speeds are traveled for equal amounts of <em>time</em> only, not distance.  More generally, if $n$ different speeds $v_1, v_2, ..., v_n$ are traveled for $n$ different amounts of times $t_1, t_2, ..., t_n$, then the average speed will simply be the weighted average $\\frac{v_1t_1 + v_2t_2 + ... + v_nt_n}{t_1 + t_2 + ... + t_n}$ - it should be easy to see that this is simply the definition of average speed (total distance over the total time).  We also saw that when equal amounts of distance are traveled, the average speed will always be closer to the <em>slower</em> of the two speeds because the person will have spent more <em>time</em> traveling at the slower speed (since the distances are equal).  When equal distances are traveled, the average speed will be the <em>harmonic mean</em> of the two speeds: $\\left( \\frac{v_1^{-1} + v_2^{-1}}{2} \\right)^{-1}$"
+        ],
+        links: [
+            {
+                href: "https://en.wikipedia.org/wiki/Harmonic_mean",
+                text: "Harmonic Mean - Wikipedia"
+            }
+        ]
     }
-
-
-
 ]
