@@ -1,13 +1,5 @@
 export const solutions = [
     {
-        id: 1,
-        answer: "112 cups of tropical punch",
-        solutions: [
-            "The recipe calls for 3 cups of coconut milk, and because you have 30 cups, that means you have enough coconut milk for 10 batches.  However, in the same way, you only have enough orange juice for 8 batches.  Orange juice is the limiting ingredient (check the pineapple juice on your own), so we can only match a maximum of 8 batches if we follow the recipe.  Each batch makes 6 + 5 + 3 = 14 cups of punch, so we can make a total 112 cups of tropical punch.  There will be 6 cups of coconut milk and 22 cups of pineapple juice left over.",
-        ],
-        links: null
-    },
-    {
         id: 2,
         answer: "33 minutes",
         solutions: [
@@ -76,14 +68,6 @@ export const solutions = [
                 text: "Gauss's Day of Reckoning - Bryan Hayes"
             },
         ]
-    },
-    {
-        id: 8,
-        answer: "$91",
-        solutions: [
-            "We begin by making piles of coins. In each pile we place 25 coins: 4 nickles, 6 dimes, and 15 quarters.  The ratios given ensure that we will run out of each type of coin at the same time. For example, if there are 3 dimes for every 2 nickels, then we will have 6 dimes for every 4 nickels, so we will run out of nickels at the same time we run out of dimes.  Since there are 500 coins in total and each pile has 25 coins, there must be 20 piles.  Each pile is worth $4.55, so the altogether the piggy bank has 91 dollars in it."
-        ],
-        links: null
     },
     {
         id: 11,
@@ -248,6 +232,22 @@ export const solutions = [
                 text: "Chinese Remainder Theorem - Wikipedia"
             }
         ]
+    },
+    {
+        id: 27,
+        answer: "112 cups of tropical punch",
+        solutions: [
+            "The recipe calls for 3 cups of coconut milk, and because you have 30 cups, that means you have enough coconut milk for 10 batches.  However, in the same way, you only have enough orange juice for 8 batches.  Orange juice is the limiting ingredient (check the pineapple juice on your own), so we can only match a maximum of 8 batches if we follow the recipe.  Each batch makes 6 + 5 + 3 = 14 cups of punch, so we can make a total 112 cups of tropical punch.  There will be 6 cups of coconut milk and 22 cups of pineapple juice left over.",
+        ],
+        links: null
+    },
+    {
+        id: 28,
+        answer: "$91",
+        solutions: [
+            "We begin by making piles of coins. In each pile we place 25 coins: 4 nickles, 6 dimes, and 15 quarters.  The ratios given ensure that we will run out of each type of coin at the same time. For example, if there are 3 dimes for every 2 nickels, then we will have 6 dimes for every 4 nickels, so we will run out of nickels at the same time we run out of dimes.  Since there are 500 coins in total and each pile has 25 coins, there must be 20 piles.  Each pile is worth $4.55, so the altogether the piggy bank has 91 dollars in it."
+        ],
+        links: null
     },
     {
         id: 29,

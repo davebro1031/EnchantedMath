@@ -1,18 +1,4 @@
 export const problems = [
-
-    {
-        id: 1,
-        title: "Making punch",
-        text: "The recipe for Dave's tropical punch calls for 6 cups of pineapple juice, 5 cups of orange juice, and 3 cups of coconut milk.   If we have 70 cups of pineapple juice, 40 cups of orange juice, and 30 cups of coconut milk, how many cups of Dave's tropical punch will we be able to make?",
-        hints: [
-            "How many batches can you make?"
-        ],
-        wrongAnswers: null,
-        categories: [
-            "proportional reasoning"
-        ],
-        chilis: 1
-    },
     {
         id: 2,
         title: "Sawing logs",
@@ -109,20 +95,6 @@ export const problems = [
             "quadratics"
         ],
         chilis: 2
-    },
-    {
-        id: 8,
-        title: "The piggy bank",
-        text: "A piggy bank is filled with coins: nickles, dimes, and quarters (these are the only types). For every 2 nickels there are 3 dimes.  For every 2 dimes there are 5 quarters. If there are 500 coins in total, how much money is in the piggy bank?",
-        hints: [
-            "For every 6 dimes there are how many nickles? how many quarters?"
-        ],
-        wrongAnswers: null,
-        categories: [
-            "many variables",
-            "proportional reasoning"
-        ],
-        chilis: 1
     },
     {
         id: 11,
@@ -303,6 +275,33 @@ export const problems = [
         wrongAnswers: null,
         categories: [
             "prime factors",
+        ],
+        chilis: 1
+    },
+    {
+        id: 27,
+        title: "Making punch",
+        text: "The recipe for Dave's tropical punch calls for 6 cups of pineapple juice, 5 cups of orange juice, and 3 cups of coconut milk.   If we have 70 cups of pineapple juice, 40 cups of orange juice, and 30 cups of coconut milk, how many cups of Dave's tropical punch will we be able to make?",
+        hints: [
+            "How many batches can you make?"
+        ],
+        wrongAnswers: null,
+        categories: [
+            "proportional reasoning"
+        ],
+        chilis: 1
+    },
+    {
+        id: 28,
+        title: "The piggy bank",
+        text: "A piggy bank is filled with coins: nickles, dimes, and quarters (these are the only types). For every 2 nickels there are 3 dimes.  For every 2 dimes there are 5 quarters. If there are 500 coins in total, how much money is in the piggy bank?",
+        hints: [
+            "For every 6 dimes there are how many nickles? how many quarters?"
+        ],
+        wrongAnswers: null,
+        categories: [
+            "many variables",
+            "proportional reasoning"
         ],
         chilis: 1
     },
