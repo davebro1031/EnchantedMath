@@ -459,5 +459,13 @@ export const solutions = [
         ],
         links: null
     },
+    {
+        id: 55,
+        answer: "4 hours",
+        solutions: [
+            "In 24 hours, the first faucet would fill 4 containers, the second would fill 3 containers, and the last would fill 2.  The leakage would empty one container's worth, so in 24 hours, the faucets and leakage together would fill 2 + 3 + 4 - 1 = 6 containers.  So they will fill a container every 4 hours.",
+            "In 1 hour, the first faucet fills 1/6 of a container, the second 1/8, the third 1/12, and the leakage drains 1/24.  So in one hour, altogether 1/6 + 1/8 + 1/12 - 1/24 = 1/4 of a container is filled.  So the container fills in 4 hours."
+        ]
+    }
 
 ]
