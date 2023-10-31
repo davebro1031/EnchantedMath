@@ -179,7 +179,7 @@ export const problems = [
     },
     {
         id: 15,
-        title: "Bridges of Konigsberg",
+        title: "Bridges of Königsberg",
         text: "In a certain town, there is a river that splits and rejoins and splits again, forming an island in the center of town.  There are 7 bridges in this town, and the townsfolk hold a competition to see who can find a bicycle path through the town that crosses each bridge exactly once. Try to find a winning path.",
         hints: null,
         wrongAnswers: null,
@@ -307,17 +307,6 @@ export const problems = [
         chilis: 1
     },
     {
-        id: 28,
-        title: "Simple subs",
-        text: "Mark and Juanita own a sandwich shop.  They offer 3 kinds of breads, 5 kinds of meats, and 3 kinds of cheeses.  Each type of sandwich consists of a combination of 1 type of bread, 1 type of meat, and 1 type of cheese.  How many types of sandwiches are possible?",
-        hints: null,
-        wrongAnswers: null,
-        categories: [
-            "combinatorics"
-        ],
-        chilis: 0
-    },
-    {
         id: 29,
         title: "Counting diagonals",
         text: "A square has two diagonals, a pentagon has five.  How many diagonals does an octagon have?",
@@ -332,7 +321,7 @@ export const problems = [
     },
     {
         id: 31,
-        title: "Matchstick houses",
+        title: "Toothpick houses",
         text: "In the image below, 6 toothpicks are used to form Figure 1.  11 toothpicks are used to form Figure 2, and 16 toothpicks are used to form Figure 3.  How many toothpicks would be needed to form Figure 50?",
         hint: [
             "How many toothpicks does each ADDITIONAL house take?"
@@ -361,7 +350,7 @@ export const problems = [
         hints: null,
         wrongAnswers: null,
         categories: [
-            "prime factors"
+            "potpourri"
         ],
         chilis: 1
     },
@@ -407,7 +396,7 @@ export const problems = [
     {
         id: 39,
         title: "Ducks in a line",
-        text: "When six ducks sit next to each other in a row on a log, Amy sits next to Ben, Carl does not sit next to Diane, and Eddie sits somewhere to Fiona’s left.  In addition, Amy sits somewhere to Carl’s right, Ben sits next to Eddie, and Diane sits somewhere to Fiona’s left.  If Amy is somewhere to Eddie’s right, what are the initials of the friends from left to right?",
+        text: "When six ducks sit next to each other in a row on a log, Amy sits next to Ben, Carl does not sit next to Diane, and Eddie sits somewhere to Fiona's left.  In addition, Amy sits somewhere to Carl's right, Ben sits next to Eddie, and Diane sits somewhere to Fiona's left.  If Amy is somewhere to Eddie's right, what are the initials of the friends from left to right?",
         hints: null,
         wrongAnswers: null,
         categories: [
@@ -429,7 +418,7 @@ export const problems = [
     {
         id: 42,
         title: "Office supplies",
-        text: "A pencil and five paper clips weighs the same as two erasers. A pencil weighs the same as 29 paper clips.  How many paper clips weigh the same as 3 erasers and two pencils?",
+        text: "A pencil and five paper clips weighs the same as two erasers. A pencil weighs the same as 29 paper clips.  How many paper clips weigh the same as three erasers and two pencils?",
         hints: null,
         wrongAnswers: null,
         categories: [
@@ -481,7 +470,7 @@ export const problems = [
     {
         id: 46,
         title: "Mixed nuts",
-        text: "Three kinds of nuts are mixed in a can.  You begin taking them out, one by one, and sorting them into piles according to their type.  How many nuts must you take out to ensure that at least one of your piles has at least 5 nuts in it?",
+        text: "Three kinds of nuts are mixed in a can.  You begin taking them out one by one and sorting them into piles according to their type.  How many nuts must you take out to ensure that at least one of your piles has at least 5 nuts in it?",
         hints: null,
         wrongAnswers: null,
         categories: [
@@ -505,7 +494,7 @@ export const problems = [
     {
         id: 48,
         title: "Runnin up that hill",
-        text: "A boy ran up a hill at 3 mph and came down the hill at 9 mph. The trip took him 6 hours.  How far, in miles, is it to the top of the hill?",
+        text: "Kate ran up a hill at 4 mph and came down the hill at 6 mph. The whole trip took her 2 hours.  How far, in miles, is it to the top of the hill?",
         hints: null,
         wrongAnswers: null,
         categories: [
@@ -534,7 +523,7 @@ export const problems = [
     {
         id: 50,
         title: "Mr. Sampson's drive",
-        text: "Mr. Sampson is going to the zoo.  He travels at the speed limit (it’s constant) on the way to the zoo and speeds 9 mph above the speed limit on his way home.  He tells you that his average speed was 40 mph.  What is the speed limit?",
+        text: "Mr. Sampson is going to the zoo.  He travels at 1 mph above the speed limit (it is constant) on the way to the zoo and speeds 10 mph above the speed limit on his way home.  He tells you that his average speed was 40 mph.  What is the speed limit?",
         hints: null,
         wrongAnswers: null,
         categories: [

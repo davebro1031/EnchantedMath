@@ -30,7 +30,7 @@ export default function Problem({ problem, image }) {
             <Spacer />
             <Box>
                 {problem.hints ? <Hints hints={problem.hints} /> : null}
-                <RelatedProblems id={problem.id} />
+                {/* <RelatedProblems id={problem.id} /> */}
                 {/* <Tags categories={problem.categories} /> */}
             </Box>
         </Flex>
