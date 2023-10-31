@@ -429,6 +429,14 @@ export const solutions = [
             "We assume that Morten could paddle at some constant speed greater than 3 mph in a still lake; otherwise, Morten would not be able to paddle his way back to camp against the current. Call this speed $v$ mph. He first goes upstream $v$ - 3 miles and then down stream 2($v$ + 3) miles for total distance of 2($v$ + 3) - ($v$ - 3) = $v$ + 9 miles downstream.  Since $v$ + 9 = 14, then he must be able to paddle at a constant rate of $v$ = 5 mph.  However, paddling against the current, his net speed will be 2 mph, so it will take 7 hours for him to travel the 14 miles back to camp."
         ],
         links: null
+    },
+    {
+        id: 52,
+        answer: "15 mph",
+        solutions: [
+            "Average speed is total distance divided by the total time.  So if we want the average speed over the full 40 miles to be 10 miles per hour, then the whole ride must take 4 hours.  Up until this point, the cyclist has ridden for 30 miles / 9 mph = 3.3333... hours, or 3 hours and 20 minutes.  So she must cover the next 10 miles in 40 minutes, which means she pedals at a rate of 1 mile every 4 minutes, or 15 mph."
+        ],
+        links: null
     }
 
 
