@@ -34,7 +34,7 @@ export default function ProblemDetails() {
             grow='1'
         >
             <Heading mb={3}> {problem.title}</Heading>
-            <Heading size='md'> Difficulty: <Chilis rating={problem.chilis} /></Heading>
+            <Heading size='md'> Difficulty: {problem.chilis?<Chilis rating={problem.chilis} />: "0 chilis"}</Heading>
             <Tabs colorScheme='red' flexGrow={1} display={'flex'} flexDirection='column'>
                 <TabList>
                     <Tab >Problem</Tab>
