@@ -421,6 +421,14 @@ export const solutions = [
             "Let us denote by $D$ the distance to the zoo, by $v$ the speed limit, and by $t_1$ and $t_2$ the times take to travel to and from the zoo respectively.  Since average speed is given by total distance over the total time, we have: <br><br> <div style='text-align:center'>$40 = \\frac{2D}{t_1 + t_2}$, $v+1 = \\frac{D}{t_1}$, and $v+10 = \\frac{D}{t_2}$. </div><br> Taking the reciprocal of each equation (and simplifying a factor of 2 in the first equation), we obtain: <br><br> <div style='text-align:center'> $\\frac{1}{20} = \\frac{t_1+t_2}{D}$, $\\frac{1}{v+1} = \\frac{t_1}{D}$ and $\\frac{1}{v+10} = \\frac{t_2}{D}$ </div><br> Note that the first equation is the sum of the other two, so indeed, we have: <br><br><div style='text-align:center'> $\\frac{1}{20} = \\frac{1}{v+1} + \\frac{1}{v+10}$ </div><br> Combining our fractions, we have $\\frac{1}{20} = \\frac{2v+11}{(v+1)(v+10)}$, which simplifies to $(v+1)(v+10) = 40v + 220$.  Rearranging, we obtain <br><br><div style='text-align:center'> $v^2 - 29v - 210 = 0$, </div><br> which factors as $(v - 35)(v + 6) = 0$; choosing the positive root, we find that the speed limit is 35 mph."
         ],
         links: null
+    },
+    {
+        id: 51,
+        answer: "7 hours",
+        solutions: [
+            "We assume that Morten could paddle at some constant speed greater than 3 mph in a still lake; otherwise, Morten would not be able to paddle his way back to camp against the current. Call this speed $v$ mph. He first goes upstream $v$ - 3 miles and then down stream 2($v$ + 3) miles for total distance of 2($v$ + 3) - ($v$ - 3) = $v$ + 9 miles downstream.  Since $v$ + 9 = 14, then he must be able to paddle at a constant rate of $v$ = 5 mph.  However, paddling against the current, his net speed will be 2 mph, so it will take 7 hours for him to travel the 14 miles back to camp."
+        ],
+        links: null
     }
 
 
