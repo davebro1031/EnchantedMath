@@ -523,7 +523,7 @@ export const problems = [
     {
         id: 50,
         title: "Mr. Sampson's drive",
-        text: "Mr. Sampson is going to the zoo.  He travels at the speed limit (it’s constant) on the way to the zoo and speeds 9 mph above the speed limit on his way home.  He tells you that his average speed was 40 mph.  What is the speed limit?",
+        text: "Mr. Sampson is going to the zoo.  He travels at 1 mph above the speed limit (it is constant) on the way to the zoo and speeds 10 mph above the speed limit on his way home.  He tells you that his average speed was 40 mph.  What is the speed limit?",
         hints: null,
         wrongAnswers: null,
         categories: [

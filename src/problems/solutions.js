@@ -409,12 +409,18 @@ export const solutions = [
         id: 49,
         answer: "20 mph",
         solutions: [
-            "The distance to the zoo is not given, so let us suppose that it is 60 miles away (the reason we chose 60 miles will soon become apparent). Then, because the average speed for the entire trip is 24 mph, the entire 120 mile journey will have taken 5 hours.  Similarly we know that it took him 2 hours to get there because he drove 30mph for the 60 mile journey there.  This means that the 60 mile return turn trip took him 3 hours; he drove 60 / 3 = 20 mph on the way back.  In this solution, we chose 60 miles because it is the smallest multiple of 30 whose double (120) is a multiple of 24, but it turns out that choosing any other distance would yeild the same result."
+            "The distance to the beach is not given, so let us suppose that it is 60 miles away (the reason we chose 60 miles will soon become apparent). Then, because the average speed for the entire trip is 24 mph, the entire 120 mile journey will have taken 5 hours.  Similarly we know that it took him 2 hours to get there because he drove 30mph for the 60 mile journey there.  This means that the 60 mile return turn trip took him 3 hours; he drove 60 / 3 = 20 mph on the way back.  In this solution, we chose 60 miles because it is the smallest multiple of 30 whose double (120) is a multiple of 24, but it turns out that choosing any other distance would yeild the same result."
         ],
         links: null
     },
     {
-        // id: 
+        id: 50,
+        answer: "35 miles per hour",
+        solutions: [
+            "Call his speed on the trip there $x$ mph, so that his return speed is $x+9$ mph. His average speed, 40 mph, is <em>not</em> halfway between these two speeds: because Mr. Sampson drives <em>slower</em> on the way there, he spends more time driving at $x$ mph than at $x+9$ mph, so the average $40$ is closer to $x$ mph than to $x+9$.  At this point, our number sense bells are jingling, and we immediately suspect that $x$ is 36 mph (and that his return speed is $45$ mph)  It is easy to check that our suspicion was correct.  Suppose the zoo was 180 miles away.  Then the journey there would take 5 hours at 36 mph, and the return trip would take 4 hours at 45 mph, for a total of 9 hours round trip.  360 miles in 9 hours is an average speed of 40 mph, so we have indeed found the correct solution.  The speed limit is thus 35 mph.",
+            "Let us denote by $D$ the distance to the zoo, by $v$ the speed limit, and by $t_1$ and $t_2$ the times take to travel to and from the zoo respectively.  Since average speed is given by total distance over the total time, we have: <br><br> <div style='text-align:center'>$40 = \\frac{2D}{t_1 + t_2}$, $v+1 = \\frac{D}{t_1}$, and $v+10 = \\frac{D}{t_2}$. </div><br> Taking the reciprocal of each equation (and simplifying a factor of 2 in the first equation), we obtain: <br><br> <div style='text-align:center'> $\\frac{1}{20} = \\frac{t_1+t_2}{D}$, $\\frac{1}{v+1} = \\frac{t_1}{D}$ and $\\frac{1}{v+10} = \\frac{t_2}{D}$ </div><br> Note that the first equation is the sum of the other two, so indeed, we have: <br><br><div style='text-align:center'> $\\frac{1}{20} = \\frac{1}{v+1} + \\frac{1}{v+10}$ </div><br> Combining our fractions, we have $\\frac{1}{20} = \\frac{2v+11}{(v+1)(v+10)}$, which simplifies to $(v+1)(v+10) = 40v + 220$.  Rearranging, we obtain <br><br><div style='text-align:center'> $v^2 - 29v - 210 = 0$, </div><br> which factors as $(v - 35)(v + 6) = 0$; choosing the positive root, we find that the speed limit is 35 mph."
+        ],
+        links: null
     }
 
 
