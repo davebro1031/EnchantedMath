@@ -1,18 +1,4 @@
 export const problems = [
-
-    {
-        id: 1,
-        title: "Making punch",
-        text: "The recipe for Dave's tropical punch calls for 6 cups of pineapple juice, 5 cups of orange juice, and 3 cups of coconut milk.   If we have 70 cups of pineapple juice, 40 cups of orange juice, and 30 cups of coconut milk, how many cups of Dave's tropical punch will we be able to make?",
-        hints: [
-            "How many batches can you make?"
-        ],
-        wrongAnswers: null,
-        categories: [
-            "proportional reasoning"
-        ],
-        chilis: 1
-    },
     {
         id: 2,
         title: "Sawing logs",
@@ -303,6 +289,19 @@ export const problems = [
         wrongAnswers: null,
         categories: [
             "prime factors",
+        ],
+        chilis: 1
+    },
+    {
+        id: 27,
+        title: "Making punch",
+        text: "The recipe for Dave's tropical punch calls for 6 cups of pineapple juice, 5 cups of orange juice, and 3 cups of coconut milk.   If we have 70 cups of pineapple juice, 40 cups of orange juice, and 30 cups of coconut milk, how many cups of Dave's tropical punch will we be able to make?",
+        hints: [
+            "How many batches can you make?"
+        ],
+        wrongAnswers: null,
+        categories: [
+            "proportional reasoning"
         ],
         chilis: 1
     },
