@@ -606,5 +606,18 @@ export const problems = [
             "harmonic mean"
         ],
         chilis: 2
+    },
+    {
+        id: 56,
+        title: "Flower bouquets",
+        text: "Flowers are sold in bouquets of 6 and 13.  If you wanted to purchase exactly 24 flowers, you could buy four small bouquets (4 bouquets with 6 flowers in each is exactly 24 flowers).  If you wanted to purchase exactly 25 flowers, you could buy two small bouquets and one large bouquet.  If you wanted to buy exactly 26, you would get two large bouquets.  There is no way, however, to purchase exactly 27 flowers.  What is the largest number of flowers that cannot be purchased exactly? ",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "number theory",
+            "prime factors",
+            "potpourri"
+        ],
+        chilis: 2
     }
 ]
