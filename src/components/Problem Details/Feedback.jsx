@@ -20,7 +20,7 @@ export default function Feedback({ title }) {
                 onSubmit={(values, { setSubmitting }) => {
                     setTimeout(() => {
                      
-                        emailjs.sendForm('service_irjoalo', 'template_bve4rrr', form.current, '3JjiwyeBApVMWrxjU')
+                        emailjs.sendForm('service_irjoalo', 'template_bve4rrr', form.current, 'rdWXGwjeVqsj8OSlm')
                             .then((result) => {
                                 toast({
                                     title: 'Message sent',
