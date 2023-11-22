@@ -46,8 +46,8 @@ export default function ProblemSubmissions({ isOpen, onClose }) {
                         onSubmit={(values, { setSubmitting }) => {
                             setTimeout(() => {
 
-                                emailjs.sendForm('service_1k8zvyk', 'template_qqqt1zj', form.current, '3JjiwyeBApVMWrxjU')
-                                    .then((result) => {
+                                emailjs.sendForm('service_irjoalo', 'template_sx6vf8m', form.current, 'rdWXGwjeVqsj8OSlm')
+                                .then((result) => {
                                         toast({
                                             title: 'Message sent',
                                             description: 'Thank you for your submission!',

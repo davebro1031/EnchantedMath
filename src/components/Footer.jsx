@@ -15,7 +15,7 @@ export default function Footer({ ml, width }) {
         >
             <HStack>
                 <Text color='white'>Contact us</Text>
-                <Link color='gray.300' href="mailto:nerdsnipesfeedback@gmail.com" _hover={{textDecoration:'none'}}>nerdsnipesfeedback@gmail.com</Link>
+                <Link color='gray.300' href="mailto:enchantedmathfeedback@gmail.com" _hover={{textDecoration:'none'}}>enchantedmathfeedback@gmail.com</Link>
             </HStack>
         </Flex>
     )
