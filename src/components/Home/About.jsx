@@ -5,7 +5,7 @@ import TabHeader from "../Problem Details/TabHeader"
 export default function About() {
     return (
         <Box bg={'white'} p={3} m={4} minHeight='80vh'>
-            <Heading>About Nerd Snipes</Heading>
+            <Heading>About Enchanted Math</Heading>
             <Box>
 
                 <TabHeader text='Background' width='115px' />
