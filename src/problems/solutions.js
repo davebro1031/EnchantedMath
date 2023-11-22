@@ -467,6 +467,13 @@ export const solutions = [
             "In 24 hours, the first faucet would fill 4 containers, the second would fill 3 containers, and the last would fill 2.  The leakage would empty one container's worth, so in 24 hours, the faucets and leakage together would fill 2 + 3 + 4 - 1 = 6 containers.  So they will fill a container every 4 hours.",
             "In 1 hour, the first faucet fills 1/6 of a container, the second 1/8, the third 1/12, and the leakage drains 1/24.  So in one hour, altogether 1/6 + 1/8 + 1/12 - 1/24 = 1/4 of a container is filled.  So the container fills in 4 hours."
         ]
+    },
+    {
+        id: 56,
+        answer: "59 flowers",
+        solutions: [
+            "6 and 13 are relatively prime, which is essential to this problem.  If they were both multiples of 3, for example, then you would only be able to purchase flowers in multiples of 3, and so there wouldn't be a <em>greatest</em> unpurchaseable amount.   "
+        ]
     }
 
 ]
