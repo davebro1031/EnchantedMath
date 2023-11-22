@@ -9,7 +9,7 @@ export default function Logo() {
     return (
         <HStack onClick={()=>navigate("/")} _hover={{cursor:'pointer'}}>
             <Image src={NerdSnipe2} boxSize='45px' minWidth='45px' />
-            {showName ? <Heading size={['md', 'md', 'lg']} width={['','6em','']}color='white'>Nerd Snipes</Heading> : null}
+            {showName ? <Heading size={['md', 'md', 'lg']} width={['','8em','']}color='white'>Enchanted Math</Heading> : null}
         </HStack>
     )
 }
