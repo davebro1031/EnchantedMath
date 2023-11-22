@@ -472,7 +472,12 @@ export const solutions = [
         id: 56,
         answer: "59 flowers",
         solutions: [
-            "6 and 13 are relatively prime, which is essential to this problem.  If they were both multiples of 3, for example, then you would only be able to purchase flowers in multiples of 3, and so there wouldn't be a <em>greatest</em> unpurchaseable amount.   "
+            `
+            For this solution, we refer to numbers as "purchaseable" and "unpurchaseable".  Note that 6 and 13 are relatively prime, which is essential to this problem.  It is easy to see that if they were both multiples of 3, for example, then you would only be able to purchase flowers in multiples of 3, and so there wouldn't be a <em>greatest</em> unpurchaseable amount.  <br>
+            <br> We approach this problem by first noting that every number has some remainder when divided by 6.  Multiples of 6 have remainder 0, and every other positive integer can be sorted into one of five other groups: those have remainder 1, 2, 3, 4, and 5.  We refer to these groups as "residue classes" and use the terminology of modular arithmetic.  For example, we say that "19 is 1 mod 6" because it belongs to the class of integers that have remainder 1 when divided by 6.  As another couple of examples, it is easy to verify that "8 is 0 mod 2" and that "68 is 2 mod 11."  As a final example, we note that the residue class of "4 mod 6" consists of the following positive integers: 4, 10, 16, 22, 28, ...  <br>
+            <br> One important property of these residue classes is that if we take any two numbers that belong to the same residue class mod 6, then their difference will be a multiple of 6.  For example, let's take two numbers that are both 4 mod 6, 64 and 16.  Their difference, 48, is clearly a multiple of 6. Thinking about remainders, it should be easy to see why this will always happen. <br>
+            <br>  This means that as soon as we find one purchaseable number that is "n mod 6," then every greater number that is "n mod 6" will also be purchaseable.  For example, because we can purchase 19 (one small and one large bouquet), then it is easy to purchase any other greater number that is also 1 mod 6.  We simply purchase 19 and then continue purchasing small bouquets until we reach the desired amount.  To illustrate this, suppose we want to buy 61 flowers.  61, like 19, is 1 mod 6.  So we first purchase 19 flowers: there are now 42 flowers remaining to be purchased.  We can purchase 42 via 7 small bouquets, so 61 is purchaseable.  
+            `
         ]
     }
 
