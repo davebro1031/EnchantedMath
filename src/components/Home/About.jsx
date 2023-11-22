@@ -11,7 +11,6 @@ export default function About() {
                 <TabHeader text='Background' width='115px' />
                 <Avatar size='2xl' name='Dave Broaddus' src={developer} float='left' m={4} />
                 <Text>Hi, I'm Dave.  I've spent my years since undergrad teaching math from high school calculus all the way down to 6th grade. Over the years I have accumulated a collection of problems that, while accessible to a 6th grader, still pose a challenge to the average high school student or adult.  I believe these sorts of problems possess a unique value for mathematics outreach. On countless occasions, I have watched these problems ensnare the minds of students and adults who would otherwise never want to spend time doing math.  The simplicity of these questions disguises the cleverness required for their solution, so many people find process of solving one to be a startlingly compelling mathematical experience. I hope that people from all walks of life will find themselves enjoying problems from this collection.</Text>
-                {/* <Image src="https://imgs.xkcd.com/comics/nerd_sniping.png" margin='auto'/> */}
             </Box>
             <Box>
                 <TabHeader text='Design' width='75px' />
