@@ -15,7 +15,7 @@ export default function About() {
             </Box>
             <Box>
                 <TabHeader text='Design' width='75px' />
-                <Text>If you have ever been to New Mexico, you'll find the symbols and color scheme on this website familiar.  I am a recent transplant to this beautiful State and have loved experiencing its rich visual culture.  Even our name, "Enchanted Math," comes from the state nickname: <em>the land of enchantment.</em>  The chili pepper difficulty rating, incidentally, is not a reference to the State question ("red or green?"), but rather borrowed from my abstract algebra professor Dr. Lovett.  His passion for mathematics inspired me as an early undergraduate and I owe a great deal of my mathematical identity to his mentorship. </Text>
+                <Text>If you have ever been to New Mexico, you'll find the symbols and color scheme on this website familiar.  I am a recent transplant to this beautiful state and have loved experiencing its rich visual culture.  Even our name, "Enchanted Math," comes from the state nickname: <em>the land of enchantment.</em>  The chili pepper difficulty rating, incidentally, is not a reference to the state question ("red or green?"), but rather borrowed from my abstract algebra professor Dr. Lovett.  His passion for mathematics inspired me as an early undergraduate and I owe a great deal of my mathematical identity to his mentorship. </Text>
             </Box>
         </Box>
     )
