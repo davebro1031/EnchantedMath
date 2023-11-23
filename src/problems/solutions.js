@@ -466,7 +466,8 @@ export const solutions = [
         solutions: [
             "In 24 hours, the first faucet would fill 4 containers, the second would fill 3 containers, and the last would fill 2.  The leakage would empty one container's worth, so in 24 hours, the faucets and leakage together would fill 2 + 3 + 4 - 1 = 6 containers.  So they will fill a container every 4 hours.",
             "In 1 hour, the first faucet fills 1/6 of a container, the second 1/8, the third 1/12, and the leakage drains 1/24.  So in one hour, altogether 1/6 + 1/8 + 1/12 - 1/24 = 1/4 of a container is filled.  So the container fills in 4 hours."
-        ]
+        ],
+        links: null
     },
     {
         id: 56,
@@ -486,7 +487,8 @@ export const solutions = [
             <br> You may have found some of my arguments needlessly general (for example, I repeatedly referred to "$13\\times 5$" instead of just calling it "$65$")  The reason for this is that I wanted to make this argument easily generalizeable.  Our solution showed how to reason that $59$ is the solution for the pair $(6, 13)$, but by following the arguments laid out here, we can show that the solution for any relatively prime pair $(m, n)$ is $m(n-1) - n$.  That formula works, but its beautiful symmetry is obscured in that form.  We present several more expressions that more clearly elucidate the symmetry between $n$ and $m$: <br>
             <br> $mn - m - n$ <br> $mn - (m + n)$ <br> $(m-1)(n-1) - 1$ 
             `
-        ]
+        ],
+        links: null
     },
     {
         id: 57,
@@ -497,6 +499,20 @@ export const solutions = [
             <br> If the scales balance, then we know that one of the colored balls is heavy and one is light; the heavy colored ball must be with the light gray ball and vice versa.  So we simply remove the colored balls from the scale and reweigh just the gray balls; this will tell us which gray ball is heavy.  Since we know which gray ball is heavy, then we know which of the colored balls we removed was heavy (it was paired with the light gray ball).  Suppose it was the purple ball that was heavy. Then we also know that the green ball we weighed is light, which means its counterpart is heavy; we have determined all three heavy balls.<br>
             <br> If the scales <em>do not</em> balance, this can occur in one of three ways: 1) the light gray is paired with a light colored ball and the heavy gray is paired with a light colored ball; 2) the light gray is paired with a light colored ball and the heavy gray is paired with a heavy colored ball; 3) the light gray ball is paired with a heavy colored ball and the heavy gray ball is also paired with a heavy colored ball.  In all three cases, note that the heavy side of the scale contains the heavy gray ball and vice versa.  So the gray balls are known.  Now swap one gray ball with one colored ball and reweigh the same four balls: this time with the two gray balls together and the two colored balls together.  If the gray balls together are heavier than the two colored balls together, then we know the two colored balls were both light (case 1) and hence all three balls are known.  If the gray balls are lighter than the colored balls, then the colored balls must be both heavy (case 3) and again, we are finished.  Finally, if the scales balance then we know one of the colored balls is heavy and the other is light.  This can only happen if the light colored ball was with the light gray and the heavy colored ball was with the heavy gray ball (case 2).  If the reverse had been true, then the scales would hae balanced originally.  So suppose the purple was originally with the light gray ball and the green was with the heavy gray ball.  Then we know that the green we weighed was heavy and the purple we did not weigh is heavy.  In any event, we have determined all three heavy balls.
             `
+        ],
+        links: null
+    },
+    {
+        id: 58,
+        answer: "3, 3, and 8 years old",
+        solutions: [
+            "Please see the wikipedia article below for an extremely clear and detailed explanation of the solution"
+        ],
+        links: [
+            {
+                href: "https://en.wikipedia.org/wiki/Ages_of_Three_Children_puzzle",
+                text: "Ages of Three Children puzzle - Wikipedia"
+            }
         ]
     }
 
