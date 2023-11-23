@@ -487,6 +487,15 @@ export const solutions = [
             <br> $mn - m - n$ <br> $mn - (m + n)$ <br> $(m-1)(n-1) - 1$ 
             `
         ]
+    },
+    {
+        id: 57,
+        answer: "see below",
+        solutions: [
+            `Begin by weighing the two white balls against one purple and one green ball. <br>
+            <br> If the scales do not balance, then either the two colored balls are heavier than the white balls or they are lighter.  If they are heavier, then they must both be the heavy ball from their set and vice versa if they are lighter.  All that remains is to determine the white balls.  Simply weigh the two white balls against one another and the heavy ball will be known. <br>
+            <br> this.`
+        ]
     }
 
 ]
