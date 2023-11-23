@@ -619,5 +619,10 @@ export const problems = [
             "potpourri"
         ],
         chilis: 2
+    },
+    {
+        id: 57,
+        title: "Weighing Balls",
+        text: "There are six balls on a table: two white, two purple, and two green.  "
     }
 ]
