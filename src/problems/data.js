@@ -618,11 +618,17 @@ export const problems = [
             "prime factors",
             "potpourri"
         ],
-        chilis: 2
+        chilis: 3
     },
     {
         id: 57,
         title: "Weighing Balls",
-        text: "There are six balls on a table: two white, two purple, and two green.  "
+        text: "There are six balls on a table divided evenly into three sets by color: there are two white balls, two purple, and two green.  In each of the three sets, there is one heavy ball and one light ball.  Each of the three heavy balls weigh exactly the same, as do each of the light balls.  There is a balance scale on the table: each bowl can fit any number of balls.  Your task is to determine the heavy ball in each of the three sets by using the balance scale only twice.  How can you do this?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "potpourri"
+        ],
+        chilis: 3
     }
 ]
