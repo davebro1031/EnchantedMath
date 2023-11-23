@@ -492,9 +492,11 @@ export const solutions = [
         id: 57,
         answer: "see below",
         solutions: [
-            `Begin by weighing the two white balls against one purple and one green ball. <br>
-            <br> If the scales do not balance, then either the two colored balls are heavier than the white balls or they are lighter.  If they are heavier, then they must both be the heavy ball from their set and vice versa if they are lighter.  All that remains is to determine the white balls.  Simply weigh the two white balls against one another and the heavy ball will be known. <br>
-            <br> this.`
+            `
+            Begin by taking four balls: both white and then one green and one purple.  On each side of the balance we place one white and one colored ball.  <br>
+            <br> If the scales balance, then we know that one of the colored balls is heavy and one is light; the heavy colored ball must be with the light white ball and vice versa.  So we simply remove the colored balls from the scale and reweigh just the white balls; this will tell us which white ball is heavy.  Since we know which white ball is heavy, then we know which of the colored balls we removed was heavy (it was paired with the light white ball).  Suppose it was the purple ball that was heay. Then we also know that the green ball we weighed is light, which means its counterpart is heavy; we have determined all three heavy balls.<br>
+            <br> If the scales <em>do not</em> balance, this can occur in one of three ways: 
+            `
         ]
     }
 
