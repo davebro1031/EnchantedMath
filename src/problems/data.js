@@ -622,7 +622,7 @@ export const problems = [
     },
     {
         id: 57,
-        title: "Weighing Balls",
+        title: "Six balls",
         text: "There are six balls on a table divided evenly into three sets by color: there are two gray balls, two purple, and two green.  In each of the three sets, there is one heavy ball and one light ball.  Each of the three heavy balls weigh exactly the same, as do each of the light balls.  There is a balance scale on the table: each bowl can fit any number of balls.  Your task is to determine the heavy ball in each of the three sets by using the balance scale only twice.  How can you do this?  Note that the heavy and light balls are extremely close in weight (say 1.00lbs for a light ball and 1.01lbs for a heavy ball, so that they feel the same to human senses but will still tip the scales).",
         hints: null,
         wrongAnswers: null,
@@ -630,5 +630,16 @@ export const problems = [
             "potpourri"
         ],
         chilis: 3
+    },
+    {
+        id: 58,
+        title: "The three children",
+        text: `A census taker approaches a woman's house, inquiring about the ages of her children.  She agrees to give him the information, but in the form of a riddle.  She tells him: "If you add the ages of my children, you will get my house number.  If you multiply their ages, the result is 72."  The census taker thinks for a moment and replies "I still don't know their ages." She replies: "Oh, you're right!  I forgot to mention that only my oldest was born in the summer!" The census taker then records the children's ages, thanks the woman for her time, and continues on his way.  What are the ages of the children?`,
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "potpourri"
+        ],
+        chilis: 2
     }
 ]
