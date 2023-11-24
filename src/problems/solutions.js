@@ -488,7 +488,12 @@ export const solutions = [
             <br> $mn - m - n$ <br> $mn - (m + n)$ <br> $(m-1)(n-1) - 1$ 
             `
         ],
-        links: null
+        links: [
+            {
+                href: 'https://en.wikipedia.org/wiki/Coin_problem',
+                text: 'Coin problem - wikipedia'
+            }
+        ]
     },
     {
         id: 57,
