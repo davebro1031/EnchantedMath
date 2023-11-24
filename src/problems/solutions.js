@@ -491,7 +491,7 @@ export const solutions = [
         links: [
             {
                 href: 'https://en.wikipedia.org/wiki/Coin_problem',
-                text: 'Coin problem - wikipedia'
+                text: 'Coin problem - Wikipedia'
             }
         ]
     },
