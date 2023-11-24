@@ -492,6 +492,10 @@ export const solutions = [
             {
                 href: 'https://en.wikipedia.org/wiki/Coin_problem',
                 text: 'Coin problem - Wikipedia'
+            },
+            {
+                href: 'https://www.youtube.com/watch?v=FJtaaM7Txys',
+                text: 'The Nugget Algorithm - VSauce'
             }
         ]
     },
