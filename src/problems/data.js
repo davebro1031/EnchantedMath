@@ -641,5 +641,16 @@ export const problems = [
             "potpourri"
         ],
         chilis: 2
+    },
+    {
+        id: 59,
+        title:"Officers holding hands",
+        text: "Members of the local police department stand in a circle to join hands and speak affirmations to one another.  They are evenly spaced, and the officers are numbered consecutively starting from 1. Officer #17 stands directly across form officer #55.  How many police officers are in the hand-holding circle?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "potpourri"
+        ],
+        chilis: 1
     }
 ]
