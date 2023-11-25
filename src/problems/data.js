@@ -673,6 +673,6 @@ export const problems = [
         categories: [
             "combinatorics"
         ],
-        chilis: 1
+        chilis: 2
     }
 ]
