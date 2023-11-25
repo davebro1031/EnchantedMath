@@ -568,7 +568,12 @@ export const solutions = [
     },
     {
         id: 62,
-        answer: "14641 different places"
+        answer: "14641 different locations",
+        solutions: [
+            `
+            Let U (for up) represent the number of steps the ladybug in the +y direction, D (for down) the number of steps in the -y direction, L (left) the number in the -x direction, and R (right) the number in the +x direction. Then U + D + L + R = 120, since there are 120 seconds in two minutes and hence the ladybug takes 120 steps total.  Furthermore, its final location (x, y) will be given by (R - L, U - D).
+            `
+        ]
     }
 
 ]
