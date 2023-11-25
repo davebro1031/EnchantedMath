@@ -531,6 +531,13 @@ export const solutions = [
             "If there were 6 officers, for example, it is easy to check that #1 and #4 would stand opposite to one another, as would #2 and #5, as well as #3 and #6.  The invariant here is that the absolute difference in opposite officer's numbers is 3 (4 - 1 = 5 - 2 = 6 - 3).  This is because 3 is half of 6; the officers stand exactly halfway around the circle form one another.  Now note that 55 - 17 = 38; the two officers standing exactly opposite one another have a difference of 38.  These officers stand a distance of exactly halfway around the circle from one another, so 38 must be half of the total number of officers.  There must be 76 officers."
         ],
         links: null
+    },
+    {
+        id: 60,
+        answer: "987 ways to climb the stairs",
+        solutions: [
+            "We first note that the stair sequence (2, 4, 6, 8, 10, 12, 13, 15) can be represented differently via the step size at each move: (2, 2, 2, 2, 2, 2, 1, 2).  Similarly, the stair sequence of (1, 3, 5, 6, 7, 9, 10, 12, 14, 15) could be represented as (1, 2, 2, 1, 1, 2, 1, 2, 2, 1)."
+        ]
     }
 
 ]
