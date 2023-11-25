@@ -523,6 +523,10 @@ export const solutions = [
                 text: "Ages of Three Children puzzle - Wikipedia"
             }
         ]
+    },
+    {
+        id: 59,
+        answer: "76 officers holding hands"
     }
 
 ]
