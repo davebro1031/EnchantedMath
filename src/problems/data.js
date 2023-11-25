@@ -651,6 +651,6 @@ export const problems = [
         categories: [
             "potpourri"
         ],
-        chilis: 1
+        chilis: 0
     }
 ]
