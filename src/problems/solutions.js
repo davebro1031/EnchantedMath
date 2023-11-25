@@ -545,6 +545,14 @@ export const solutions = [
             <br> Suppose there are 6 stairs.  If he begins with 1, then since there are 5 remaining stairs to climb, there will be 8 ways to finish the climb. If he begins with 2, then 4 stairs remain to climb and so he can finish the climb in 5 ways.  There are 13 distinct ways to climb 6 stairs. <br>
             <br> At this stage, we recognize both the specific numbers and structure of the Fibonacci sequence.  Indeed, if we consider the seqeunce we have been constructing, to find the 6th term (13), we simply summed the value of the previous two (5 + 8).  This pattern will continue as the number of stairs increases: if there are 7 stairs, there will be 21 ways to climb them.  If there are 8 stairs, there will be 34 ways.  Following the recurrence of summing the previous two to get the next, it is easy to calculate that when there are 15 stairs, there will be 987 ways to climb them.
             `
+        ],
+        links: null
+    },
+    {
+        id: 61,
+        answer: "EDACB",
+        solutions: [
+            ""
         ]
     }
 
