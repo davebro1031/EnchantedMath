@@ -565,6 +565,10 @@ export const solutions = [
                 text: "1963 IMO Problem 6"
             }
         ]
+    },
+    {
+        id: 62,
+        answer: "14641 different places"
     }
 
 ]

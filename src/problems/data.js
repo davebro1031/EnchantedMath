@@ -678,7 +678,7 @@ export const problems = [
     {
         id: 62,
         title: "A drunk ladybug",
-        text: "A drunk ladybug stumbles around the coordinate plane for exactly one minute.  It begins at the origin and every second, it moves exactly one unit in one of the four cardinal directions (+x, -x, +y, -y).  In how many different locations (x, y) could it be when the timer runs out?",
+        text: "A drunk ladybug stumbles around the coordinate plane for exactly two minutes.  It begins at the origin and every second, it moves exactly one unit in one of the four cardinal directions (+x, -x, +y, -y).  In how many different locations (x, y) could it be when the timer runs out?",
         hints: null,
         wrongAnswers: null,
         categories: [
