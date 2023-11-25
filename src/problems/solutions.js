@@ -536,7 +536,12 @@ export const solutions = [
         id: 60,
         answer: "987 ways to climb the stairs",
         solutions: [
-            "We first note that the stair sequence (2, 4, 6, 8, 10, 12, 13, 15) can be represented differently via the step size at each move: (2, 2, 2, 2, 2, 2, 1, 2).  Similarly, the stair sequence of (1, 3, 5, 6, 7, 9, 10, 12, 14, 15) could be represented as (1, 2, 2, 1, 1, 2, 1, 2, 2, 1)."
+            `
+            We first note that the stair sequence (2, 4, 6, 8, 10, 12, 13, 15) can be represented differently via the step size at each move: (2, 2, 2, 2, 2, 2, 1, 2). The original sequence is recoverable as the partial sums of our new sequence.  Similarly, the stair sequence of (1, 3, 5, 6, 7, 9, 10, 12, 14, 15) could be represented as steps of sizes (1, 2, 2, 1, 1, 2, 1, 2, 2, 1).  In both cases, the essential invariant here is that both sequences of ones and twos add up to 15 for obvious reasons. So our aim is to count the number of distinct sequences of 1s and 2s, where order does matter, such that the sum of the sequence is exactly 15. <br> 
+            <br> We begin by reducing the problem down to smaller cases.  Suppose the flight had just one stair, not 15. Clearly there is just one way he could climb this "flight:" he would take a single step, corresponding to the sequence (1).  Suppose now that the flight had two stairs: there are two ways he could climb them: (1,1) and (2).  <br>
+            <br> If the flight had three steps, Nico has two choices for his first step: he could either take a step onto the first stair, or he could skip the first stair and step directly onto to the second; his sequence could stair either with a 1 or a 2.  If he starts with a 1, there are two stairs remaining to climb - we have seen that there are two ways for him to do so: (1,1,1) and (1,2).  On the other hand, if he begins by skipping the first stair, then there is only one stair remaining to climb, and we have seen that there is just one way to climb it: (2, 1).  So when there are three stairs, there are exactly 3 ways to climb the flight. <br>
+            <br> 
+            `
         ]
     }
 
