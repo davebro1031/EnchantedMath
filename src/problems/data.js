@@ -663,5 +663,16 @@ export const problems = [
             "combinatorics",
         ],
         chilis: 2
+    },
+    {
+        id: 61,
+        title: "Kids in a row",
+        text: "1963 IMO problem 6. Five students, A,B,C,D,E, took part in a contest. One prediction was that the contestants would finish in the order ABCDE. This prediction was very poor. In fact no contestant finished in the position predicted, and no two contestants predicted to finish consecutively actually did so. A second prediction had the contestants finishing in the order DAECB. This prediction was better. Exactly two of the contestants finished in the places predicted, and two disjoint pairs of students predicted to finish consecutively actually did so. Determine the order in which the contestants finished.",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "combinatorics"
+        ],
+        chilis: 1
     }
 ]
