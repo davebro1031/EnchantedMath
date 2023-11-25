@@ -656,7 +656,7 @@ export const problems = [
     {
         id: 60,
         title: "Climbing stairs",
-        text: "Nico climbs a flight of 15 stairs to get to his office every day.  He can take steps one at a time, two at a time, or in any combination of ones and twos. For example, he could climb the stairs by stepping on stair 2, stair 4, stair 6, stair 8, stair 10, stair 12, stair 13, and stair 15 (the landing).  He could also climb the stairs in a different way: using stairs 1, 3, 5, 6, 7, 9, 10, 12, 14, and 15.  These are just two of many ways he can climb the stairs: how many different ways can Nico climb the stairs to work?",
+        text: "Nico climbs a flight of 15 stairs to get to his office every day.  He can take steps one at a time, two at a time, or in any combination of ones and twos. For example, he could climb the stairs by stepping on stair 2, then stair 4, then stair 6, then stair 8, then stair 10, then stair 12, then stair 13, and then finally stair 15 (the landing).  He could also climb the stairs in a different way: using stairs 1, 3, 5, 6, 7, 9, 10, 12, 14, and 15.  These are just two of many ways he can climb the stairs: how many different ways can Nico climb the stairs to work?",
         hints: null,
         wrongAnswers: null,
         categories: [
