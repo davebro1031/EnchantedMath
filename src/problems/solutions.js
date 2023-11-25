@@ -528,7 +528,7 @@ export const solutions = [
         id: 59,
         answer: "76 officers holding hands",
         solutions: [
-            "If there were 6 officers, for example, it is easy to check that #1 and #4 would stand opposite to one another, as would #2 and #5, as well as #3 and #6.  The invariant here is that the absolute difference in opposite officer's numbers is 3.  This is because 3 is half of 6; the officers stand exactly halfway around the circle form one another.  Now note that 55 - 17 = 38; the two officers standing exactly opposite one another have a difference of 38.  These officers stand a distance of exactly halfway around the circle from one another, so 38 must be half of the total number of officers.  There must be 76 officers."
+            "If there were 6 officers, for example, it is easy to check that #1 and #4 would stand opposite to one another, as would #2 and #5, as well as #3 and #6.  The invariant here is that the absolute difference in opposite officer's numbers is 3 (4 - 1 = 5 - 2 = 6 - 3).  This is because 3 is half of 6; the officers stand exactly halfway around the circle form one another.  Now note that 55 - 17 = 38; the two officers standing exactly opposite one another have a difference of 38.  These officers stand a distance of exactly halfway around the circle from one another, so 38 must be half of the total number of officers.  There must be 76 officers."
         ],
         links: null
     }
