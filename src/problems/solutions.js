@@ -558,6 +558,12 @@ export const solutions = [
             <br> Let us examine the possibilities if the correctly placed pair is $DA$.  Then the other correctly-ordered yet incorrectly-placed consecutive pair could either be $EC$ or $CB$.  If it is $EC$, then the correct order must be $DABEC$.  On the other hand, if it is $CB$, then the only possiblity is $DACBE$.  Neither of these can be the correct order.  To see why, note that $DABEC$ has $AB$ placed consecutively, which is ruled out by the first prediction (we are told that the prediction $ABCDE$ has no two correctly ordered consecutive pairs).  Similarly, $DACBE$ is ruled out by the first prediction because $C$ cannot be in the third position (none of $ABCDE$ are correctly placed). <br>
             <br> So $CB$ must be the correctly placed pair. Then the possibilities for the other correctly-ordered yet incorrectly-placed consecutive pair are $DA$ (corresponding to $EDACB$) and $AE$ (corresponding to $AEDCB$).  It is easy to see that $AEDCB$ cannot be the correct order, because the first prediction tells us that $A$ cannot be in the first position.  It is equally easy to verify that the ordering $EDACB$ satisfies all of the conditions given to us, and the preceding arguments show that it is the <em>only</em> such ordering.
             `
+        ],
+        links: [
+            {
+                href: "https://artofproblemsolving.com/wiki/index.php/1963_IMO_Problems/Problem_6",
+                text: "1963 IMO Problem 6"
+            }
         ]
     }
 
