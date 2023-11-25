@@ -552,7 +552,9 @@ export const solutions = [
         id: 61,
         answer: "EDACB",
         solutions: [
-            ""
+            `
+            We first consider the second prediction: $DAECB$.  Since there are two disjoint pairs in the correct order, then exactly four of the students must belong to one of these pairs. So there is exactly <em>one</em> student who is not a member of one of these pairs - we shall call her the 'excluded' student. There are <em>two</em> correctly placed students, which means that <em>at least</em> one of the correctly placed students must be among the four who belong to a disjoint pair (they cannot <em>both</em> be the excluded student). However, if one member of a correctly ordered pair is also in the correct place, then his or her counterpart must also be correctly placed.  So there is a correctly placed <em>pair</em> of students and the remaining three are all incorrectly placed."
+            `
         ]
     }
 
