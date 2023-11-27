@@ -596,6 +596,16 @@ export const solutions = [
             We first count the number of edges by using the principle of overcounting.  If each face were cut out and laid separate from all the others, we would have 3 edges for each triangle, 4 for each square, 5 for each pentagon, and 10 for each decagon; there would be $5(3) + 15(4) + 9(5) + 3(10) = 150$ edges. However, on a polyhedron, every edge is <em>shared</em> by exactly two faces.  Thus the 150 figure represents an overcounting by a factor of 2, so there this Johnson solid has are 75 edges. <br>
             <br> Any convex polyhedron has an Euler characteristic of 2.  That is, for convex polyhedra, we always have $F - E + V = 2$, where $F$ is the number of faces, $E$ the number of edges, and $V$ the number of vertices. This is absolutely beautiful fact can be proved in a wide variety of different ways, and I encourage you to peruse one such proof that I have included in the links below.  Armed with this fact, the remainder of the problem is trivial: $32 - 75 + V = 2$ precisely when $V = 45.$
             `
+        ],
+        links: [
+            {
+                href: "https://en.wikipedia.org/wiki/Euler_characteristic#Proof_of_Euler's_formula",
+                text: "Proof of Euler characteristic for convex polyhedra - Wikipedia"
+            },
+            {
+                href: "https://en.wikipedia.org/wiki/Tridiminished_rhombicosidodecahedron",
+                text: "Tridiminished rhombicosidodecahedron - Wikipedia"
+            }
         ]
     }
 
