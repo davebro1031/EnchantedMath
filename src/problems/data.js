@@ -690,6 +690,16 @@ export const problems = [
     {
         id: 63,
         title: "A Johnson solid",
-        text: `A tridiminished rhombicosidodecahedron is a so-called "Johnson solid" because it is a non-uniform convex polyhedra whose faces are regular polygons. This particular solid has 32 faces: 5 triangles, 15 squares, 9 pentagons, and 3 decagons.  How many vertices does it the tridiminished rhombicosidodecahedron have?`
+        text: `A tridiminished rhombicosidodecahedron is a so-called "Johnson solid" because it is a non-uniform convex polyhedra whose faces are regular polygons. This particular solid has 32 faces: 5 triangles, 15 squares, 9 pentagons, and 3 decagons.  How many vertices does it the tridiminished rhombicosidodecahedron have?`,
+        hints: [
+            "How many edges must the solid have?",
+            "Google Euler characteristic"
+        ],
+        wrongAnswers: null,
+        categories: [
+            "combinatorics",
+            "graph theory"
+        ],
+        chilis: 1
     }
 ]
