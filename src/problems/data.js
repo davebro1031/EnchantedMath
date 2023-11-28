@@ -94,7 +94,7 @@ export const problems = [
             "series",
             "quadratics"
         ],
-        chilis: 2
+        chilis: 1
     },
     {
         id: 11,
@@ -541,11 +541,10 @@ export const problems = [
         wrongAnswers: null,
         categories: [
             "proportional reasoning",
-            "inverse proportion",
             "rates",
             "average speed"
         ],
-        chilis: 2
+        chilis: 1
     },
     {
         id: 52,
@@ -574,22 +573,6 @@ export const problems = [
             "average speed"
         ],
         chilis: 1
-    },
-    {
-        id: 54,
-        title: "Many mowers",
-        text: "Jina can mow a lawn in 3 hours, Josh can mow a lawn in 2 hours, and Gregg can mow a lawn in 1 hour.  If they work together, how many minutes (rounded to the nearest minute) will it take them to mow 2 lawns?",
-        hints: [
-            "How many lawns can they all mow together in 6 hours?"
-        ],
-        wrongAnswers: null,
-        categories: [
-            "proportional reasoning",
-            "inverse proportion",
-            "rates",
-            "harmonic mean"
-        ],
-        chilis: 2
     },
     {
         id: 55,

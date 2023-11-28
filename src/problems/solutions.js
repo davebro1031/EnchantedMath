@@ -455,14 +455,6 @@ export const solutions = [
         ]
     },
     {
-        id: 54,
-        answer: "1 hour and 5 minutes",
-        solutions: [
-            "In 6 hours, they collectively mow 11 lawns: Jina mows 2, Josh mows 3, and Gregg mows 6.  So 1 lawn would take 0.5454.. hours, and thus two lawns would take 1.0909.. hours, or roughly 1 hour and 5 minutes.",
-        ],
-        links: null
-    },
-    {
         id: 55,
         answer: "4 hours",
         solutions: [
