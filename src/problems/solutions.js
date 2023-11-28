@@ -1,3 +1,5 @@
+import s62_4_seconds from '../images/s62_4_seconds.png'
+
 export const solutions = [
     {
         id: 2,
@@ -453,20 +455,13 @@ export const solutions = [
         ]
     },
     {
-        id: 54,
-        answer: "1 hour and 5 minutes",
-        solutions: [
-            "In 6 hours, they collectively mow 11 lawns: Jina mows 2, Josh mows 3, and Gregg mows 6.  So 1 lawn would take 0.5454.. hours, and thus two lawns would take 1.0909.. hours, or roughly 1 hour and 5 minutes.",
-        ],
-        links: null
-    },
-    {
         id: 55,
         answer: "4 hours",
         solutions: [
             "In 24 hours, the first faucet would fill 4 containers, the second would fill 3 containers, and the last would fill 2.  The leakage would empty one container's worth, so in 24 hours, the faucets and leakage together would fill 2 + 3 + 4 - 1 = 6 containers.  So they will fill a container every 4 hours.",
             "In 1 hour, the first faucet fills 1/6 of a container, the second 1/8, the third 1/12, and the leakage drains 1/24.  So in one hour, altogether 1/6 + 1/8 + 1/12 - 1/24 = 1/4 of a container is filled.  So the container fills in 4 hours."
-        ]
+        ],
+        links: null
     },
     {
         id: 56,
@@ -486,6 +481,124 @@ export const solutions = [
             <br> You may have found some of my arguments needlessly general (for example, I repeatedly referred to "$13\\times 5$" instead of just calling it "$65$")  The reason for this is that I wanted to make this argument easily generalizeable.  Our solution showed how to reason that $59$ is the solution for the pair $(6, 13)$, but by following the arguments laid out here, we can show that the solution for any relatively prime pair $(m, n)$ is $m(n-1) - n$.  That formula works, but its beautiful symmetry is obscured in that form.  We present several more expressions that more clearly elucidate the symmetry between $n$ and $m$: <br>
             <br> $mn - m - n$ <br> $mn - (m + n)$ <br> $(m-1)(n-1) - 1$ 
             `
+        ],
+        links: [
+            {
+                href: 'https://en.wikipedia.org/wiki/Coin_problem',
+                text: 'Coin problem - Wikipedia'
+            },
+            {
+                href: 'https://www.youtube.com/watch?v=FJtaaM7Txys',
+                text: 'The Nugget Algorithm - VSauce'
+            }
+        ]
+    },
+    {
+        id: 57,
+        answer: "see below",
+        solutions: [
+            `
+            Begin by taking four balls: both gray and then one green and one purple.  On each side of the balance we place one gray and one colored ball.  <br>
+            <br> If the scales balance, then we know that one of the colored balls is heavy and one is light; the heavy colored ball must be with the light gray ball and vice versa.  So we simply remove the colored balls from the scale and reweigh just the gray balls; this will tell us which gray ball is heavy.  Since we know which gray ball is heavy, then we know which of the colored balls we removed was heavy (it was paired with the light gray ball).  Suppose it was the purple ball that was heavy. Then we also know that the green ball we weighed is light, which means its counterpart is heavy; we have determined all three heavy balls.<br>
+            <br> If the scales <em>do not</em> balance, this can occur in one of three ways: 1) the light gray is paired with a light colored ball and the heavy gray is paired with a light colored ball; 2) the light gray is paired with a light colored ball and the heavy gray is paired with a heavy colored ball; 3) the light gray ball is paired with a heavy colored ball and the heavy gray ball is also paired with a heavy colored ball.  In all three cases, note that the heavy side of the scale contains the heavy gray ball and vice versa.  So the gray balls are known.  Now swap one gray ball with one colored ball and reweigh the same four balls: this time with the two gray balls together and the two colored balls together.  If the gray balls together are heavier than the two colored balls together, then we know the two colored balls were both light (case 1) and hence all three balls are known.  If the gray balls are lighter than the colored balls, then the colored balls must be both heavy (case 3) and again, we are finished.  Finally, if the scales balance then we know one of the colored balls is heavy and the other is light.  This can only happen if the light colored ball was with the light gray and the heavy colored ball was with the heavy gray ball (case 2).  If the reverse had been true, then the scales would hae balanced originally.  So suppose the purple was originally with the light gray ball and the green was with the heavy gray ball.  Then we know that the green we weighed was heavy and the purple we did not weigh is heavy.  In any event, we have determined all three heavy balls.
+            `
+        ],
+        links: null
+    },
+    {
+        id: 58,
+        answer: "3, 3, and 8 years old",
+        solutions: [
+            "Please see the wikipedia article below for an extremely clear and detailed explanation of the solution"
+        ],
+        links: [
+            {
+                href: "https://en.wikipedia.org/wiki/Ages_of_Three_Children_puzzle",
+                text: "Ages of Three Children puzzle - Wikipedia"
+            }
+        ]
+    },
+    {
+        id: 59,
+        answer: "76 officers holding hands",
+        solutions: [
+            "If there were 6 officers, for example, it is easy to check that #1 and #4 would stand opposite to one another, as would #2 and #5, as well as #3 and #6.  The invariant here is that the absolute difference in opposite officer's numbers is 3 (4 - 1 = 5 - 2 = 6 - 3).  This is because 3 is half of 6; the officers stand exactly halfway around the circle form one another.  Now note that 55 - 17 = 38; the two officers standing exactly opposite one another have a difference of 38.  These officers stand a distance of exactly halfway around the circle from one another, so 38 must be half of the total number of officers.  There must be 76 officers."
+        ],
+        links: null
+    },
+    {
+        id: 60,
+        answer: "987 ways to climb the stairs",
+        solutions: [
+            `
+            We first note that the stair sequence (2, 4, 6, 8, 10, 12, 13, 15) can be represented differently via the step size at each move: (2, 2, 2, 2, 2, 2, 1, 2). The original sequence is recoverable as the partial sums of our new sequence.  Similarly, the stair sequence of (1, 3, 5, 6, 7, 9, 10, 12, 14, 15) could be represented as steps of sizes (1, 2, 2, 1, 1, 2, 1, 2, 2, 1).  In both cases, the essential invariant here is that both sequences of ones and twos add up to 15 for obvious reasons. So our aim is to count the number of distinct sequences of 1s and 2s, where order does matter, such that the sum of the sequence is exactly 15. <br> 
+            <br> We begin by reducing the problem down to smaller cases.  Suppose the flight had just one stair, not 15. Clearly there is just one way he could climb this "flight:" he would take a single step, corresponding to the sequence (1).  Suppose now that the flight had two stairs: there are two ways he could climb them: (1,1) and (2).  <br>
+            <br> If the flight had three steps, Nico has two choices for his first step: he could either take a step onto the first stair, or he could skip the first stair and step directly onto to the second; his sequence could stair either with a 1 or a 2.  If he starts with a 1, there are two stairs remaining to climb - we have seen that there are two ways for him to do so: (1,1,1) and (1,2).  On the other hand, if he begins by skipping the first stair, then there is only one stair remaining to climb, and we have seen that there is just one way to climb it: (2, 1).  So when there are three stairs, there are exactly 3 ways to climb the flight. <br>
+            <br> You may suspect that if there are $n$ stairs in the flight, there will be $n$ different ways to climb it.  We will see that this is not the case for $n = 4$.  In this case, Nico again has the choice of beginning his sequence of steps with a 1 or a 2.  If he begins with a 1, then there are 3 stairs remaining, so there are three ways he can complete his climb: (1, 1, 1, 1), (1, 1, 2), (1, 2, 1).  On the other hand, if he begins with a 2, then 2 stairs remain and hence there are two ways he can finish his climb: (2, 1, 1) and (2, 2).  So when there are four stairs, we have 5 distinct ways to climb the flight. <br>
+            <br> Now suppose there are 5 stairs.  If he begins with a 1, then four steps remain: there are 5 ways he can complete this climb.  If he begins with a 2, then three steps remain: there are 3 ways he can complete this climb.  So there are 3 + 5 = 8 different ways he can climb a flight of 5 stairs. <br>
+            <br> Suppose there are 6 stairs.  If he begins with 1, then since there are 5 remaining stairs to climb, there will be 8 ways to finish the climb. If he begins with 2, then 4 stairs remain to climb and so he can finish the climb in 5 ways.  There are 13 distinct ways to climb 6 stairs. <br>
+            <br> At this stage, we recognize both the specific numbers and structure of the Fibonacci sequence.  Indeed, if we consider the seqeunce we have been constructing, to find the 6th term (13), we simply summed the value of the previous two (5 + 8).  This pattern will continue as the number of stairs increases: if there are 7 stairs, there will be 21 ways to climb them.  If there are 8 stairs, there will be 34 ways.  Following the recurrence of summing the previous two to get the next, it is easy to calculate that when there are 15 stairs, there will be 987 ways to climb them.
+            `
+        ],
+        links: null
+    },
+    {
+        id: 61,
+        answer: "EDACB",
+        solutions: [
+            `
+            We first consider the second prediction: $DAECB$.  Since there are two disjoint pairs in the correct order, then exactly four of the students must belong to one of these pairs. So there is exactly <em>one</em> student who is not a member of one of these pairs - we shall call her the 'excluded' student. There are <em>two</em> correctly placed students, which means that <em>at least</em> one of the correctly placed students must be among the four who belong to a disjoint pair (they cannot <em>both</em> be the excluded student). However, if one member of a correctly ordered pair is also in the correct place, then his or her counterpart must also be correctly placed.  So there is a correctly placed <em>pair</em> of students and the remaining three are all incorrectly placed. <br>
+            <br> So the candidates for the correctly placed pairs are $DA$, $AE$, $EC$, and $CB$.  At a moment's glance we can see that the middle two ($AE$ and $EC$) are not possible.  Assume for the sake of contradiction that $AE$ is correctly placed.  Then the solution will be of the form _ $AE$ _ _ , where the blanks are filled with $D, C,$ and $B$ in an order such that none are in the same places as they are in the above prediction. However, there must be a second correctly ordered consecutive pair in the above prediction.  The only possible candidate is $CB$, but the only way those two could be placed consecutively is if they are in the places they already occupy.  But then <em>every</em> student would have to be in the correct location, which is not possible.  For a similar reason, $EC$ cannot be the correctly placed pair: there is simply no room for a second incorrectly-placed yet correctly-ordered consecutive pair.  <br>
+            <br> Let us examine the possibilities if the correctly placed pair is $DA$.  Then the other correctly-ordered yet incorrectly-placed consecutive pair could either be $EC$ or $CB$.  If it is $EC$, then the correct order must be $DABEC$.  On the other hand, if it is $CB$, then the only possiblity is $DACBE$.  Neither of these can be the correct order.  To see why, note that $DABEC$ has $AB$ placed consecutively, which is ruled out by the first prediction (we are told that the prediction $ABCDE$ has no two correctly ordered consecutive pairs).  Similarly, $DACBE$ is ruled out by the first prediction because $C$ cannot be in the third position (none of $ABCDE$ are correctly placed). <br>
+            <br> So $CB$ must be the correctly placed pair. Then the possibilities for the other correctly-ordered yet incorrectly-placed consecutive pair are $DA$ (corresponding to $EDACB$) and $AE$ (corresponding to $AEDCB$).  It is easy to see that $AEDCB$ cannot be the correct order, because the first prediction tells us that $A$ cannot be in the first position.  It is equally easy to verify that the ordering $EDACB$ satisfies all of the conditions given to us, and the preceding arguments show that it is the <em>only</em> such ordering.
+            `
+        ],
+        links: [
+            {
+                href: "https://artofproblemsolving.com/wiki/index.php/1963_IMO_Problems/Problem_6",
+                text: "1963 IMO Problem 6"
+            }
+        ]
+    },
+    {
+        id: 62,
+        answer: "14641 different locations",
+        solutions: [
+            `
+            Suppose we find the ladybug after two minutes at some point $(x, y)$. We begin with the claim that we must have that $|x| + |y| \\leq 120$.  To explain why this must be true, first note that a <em>shortest</em> path to the point $(x, y)$ involves taking $|x|$ steps in either the positive or negative x-direction so that the ladybug ends up directly above or below the point $(x, y)$, then taking exactly $|y|$ steps in the y-direction to reach its destination.  We said that this is "a" shortest path, and not "the" shortest path, because there are many such paths of this same length.  Indeed, as long as the ladybug progresses in a way such that its pythagorean distance to the point $(x, y)$ is strictly decreasing, then it will make a total of $|x|$ steps in the appropriate horizontal direction and $|y|$ steps in the appropriate vertical direction.  We say that the minimum walking distance to the point $(x, y)$ is $|x| + |y|$ because it takes <em>at least</em> that many steps for the ladybug to reach that point.  The ladybug takes only 120 steps, so it certainly cannot reach any point whose minimum walking distance is greater than 120.  Thus if the ladybug ends up at point $(x, y)$, we cannot have $|x| + |y| > 120$; we must have $|x| + |y| \\leq 120$.<br>
+            <br> So we have bounded the region in which we can find the ladybug.  The region satisfying $|x| + |y| \\leq 120$  is the square, centered at the origin, whose vertices are at $(120,0), (0, 120), (-120, 0),$ and $(0, -120)$.  Other notable points include $(60, 60)$ or $(60, -60)$, for example, which correspond to taking 60 steps in the +x direction and then 60 more in either the positive or negative y-directions.  It is clear that the ladybug could also end up somewhere within the interior of this region as well, not just on its boundary.  For example, the ladybug could wind up at the origin if it just stumbles back and forth alternating between the $+x$ and $-x$ directions for the full two minutes.  You may suspect that it could end up at <em>any</em> of the interior points within this square, but we argue now that the ladybug can be found at only <em>roughly half</em> them at the end of the two minutes. <br>
+            <br> We show that the coordinates $x$ and $y$ must be either both even or both odd.  Let $U$ (for up) be a nonnegative integer that represents the number of moves in the $+y$ direction, $D$ (for down) the number of moves in the $-y$ direction, $L$ (left) the number in the $-x$ direction, and $R$ (right) the number in the $+x$ direction. Then we have $U + D + L + R = 120$ because the ladybug takes one step each second and each step is in exactly one of these four direction.  Now, since we have $x = R - L$ and $y = U - D$, then we have: <br>
+            <br> $x + y = R - L + U - D$ <br>
+            <br> $x + y = R + L + U + D - 2(L + D)$ <br>
+            <br> $x + y = 120 - 2(L + D)$ <br>
+            <br> And so $(x+y)$ must be an even number, since it is a multiple of two less than 120. An essential way to characterize this fact is that $x$ and $y$ must have the same <em>parity</em>: if one is odd then so is the other, and vice versa.  <br>
+            <br> Furthermore, we can show that the ladybug could be found at <em>any</em> interior point whose coordinates have the same parity.  Consider some arbitrary point $(x_0, y_0)$ within the square region $(|x_0| + |y_0| \\leq 120)$ such that $x_0$ and $y_0$ have the same parity.  The ladybug could end up at this point after two minutes by 1) taking a shortest path of length $|x_0| + |y_0|$ to the point, then 2) alternating steps in the $+x$ and $-x$ directions if there is any time remaining at this point.  This works because both $x_0$ and $y_0$ have the same parity, then so do $|x_0|$ and $|y_0|$, and so their sum is even.  This means that it takes an even number of seconds to reach $(x_0, y_0)$ initially, hence if there is any time remaining, it will be $120 - (|x_0| + |y_0|)$ seconds - an even number of seconds.  Alternating until the time runs out will thus end with the ladybug landing back on $(x_0, y_0).$ <br>
+            <br> So our aim is to count the number of points $(x, y)$ such that $|x| + |y| \\leq 120$ and such that $x$ and $y$ have the same parity.  To do so is actually extremely simple - we have finished with the difficult portion of this solution.  In order to better visualize the set of points that we are trying to count, we briefly reduce the problem down from 120 seconds to just 4 seconds.  Take a moment to verify that in the image below, we have plotted precisely the points $(x, y)$ in the coordinate plane such that $|x| + |y| \\leq 4$ and such that $x$ and $y$ have the same parity. <br>
+            <br><img src=${s62_4_seconds} style="width:350px"></img><br>
+            <br>There are $5^2 = 25$ possible ending points if we allow the ladybug to wander for 4 seconds.  It is also easy to see from the image above that if the ladybug wandered for just two seconds, there would be $3^2 = 9$ possible ending points.  Since our ladybug wanders for 120 seconds, there are $121^2 = 14641$ possible ending points.
+            `,
+            "It is true, more generally, that if the ladybug walks for exactly $n$ seconds, then the number of possible ending locations will be $(n+1)^2$.  I can think of several ways to prove this fact both inductively and directly but all of them are just ugly.  They rely heavily on tedious algebraic manipulation or other calculations; all of them require handling lots of cases.  For example, one inductive approach involves using the principle of overcounting, but this requires careful handling of interior points, boundary-edge points, and vertices.  Another inductive approach involves separating the problem into two cases: show that it holds for all even $n$ inductively, then do the same for all odd $n$.  This approach not only inelegantly requires splitting into evens and odds, but it also relies on opaque algebraic manipulations of sums to complete the proof. I think the most general and clean way I have found to prove this statement is a direct approach following along the lines of the solution above: Show that if the ladybug walks for $n$ seconds and ends at $(x, y)$, then $|x| + |y|$ must be less than or equal to and of the same parity as $n$.  To conclude the proof using this approach also requires some tedious calculations, but the first two facts seem most intuitive.  I'm writing this as a request:  Can anyone write an intuitive and elegant inductive (or direct, I suppose) proof of this statement for all $n$?"
+        ]
+    },
+    {
+        id: 63,
+        answer: "45 vertices",
+        solutions: [
+            `
+            Any convex polyhedron has an Euler characteristic of 2.  That is, for convex polyhedra, we always have $F - E + V = 2$, where $F$ is the number of faces, $E$ the number of edges, and $V$ the number of vertices. This is absolutely beautiful fact can be proved in a wide variety of ways, and I encourage you to peruse the proof that I have included in the links below.  The Euler characteristic gives us a way to calculate the number of vertices if the numbers of faces and edges are known - we thus turn our attention briefly towards calculating the number of edges. <br>
+            <br> As you will soon see, we can easily count the number of edges by using the principle of overcounting.  If each face were cut out and laid separate from all the others, we would have 3 edges for each triangle, 4 for each square, 5 for each pentagon, and 10 for each decagon; there would be $5(3) + 15(4) + 9(5) + 3(10) = 150$ edges. However, on a polyhedron, every edge is <em>shared</em> by exactly two faces.  Thus the 150 figure represents an overcounting by a factor of 2; this Johnson solid must have 75 edges. <br>
+            <br> From here, the remainder of the problem is trivial.  Since we must have $F - E + V = 2$, and we know that $F = 32$ and $E = 75$, then we can easily calculate $V = 45$.
+            `
+        ],
+        links: [
+            {
+                href: "https://en.wikipedia.org/wiki/Euler_characteristic#Proof_of_Euler's_formula",
+                text: "Proof of Euler characteristic for convex polyhedra - Wikipedia"
+            },
+            {
+                href: "https://en.wikipedia.org/wiki/Tridiminished_rhombicosidodecahedron",
+                text: "Tridiminished rhombicosidodecahedron - Wikipedia"
+            }
         ]
     }
 

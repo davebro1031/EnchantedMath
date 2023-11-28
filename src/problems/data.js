@@ -94,7 +94,7 @@ export const problems = [
             "series",
             "quadratics"
         ],
-        chilis: 2
+        chilis: 1
     },
     {
         id: 11,
@@ -128,7 +128,7 @@ export const problems = [
     {
         id: 13,
         title: "How much water?",
-        text: "When a 21cm tall water bottle is placed on a table, water fills it up to a height of 12cm. When the bottle is turned upside down, because the neck is tapered, water fills the bottle up to a height of 15cm.  What fraction of the bottle is filled?",
+        text: "When a partially filled 21cm tall water bottle is placed on a table, water fills it up to a height of 12cm. When the bottle is turned upside down, because the neck is tapered, water fills the bottle up to a height of 15cm.  What fraction of the bottle is filled?",
         hints: [
             "try to imagine that the bottle had a consistent cross section.  How much water would be in it? How much air?"
         ],
@@ -184,7 +184,7 @@ export const problems = [
         categories: [
             "combinatorics"
         ],
-        chilis: 3
+        chilis: 2
     },
     {
         id: 19,
@@ -321,7 +321,7 @@ export const problems = [
     {
         id: 31,
         title: "Toothpick houses",
-        text: "In the image below, 6 toothpicks are used to form Figure 1.  11 toothpicks are used to form Figure 2, and 16 toothpicks are used to form Figure 3.  How many toothpicks would be needed to form Figure 50?",
+        text: "In the image above, 6 toothpicks are used to form Figure 1.  11 toothpicks are used to form Figure 2, and 16 toothpicks are used to form Figure 3.  How many toothpicks would be needed to form Figure 50?",
         hint: [
             "How many toothpicks does each ADDITIONAL house take?"
         ],
@@ -541,11 +541,10 @@ export const problems = [
         wrongAnswers: null,
         categories: [
             "proportional reasoning",
-            "inverse proportion",
             "rates",
             "average speed"
         ],
-        chilis: 2
+        chilis: 1
     },
     {
         id: 52,
@@ -576,22 +575,6 @@ export const problems = [
         chilis: 1
     },
     {
-        id: 54,
-        title: "Many mowers",
-        text: "Jina can mow a lawn in 3 hours, Josh can mow a lawn in 2 hours, and Gregg can mow a lawn in 1 hour.  If they work together, how many minutes (rounded to the nearest minute) will it take them to mow 2 lawns?",
-        hints: [
-            "How many lawns can they all mow together in 6 hours?"
-        ],
-        wrongAnswers: null,
-        categories: [
-            "proportional reasoning",
-            "inverse proportion",
-            "rates",
-            "harmonic mean"
-        ],
-        chilis: 2
-    },
-    {
         id: 55,
         title: "Faucet flow",
         text: "Three faucets are pouring water into a container.  One would fill the container in 6 hours by itself, another in 8 hours and the last in 12 hours.  Additionally, outflow from the container would empty it in one day (24hrs).  How long, to the nearest minute, does the container take to fill from empty?",
@@ -619,5 +602,87 @@ export const problems = [
             "potpourri"
         ],
         chilis: 2
+    },
+    {
+        id: 57,
+        title: "Six balls",
+        text: "There are six balls on a table divided evenly into three sets by color: there are two gray balls, two purple, and two green.  In each of the three sets, there is one heavy ball and one light ball.  Each of the three heavy balls weigh exactly the same, as do each of the light balls.  There is a balance scale on the table: each bowl can fit any number of balls.  Your task is to determine the heavy ball in each of the three sets by using the balance scale only twice.  How can you do this?  Note that the heavy and light balls are extremely close in weight (say 1.00lbs for a light ball and 1.01lbs for a heavy ball, so that they feel the same to human senses but will still tip the scales).",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "potpourri"
+        ],
+        chilis: 2
+    },
+    {
+        id: 58,
+        title: "The three children",
+        text: `A census taker approaches a woman's house, inquiring about the ages of her three children.  She agrees to give him the information, but in the form of a riddle.  She tells him: "If you add the ages of my children, you will get my house number.  If you multiply their ages, the result is 72."  The census taker thinks for a moment and replies "I still don't know their ages." She replies: "Oh, you're right!  I forgot to mention that only my oldest was born in the summer!" The census taker then records the children's ages, thanks the woman for her time, and continues on his way.  What are the ages of the children?`,
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "potpourri"
+        ],
+        chilis: 2
+    },
+    {
+        id: 59,
+        title:"Officers holding hands",
+        text: "Members of the local police department stand in a circle to join hands and speak affirmations to one another.  They are evenly spaced, and the officers are numbered consecutively starting from 1. Officer #17 stands directly across form officer #55.  How many police officers are in the hand-holding circle?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "combinatorics"
+        ],
+        chilis: 0
+    },
+    {
+        id: 60,
+        title: "Climbing stairs",
+        text: "Nico climbs a flight of 15 stairs to get to his office every day.  He can take steps one at a time, two at a time, or in any combination of ones and twos. For example, he could climb the stairs by stepping on stair 2, then stair 4, then stair 6, then stair 8, then stair 10, then stair 12, then stair 13, and then finally stair 15 (the landing).  He could also climb the stairs in a different way: using stairs 1, 3, 5, 6, 7, 9, 10, 12, 14, and 15.  These are just two of many ways he can climb the stairs: how many different ways can Nico climb the stairs to work?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "combinatorics",
+        ],
+        chilis: 3
+    },
+    {
+        id: 61,
+        title: "Kids in a row",
+        text: "(1963 IMO problem 6) Five students, A,B,C,D,E, took part in a contest. One prediction was that the contestants would finish in the order ABCDE. This prediction was very poor. In fact no contestant finished in the position predicted, and no two contestants predicted to finish consecutively actually did so. A second prediction had the contestants finishing in the order DAECB. This prediction was better. Exactly two of the contestants finished in the places predicted, and two disjoint pairs of students predicted to finish consecutively actually did so. Determine the order in which the contestants finished.",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "combinatorics"
+        ],
+        chilis: 2
+    },
+    {
+        id: 62,
+        title: "A drunk ladybug",
+        text: "A drunk ladybug stumbles around the coordinate plane for exactly two minutes.  It begins at the origin and every second, it moves exactly one unit in one of the four cardinal directions (+x, -x, +y, -y).  In how many different locations (x, y) could it be when the timer runs out?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "combinatorics",
+            "number theory"
+        ],
+        chilis: 2
+    },
+    {
+        id: 63,
+        title: "A Johnson solid",
+        text: `A tridiminished rhombicosidodecahedron is a so-called "Johnson solid" because it is a non-uniform convex polyhedra whose faces are regular polygons. This particular solid has 32 faces: 5 triangles, 15 squares, 9 pentagons, and 3 decagons.  How many vertices does the tridiminished rhombicosidodecahedron have?`,
+        hints: [
+            "How many edges must the solid have?",
+            "Google Euler characteristic"
+        ],
+        wrongAnswers: null,
+        categories: [
+            "combinatorics",
+            "graph theory"
+        ],
+        chilis: 1
     }
 ]
