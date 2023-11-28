@@ -184,7 +184,7 @@ export const problems = [
         categories: [
             "combinatorics"
         ],
-        chilis: 3
+        chilis: 2
     },
     {
         id: 19,
@@ -601,7 +601,7 @@ export const problems = [
             "prime factors",
             "potpourri"
         ],
-        chilis: 3
+        chilis: 2
     },
     {
         id: 57,
@@ -612,7 +612,7 @@ export const problems = [
         categories: [
             "potpourri"
         ],
-        chilis: 3
+        chilis: 2
     },
     {
         id: 58,
@@ -645,7 +645,7 @@ export const problems = [
         categories: [
             "combinatorics",
         ],
-        chilis: 2
+        chilis: 3
     },
     {
         id: 61,
