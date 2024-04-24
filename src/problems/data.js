@@ -720,5 +720,20 @@ export const problems = [
             "proportional reasoning"
         ],
         chilis: 2
+    },
+    {
+        id: 67,
+        title: "Atomic mixing",
+        text: "A bubble-chamber contains three types of sub-atomic particles: 1998 particles of type X, 2002 of type Y, and 2003 of type Z.  Whenever an X and Y particle collide, they both become type Z.  Likewise, Y and Z particles collide and become X particles, and X and Z particles become Y particles upon collision.  Certainly the total number of particles will never change, but is it possible that they can evolve so that only one type of particle is present?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "combinatorics",
+            "potpourri"
+        ],
+        chilis: 2
+    },
+    {
+        id: 68
     }
 ]
