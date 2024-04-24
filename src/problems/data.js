@@ -708,6 +708,17 @@ export const problems = [
             "potpourri"
         ],
         chilis: 1
-
+    },
+    {
+        id: 66,
+        title: "Cycling at sunrise",
+        text: "Two towns, Alexandria and Boston, are connected by a road.  At sunrise, James begins cycling from Alexandria to Boston, while simulatenously Kaylee begins from Boston to Alexandria.  Each person cycles at a constant speed, and they cross paths at noon.  James reaches Boston at 5 p.m. while Kaylee reaches Alexandria at 11:15 p.m.  What time was sunrise?",
+        hints: ["draw a space-time diagram"],
+        wrongAnswers: null,
+        categories: [
+            "rates",
+            "proportional reasoning"
+        ],
+        chilis: 2
     }
 ]
