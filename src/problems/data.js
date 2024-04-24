@@ -684,5 +684,30 @@ export const problems = [
             "graph theory"
         ],
         chilis: 1
+    },
+    {
+        id: 64,
+        title: "Moving marbles",
+        text: "There are 10 children in a row, some boys and some girls. Then the headmaster distributes marbles among the children in such a way that the total number of marbles held by girls was equal to the total number of marbles held by boys. Next, each child gave a marble to every child standing to the right of him (or her). After that, the total number of marbles girls had increased by 25. How many girls are there in the row?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "combinatorics",
+            "potpourri"
+        ],
+        chilis: 1
+    },
+    {
+        id: 65,
+        title: "Shaking hands",
+        text: "A group of two hundred people, 105 women and 95 men, is randomly divided into two rows of 100 people each.  Each person in one row is directly opposite a person in the other row, and the opposite pairs shake hands.  How many more 'women-women' handshakes are there than 'man-man' handshakes?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "combinatorics",
+            "potpourri"
+        ],
+        chilis: 1
+
     }
 ]
