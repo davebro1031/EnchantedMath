@@ -790,6 +790,21 @@ export const problems = [
             "rates",
             "proportional reasoning"
         ],
-        chilis: 2
+        chilis: 1
+    },
+    {
+        id: 73,
+        title: "Trucker time",
+        text: "There once was a trucker with a mighty fine truck.  Going up hill, its maximum speed was 56 mph.  Going downhill, its maximum speed was 72 mph, and on level ground its maximum speed is 63 mph.  If it takes our trucker 4 hours to drive pedal-to-the-metal from X to Y, and 5 hours to return in the same fashion, how far is X from Y?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "rates",
+            "proportional reasoning"
+        ],
+        chilis: 1   
+    },
+    {
+
     }
 ]
