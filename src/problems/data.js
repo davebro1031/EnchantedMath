@@ -757,6 +757,15 @@ export const problems = [
         chilis: 3
     },
     {
-
+        id: 70,
+        title: "A chemist's concoction",
+        text: "A chemist needs a 25% solution of acid, but he has on hand two others: a 15% solution and a 30% solution.  How much of each of these must he use to make 12 liters of 25% solution?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "rates",
+            "proportional reasoning"
+        ],
+        chilis: 1
     }
 ]
