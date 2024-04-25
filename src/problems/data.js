@@ -828,6 +828,17 @@ export const problems = [
         chilis: 1
     },
     {
-        
+        id: 76,
+        title: "Cats, rabbits, and dogs",
+        text: "I have only cats, rabbits, and dogs.  Eight of my pets aren't dogs, five aren't rabbits, and seven aren't cats.  How many pets do I have?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "potpourri"
+        ],
+        chilis: 1
+    },
+    {
+
     }
 ]
