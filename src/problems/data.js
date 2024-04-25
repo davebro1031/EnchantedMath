@@ -781,6 +781,15 @@ export const problems = [
         chilis: 2
     },
     {
-        
+        id: 72,
+        title: "River boats",
+        text: "Two boats are crossing the river from opposite sides.  When they first meet, they are 720 feet from the northern shore.  When they reach the opposite shores, they stop for 10 minutes and then cross the river again, but this time they meet 400 ft from the southern shore.  How wide is the river?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "rates",
+            "proportional reasoning"
+        ],
+        chilis: 2
     }
 ]
