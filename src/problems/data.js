@@ -684,5 +684,206 @@ export const problems = [
             "graph theory"
         ],
         chilis: 1
+    },
+    {
+        id: 64,
+        title: "Moving marbles",
+        text: "There are 10 children in a row, some boys and some girls. Then the headmaster distributes marbles among the children in such a way that the total number of marbles held by girls was equal to the total number of marbles held by boys. Next, each child gave a marble to every child standing to the right of him (or her). After that, the total number of marbles girls had increased by 25. How many girls are there in the row?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "combinatorics",
+            "potpourri"
+        ],
+        chilis: 1
+    },
+    {
+        id: 65,
+        title: "Shaking hands",
+        text: "A group of two hundred people, 105 women and 95 men, is randomly divided into two rows of 100 people each.  Each person in one row is directly opposite a person in the other row, and the opposite pairs shake hands.  How many more 'women-women' handshakes are there than 'man-man' handshakes?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "combinatorics",
+            "potpourri"
+        ],
+        chilis: 1
+    },
+    {
+        id: 66,
+        title: "Cycling at sunrise",
+        text: "Two towns, Alexandria and Boston, are connected by a road.  At sunrise, James begins cycling from Alexandria to Boston, while simulatenously Kaylee begins from Boston to Alexandria.  Each person cycles at a constant speed, and they cross paths at noon.  James reaches Boston at 5 p.m. while Kaylee reaches Alexandria at 11:15 p.m.  What time was sunrise?",
+        hints: ["draw a space-time diagram"],
+        wrongAnswers: null,
+        categories: [
+            "rates",
+            "proportional reasoning"
+        ],
+        chilis: 2
+    },
+    {
+        id: 67,
+        title: "Particle mixing",
+        text: "A bubble-chamber contains three types of sub-atomic particles: 1998 particles of type X, 2002 of type Y, and 2003 of type Z.  Whenever an X and Y particle collide, they both become type Z.  Likewise, Y and Z particles collide and become X particles, and X and Z particles become Y particles upon collision.  Certainly the total number of particles will never change, but is it possible that they can evolve so that only one type of particle is present?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "combinatorics",
+            "potpourri"
+        ],
+        chilis: 2
+    },
+    {
+        id: 68,
+        title: "A shortest path",
+        text: "Find the length of the shortest path from the point (5,6) to the point (10,2) that touches both the x and y axes.",
+        hints: "First find the shortest path that touches JUST the x-axis.  What can you learn from this solution?",
+        wrongAnswers: null,
+        categories: [
+            "potpourri"
+        ],
+        chilis: 2
+    },
+    {
+        id: 69,
+        title: "Frogtagon",
+        text: "Let A and E be opposite vertices on a regular octagon.  A frog starts at vertex A.  From any vertex except E, it jumps to one of the two adjacent vertices.  When it reaches E it stops.  Find the number of distinct paths the frog can take from A to E that require exactly 14 jumps.",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "combinatorics",
+            "potpourri"
+        ],
+        chilis: 3
+    },
+    {
+        id: 70,
+        title: "A chemist's concoction",
+        text: "A chemist needs a 25% solution of acid, but he has on hand two others: a 15% solution and a 30% solution.  How much of each of these must he use to make 12 liters of 25% solution?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "rates",
+            "proportional reasoning"
+        ],
+        chilis: 1
+    },
+    {
+        id: 71,
+        title: "Hungry hippos",
+        text: "Suppose you have a grassy field, and hippos eat grass at a constant rate.  Keep in mind, the grass keeps growing continuously.  48 hippos can clear all the grass off the field in 90 days.  120 hippos, however, will clear all the grass in 30 days.  (They are three times faster, even though they are not three times as many in number, because the grass has less time to grow.)  How many cows would be needed to clear all of the grass in 20 days?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "rates",
+            "proportional reasoning"
+        ],
+        chilis: 2
+    },
+    {
+        id: 72,
+        title: "River boats",
+        text: "Two boats are crossing the river from opposite sides.  When they first meet, they are 720 feet from the northern shore.  When they reach the opposite shores, they stop for 10 minutes and then cross the river again, but this time they meet 400 ft from the southern shore.  How wide is the river?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "rates",
+            "proportional reasoning"
+        ],
+        chilis: 1
+    },
+    {
+        id: 73,
+        title: "Trucker time",
+        text: "There once was a trucker with a mighty fine truck.  Going up hill, its maximum speed was 56 mph.  Going downhill, its maximum speed was 72 mph, and on level ground its maximum speed is 63 mph.  If it takes our trucker 4 hours to drive pedal-to-the-metal from X to Y, and 5 hours to return in the same fashion, how far is X from Y?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "rates",
+            "proportional reasoning"
+        ],
+        chilis: 1   
+    },
+    {
+        id: 74,
+        title: "Ping Pongers",
+        text: "Bob, Alice, and Garfunkle decided to play ping pong.  Only two people can play at a time, so they agree that two of them will start playing, and then whoever loses the game will swap out with the player who was sitting out.  Bob played 15 games, Alice played 10 games, and Garfunkle played 17 games.  Who lost the second game?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "potpourri"
+        ],
+        chilis: 1
+    },
+    {
+        id: 75,
+        title: "The mixing tank",
+        text: "A tank contains 40 gallons of a solution composed of 90% water and 10% alcohol.  A second solution containing half water and half alcohol is added to the tank at the rate of 4 gallons per minute.  At the same time, the tank is being drained at the same rate of 4 gallons per minute, so that the total volume of the tank remains at 40 gallons.  Assuming that the solution is stirred constantly, how much alcohol will be in the tank after 10 minutes?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "rates",
+            "proportional reasoning"
+        ],
+        chilis: 1
+    },
+    {
+        id: 76,
+        title: "Cats, rabbits, and dogs",
+        text: "I have only cats, rabbits, and dogs.  Eight of my pets aren't dogs, five aren't rabbits, and seven aren't cats.  How many pets do I have?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "potpourri"
+        ],
+        chilis: 1
+    },
+    {
+        id: 77,
+        title: "Sleepy chameleons",
+        text: "1337 sleepy chameleons sit around the table.  Chameleons can be red, green, or blue.  Every hour, when the clocktower rings, every chameleon wakes up, looks at its two neighbors simultaneous and changes its color.  If both of the neighbors were of the same color, the chameleon decides to blend in and changes color to that one.  If the neighbors' colors differ, the chameleon decides to stick out and changes color to the third one.  All chameleons change colors simultaneously and then go back to sleep.  Can you be sure that at some point the colour pattern around the table returns to the initial state?  Is it possible that they never return to the initial state?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "potpourri"
+        ],
+        chilis: 3
+    },
+    {
+        id: 78,
+        title: "Von Neumman's nuisance",
+        text: "At 12:00 pm, two trains leave from two towns that are 100 miles apart, traveling towards one another.  The first train travels at 20 mph, while the second travels at 30 mph.  A tenacious little fly decides to fly back and forth between the trains as they go.  It begins at noon, perched on the slow train and flies at 40mph towards the fast train.  When it reaches the fast train, it immediately turns around and flies back to the slow train.  When it reaches the slow train, it again turns back towards the fast train, all the while flying at 40 mph.  Eventually, the trains meet, at which point the fly decides to take a rest.  How far did the fly travel altogether?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "rates",
+            "proportional reasoning"
+        ],
+        chilis: 1
+    },
+    {
+        id: 79,
+        title: "Turtle race",
+        text: "The teenage mutant ninja turtles and the brady brothers decide to run a 4x100 relay race.  Leonardo runs at a pace of 28mph, Donatello runs at 21 mph, Raphael runs at 30mph, and Michelangelo runs at 12mph. The Brady brothers (who are famously identical quadruplets) each run at the exact same pace of 21mph.  Which team wins the race?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "rates",
+            "proportional reasoning"
+        ],
+        chilis: 1
+    },
+    {
+        id: 80,
+        title: "Plowing snow",
+        text: "It starts snowing in the morning and continues steadily throughout the day.  A snowplow that removes snow at a constant rate starts plowing at noon.  It plows 2 miles in the first hour, but only 1 mile in the second (during both hours, it removed equal volumes of snow).  What time did it start snowing?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "rates",
+            "proportional reasoning"
+        ],
+        chilis: 2
     }
+
 ]
