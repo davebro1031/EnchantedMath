@@ -839,6 +839,14 @@ export const problems = [
         chilis: 1
     },
     {
-
+        id: 77,
+        title: "Sleepy chameleons",
+        text: "1337 sleepy chameleons sit around the table.  Chameleons can be red, green, or blue.  Every hour, when the clocktower rings, every chameleon wakes up, looks at its two neighbors simultaneous and changes its color.  If both of the neighbors were of the same color, the chameleon decides to blend in and changes color to that one.  If the neighbors' colors differ, the chameleon decides to stick out and changes color to the third one.  All chameleons change colors simultaneously and then go back to sleep.  Can you be sure that at some point the colour pattern around the table returns to the initial state?  Is it possible that they never return to the initial state?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "potpourri"
+        ],
+        chilis: 3
     }
 ]
