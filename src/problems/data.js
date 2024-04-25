@@ -723,7 +723,7 @@ export const problems = [
     },
     {
         id: 67,
-        title: "Atomic mixing",
+        title: "Particle mixing",
         text: "A bubble-chamber contains three types of sub-atomic particles: 1998 particles of type X, 2002 of type Y, and 2003 of type Z.  Whenever an X and Y particle collide, they both become type Z.  Likewise, Y and Z particles collide and become X particles, and X and Z particles become Y particles upon collision.  Certainly the total number of particles will never change, but is it possible that they can evolve so that only one type of particle is present?",
         hints: null,
         wrongAnswers: null,
@@ -734,6 +734,15 @@ export const problems = [
         chilis: 2
     },
     {
-        id: 68
-    }
+        id: 68,
+        title: "A shortest path",
+        text: "Find the length of the shortest path from the point (5,6) to the point (10,2) that touches both the x and y axes.",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "potpourri"
+        ],
+        chilis: 2
+    },
+    
 ]
