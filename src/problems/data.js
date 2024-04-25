@@ -862,7 +862,20 @@ export const problems = [
         chilis: 1
     },
     {
-        
+        id: 79,
+        title: "Turtle race",
+        text: "The teenage mutant ninja turtles and the brady brothers decide to run a 4x100 relay race.  Leonardo runs at a pace of 28mph, Donatello runs at 21 mph, Raphael runs at 30mph, and Michelangelo runs at 12mph. The Brady brothers (who are famously identical quadruplets) each run at the exact same pace of 21mph.  Which team wins the race?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "rates",
+            "proportional reasoning"
+        ],
+        chilis: 1
+    },
+    {
+        id: 80,
+        title: ""
     }
 
 ]
