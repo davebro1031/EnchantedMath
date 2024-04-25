@@ -737,12 +737,26 @@ export const problems = [
         id: 68,
         title: "A shortest path",
         text: "Find the length of the shortest path from the point (5,6) to the point (10,2) that touches both the x and y axes.",
-        hints: null,
+        hints: "First find the shortest path that touches JUST the x-axis.  What can you learn from this solution?",
         wrongAnswers: null,
         categories: [
             "potpourri"
         ],
         chilis: 2
     },
-    
+    {
+        id: 69,
+        title: "Frogtagon",
+        text: "Let A and E be opposite vertices on a regular octagon.  A frog starts at vertex A.  From any vertex except E, it jumps to one of the two adjacent vertices.  When it reaches E it stops.  Find the number of distinct paths the frog can take from A to E that require exactly 14 jumps.",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "combinatorics",
+            "potpourri"
+        ],
+        chilis: 3
+    },
+    {
+
+    }
 ]
