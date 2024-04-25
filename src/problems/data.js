@@ -816,6 +816,18 @@ export const problems = [
         chilis: 1
     },
     {
+        id: 75,
+        title: "The mixing tank",
+        text: "A tank contains 40 gallons of a solution composed of 90% water and 10% alcohol.  A second solution containing half water and half alcohol is added to the tank at the rate of 4 gallons per minute.  At the same time, the tank is being drained at the same rate of 4 gallons per minute, so that the total volume of the tank remains at 40 gallons.  Assuming that the solution is stirred constantly, how much alcohol will be in the tank after 10 minutes?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "rates",
+            "proportional reasoning"
+        ],
+        chilis: 1
+    },
+    {
         
     }
 ]
