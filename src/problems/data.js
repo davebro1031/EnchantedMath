@@ -875,7 +875,15 @@ export const problems = [
     },
     {
         id: 80,
-        title: ""
+        title: "Plowing snow",
+        text: "It starts snowing in the morning and continues steadily throughout the day.  A snowplow that removes snow at a constant rate starts plowing at noon.  It plows 2 miles in the first hour, but only 1 mile in the second (during both hours, it removed equal volumes of snow).  What time did it start snowing?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "rates",
+            "proportional reasoning"
+        ],
+        chilis: 2
     }
 
 ]
