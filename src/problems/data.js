@@ -805,6 +805,17 @@ export const problems = [
         chilis: 1   
     },
     {
-
+        id: 74,
+        title: "Ping Pongers",
+        text: "Bob, Alice, and Garfunkle decided to play ping pong.  Only two people can play at a time, so they agree that two of them will start playing, and then whoever loses the game will swap out with the player who was sitting out.  Bob played 15 games, Alice played 10 games, and Garfunkle played 17 games.  Who lost the second game?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "potpourri"
+        ],
+        chilis: 1
+    },
+    {
+        
     }
 ]
