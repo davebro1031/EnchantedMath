@@ -848,5 +848,21 @@ export const problems = [
             "potpourri"
         ],
         chilis: 3
+    },
+    {
+        id: 78,
+        title: "Von Neumman's nuisance",
+        text: "At 12:00 pm, two trains leave from two towns that are 100 miles apart, traveling towards one another.  The first train travels at 20 mph, while the second travels at 30 mph.  A tenacious little fly decides to fly back and forth between the trains as they go.  It begins at noon, perched on the slow train and flies at 40mph towards the fast train.  When it reaches the fast train, it immediately turns around and flies back to the slow train.  When it reaches the slow train, it again turns back towards the fast train, all the while flying at 40 mph.  Eventually, the trains meet, at which point the fly decides to take a rest.  How far did the fly travel altogether?",
+        hints: null,
+        wrongAnswers: null,
+        categories: [
+            "rates",
+            "proportional reasoning"
+        ],
+        chilis: 1
+    },
+    {
+        
     }
+
 ]
