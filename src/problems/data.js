@@ -771,7 +771,7 @@ export const problems = [
     {
         id: 71,
         title: "Hungry hippos",
-        text: "Suppose you have a grassy field, and hippos eat grass at a constant rate.  Keep in mind, the grass keeps growing continuously.  48 hippos can clear all the grass off the field in 90 days.  120 hippos, however, will clear all the grass in 30 days.  (They are three times faster, even though they are not three times as many in number, because the grass has less time to grow.)  How many cows would be needed to clear all of the grass in 20 days?",
+        text: "Suppose you have a grassy field, and hippos eat grass at a constant rate.  Keep in mind, the grass keeps growing continuously.  48 hippos can clear all the grass off the field in 90 days.  120 hippos, however, will clear all the grass in 30 days.  (They are three times faster, even though they are not three times as many in number, because the grass has less time to grow.)  How many hippos would be needed to clear all of the grass in 20 days?",
         hints: null,
         wrongAnswers: null,
         categories: [
